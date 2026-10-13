@@ -1,0 +1,41 @@
+---
+import { url } from '../lib/url';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.mit.edu/"><img src={url('images/mit-logo.svg')} width="80" alt="MIT" /></a>
+      <a href="https://www.csail.mit.edu/"><img src={url('images/csail-logo.svg')} width="80" alt="MIT CSAIL" /></a>
+    </div>
+    <div class="footer-main">
+      <ul>
+        <li><a href={url('publications/')}>Publications</a></li>
+        <li><a href={url('people/')}>People</a></li>
+        <li><a href={url('opportunities/')}>Opportunities</a></li>
+        <li><a href={url('blog/')}>Blog</a></li>
+        <li><a href="https://accessibility.mit.edu/">Accessibility</a></li>
+      </ul>
+      <p class="copyright">
+        Copyright © {year} Learning and Intelligent Systems Group // Original design by Laura Weiss //
+        <a href="https://github.com/Learning-and-Intelligent-Systems/lab-website">Edit this site on GitHub</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer { padding: 3rem 0 2rem; }
+  .footer-inner { display: flex; gap: 2.5rem; }
+  .footer-logos { display: flex; flex-direction: column; gap: 1.5rem; flex: 0 0 80px; }
+  .footer-main { border-top: 4px solid var(--rule); padding-top: 2rem; flex: 1; }
+  .footer-main ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0 2rem; margin-bottom: 1.5rem; }
+  .footer-main li a { font-family: var(--font-head); font-weight: 600; font-size: 1rem; line-height: 2rem; }
+  .copyright { color: var(--faint); font-size: 0.875rem; margin: 0; }
+  .copyright a { font-weight: 400; }
+  @media (max-width: 760px) {
+    .footer-inner { flex-direction: column; gap: 1.5rem; }
+    .footer-logos { flex-direction: row; }
+  }
+</style>

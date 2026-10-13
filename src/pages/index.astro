@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import { getPosts } from '../lib/content';
+import { url } from '../lib/url';
+
+const posts = (await getPosts()).slice(0, 3);
+---
+
+<Base>
+  <section class="hero">
+    <div class="wrap-narrow">
+      <h1>The Learning <span class="orange">&amp;</span> Intelligent Systems Group</h1>
+      <div class="hero-body">
+        <div class="cta">
+          <a class="button" href={url('blog/')}>Blog</a>
+          <a class="button" href="https://www.youtube.com/channel/UCrc2tNCabNOI58lRqvGRNzg">YouTube Channel</a>
+        </div>
+        <div class="intro">
+          <h3>
+            Part of <a href="https://robotics.mit.edu/">Robotics@MIT</a>{' and '}<a href="https://ei.csail.mit.edu/">Embodied Intelligence@MIT</a>
+          </h3>
+          <p>
+            We conduct interdisciplinary research aimed at discovering the principles underlying the design of
+            artificially intelligent robots. Our goal is to create robots that can perform the kinds of everyday tasks
+            that come naturally to humans, but that are beyond the reach of current technology.
+          </p>
+          <p>
+            Our research brings together ideas from motion and task planning, machine learning, reinforcement learning,
+            and computer vision to synthesize robot systems that are capable of behaving intelligently across a wide
+            range of problem domains. We are driven by the immense challenges faced by robots with imperfect sensors
+            and incomplete knowledge of the world operating in unstructured environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section alt">
+    <div class="wrap">
+      <h2 class="slash-title">Blogs</h2>
+      {posts.length > 0 ? posts.map((post) => <PostCard post={post} />) : <p class="empty">No posts yet.</p>}
+      <p><a href={url('blog/')}>All posts →</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding: 10rem 0 5rem; }
+  .hero h1 { max-width: 14em; }
+  .hero-body { display: flex; gap: 3rem; margin-top: 2rem; }
+  .cta { display: flex; flex-direction: column; gap: 1.5rem; align-items: flex-start; padding-top: 1.625rem; flex: 0 0 auto; }
+  .intro { margin-top: 24px; }
+  .intro h3 { margin-bottom: 1.625rem; }
+  @media (max-width: 760px) {
+    .hero { padding: 6rem 0 3rem; }
+    .hero-body { flex-direction: column-reverse; gap: 0; }
+    .cta { flex-direction: row; flex-wrap: wrap; }
+  }
+</style>

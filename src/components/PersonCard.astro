@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import type { Person } from '../lib/people';
+
+interface Props {
+  person: Person;
+}
+const { name, photo, website } = Astro.props.person.data;
+const initials = name.split(/\s+/).map((w) => w[0]).filter((c) => /[A-Za-z]/.test(c)).slice(0, 2).join('');
+const Tag = website ? 'a' : 'div';
+---
+
+<Tag class="person" href={website}>
+  {photo ? (
+    <Image src={photo} alt={name} width={400} height={400} fit="cover" class="photo" />
+  ) : (
+    <div class="photo placeholder" aria-hidden="true">{initials}</div>
+  )}
+  <span class="name">{name}</span>
+</Tag>
+
+<style>
+  .person { display: flex; flex-direction: column; color: #fff; text-decoration: none; }
+  .person:hover { text-decoration: none; }
+  .photo { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 25%; }
+  .placeholder {
+    display: grid; place-items: center;
+    background: var(--navy); color: #fff;
+    font-family: var(--font-head); font-size: 3rem;
+  }
+  .name {
+    background: var(--orange);
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.6rem 0.8rem;
+    transition: background 0.1s ease-in;
+  }
+  a.person:hover .name { background: var(--purple); }
+</style>

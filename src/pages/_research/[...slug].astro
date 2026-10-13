@@ -1,0 +1,67 @@
+---
+import { getEntries, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import Publication from '../../components/Publication.astro';
+import { getProjects } from '../../lib/content';
+import { byLastName, findPerson, peopleByName, type Person } from '../../lib/people';
+import { url } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return projects.map((project) => ({ params: { slug: project.id }, props: { project } }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const { title, summary, cover, links } = project.data;
+const pubs = (await getEntries(project.data.publications)).sort(
+  (a, b) => b.data.year - a.data.year || a.data.order - b.data.order,
+);
+const byName = await peopleByName();
+// Listed people, plus current lab members who authored the listed papers.
+const listed = await getEntries(project.data.people);
+const authors = pubs
+  .flatMap((pub) => pub.data.authors.map((a) => findPerson(byName, a)))
+  .filter((p): p is Person => !!p && !p.data.alumni);
+const people = [...new Map([...listed, ...authors].map((p) => [p.id, p])).values()].sort(byLastName);
+---
+
+<Base title={title} description={summary}>
+  <article class="wrap-narrow project">
+    <p class="meta"><a href={url('research/')}>← Research</a></p>
+    <h1>{title}</h1>
+    <p class="lede">{summary}</p>
+    {links.length > 0 && (
+      <p class="links">{links.map((l) => <a class="button" href={l.url}>{l.label}</a>)}</p>
+    )}
+    {cover && <Image src={cover} alt="" width={1200} class="cover" />}
+    <div class="prose"><Content /></div>
+
+    {people.length > 0 && (
+      <>
+        <h2 class="slash-title">People</h2>
+        <div class="grid">{people.map((p) => <PersonCard person={p} />)}</div>
+      </>
+    )}
+    {pubs.length > 0 && (
+      <>
+        <h2 class="slash-title">{project.data.kind === 'area' ? 'Selected Publications' : 'Publications'}</h2>
+        <ul>{pubs.map((pub) => <Publication pub={pub} people={byName} />)}</ul>
+      </>
+    )}
+  </article>
+</Base>
+
+<style>
+  .project { padding-top: 9rem; padding-bottom: 5rem; }
+  h1 { margin: 1rem 0; }
+  .lede { font-family: var(--font-head); font-size: 1.3rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 1rem; }
+  .cover { width: 100%; margin-bottom: 2.5rem; }
+  h2 { margin-top: 3rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem; }
+  ul { padding: 0; }
+  @media (max-width: 760px) { .project { padding-top: 5rem; } }
+</style>
