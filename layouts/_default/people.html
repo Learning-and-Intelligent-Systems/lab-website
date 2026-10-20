@@ -1,0 +1,62 @@
+{{ define "main" }}
+{{- $labels := dict
+  "postdoc" "Postdoctoral Associates" "phd" "PhD Students" "meng" "MEng Students" "urop" "UROP Students"
+  "visiting" "Visiting Researchers" "staff" "Staff" "other" "Other" "pet" "Furry Friends of the Lab" }}
+{{- $alumniLabels := dict
+  "pi" "Faculty Alumni" "postdoc" "Postdoctoral Alumni" "phd" "PhD Alumni" "meng" "MEng Alumni"
+  "urop" "UROP Alumni" "visiting" "Visiting Alumni" "staff" "Staff Alumni" "other" "Other Alumni" }}
+{{- $people := slice }}
+{{- range partialCached "people.html" . }}{{ $people = $people | append . }}{{ end }}
+{{- $people = sort $people "sort" }}
+{{- $current := where $people "alumni" false }}
+{{- $alumni := where $people "alumni" true }}
+<section class="page-header">
+  <div class="wrap">
+    <h1>Meet the Team</h1>
+    <p class="lede">{{ .Params.description }}</p>
+  </div>
+</section>
+
+<section class="wrap people">
+  <h2 class="slash-title">Principal Investigators</h2>
+  <div class="pis">
+    {{- range $pi := where $current "role" "pi" }}
+    <div class="pi">
+      {{- with .photo }}
+      {{- $img := .Fill "400x400 Center" }}
+      <a href="{{ $pi.website }}"><img src="{{ $img.RelPermalink }}" width="400" height="400" alt="{{ $pi.name }}" /></a>
+      {{- end }}
+      <div>
+        <h3><a href="{{ .website }}">{{ .name }}</a></h3>
+        {{- with .title }}
+        <p>{{ . }}</p>
+        {{- end }}
+      </div>
+    </div>
+    {{- end }}
+  </div>
+
+  {{- range $role := slice "postdoc" "phd" "meng" "urop" "visiting" "staff" "other" "pet" }}
+  {{- with where $current "role" $role }}
+  <h2 class="slash-title">{{ index $labels $role }}</h2>
+  <div class="grid">
+    {{- range . }}
+    {{ partial "person-card.html" . }}
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+
+  <h2 class="slash-title">Alumni</h2>
+  {{- range $role := slice "pi" "postdoc" "phd" "meng" "urop" "visiting" "staff" "other" }}
+  {{- with where $alumni "role" $role }}
+  <h4>{{ index $alumniLabels $role }}</h4>
+  <ul class="alumni">
+    {{- range $p := . }}
+    <li>{{ with .website }}<a href="{{ . }}">{{ $p.name }}</a>{{ else }}{{ .name }}{{ end }}</li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- end }}
+</section>
+{{ end }}

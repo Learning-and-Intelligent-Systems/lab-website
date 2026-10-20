@@ -1,0 +1,16 @@
+<nav class="primary-nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="{{ relURL "" }}" aria-label="Learning & Intelligent Systems home">
+      <img class="logo-full" src="{{ relURL "images/lis-logo.svg" }}" width="377" height="90" alt="Learning & Intelligent Systems" />
+      <img class="logo-small" src="{{ relURL "images/lis-logo-small.svg" }}" width="141" height="90" alt="Learning & Intelligent Systems" />
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" />
+    <label for="nav-toggle" class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      {{- range slice (dict "href" "publications/" "label" "Publications") (dict "href" "people/" "label" "People") (dict "href" "blog/" "label" "Blog") }}
+      {{- $href := relURL .href }}
+      <li><a href="{{ $href }}"{{ if hasPrefix $.RelPermalink $href }} aria-current="page"{{ end }}>{{ .label }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</nav>

@@ -5,19 +5,24 @@ on:
   push:
     branches: [main]
 
+env:
+  HUGO_VERSION: 0.168.0
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
+      - name: Install Hugo
+        run: curl -sL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz" | sudo tar xz -C /usr/local/bin hugo
       - name: Check image sizes
-        run: npm run check:images
-      - name: Type-check and validate content
-        run: npm run check
+        run: |
+          big=$(find assets content static -type f -regextype posix-extended -iregex '.*\.(png|jpe?g|gif|webp|avif|svg)' -size +1024k)
+          if [ -n "$big" ]; then
+            echo "Images over 1 MB (please resize, e.g. to 1200px wide, before committing):"
+            echo "$big"
+            exit 1
+          fi
+      # The templates fail the build on unknown people ids, roles or fields, and missing photos.
       - name: Build
-        run: npm run build
+        run: hugo --panicOnWarning

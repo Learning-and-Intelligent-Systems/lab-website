@@ -1,0 +1,11 @@
+{{/* Simple Markdown pages, e.g. content/about.md. */}}
+{{ define "main" }}
+<section class="page-header">
+  <div class="wrap">
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+<section class="wrap prose" style="padding-bottom: 5rem">
+  {{ .Content }}
+</section>
+{{ end }}

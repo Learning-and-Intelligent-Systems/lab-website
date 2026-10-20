@@ -1,0 +1,3 @@
+{{/* "Tomás Lozano-Pérez*" -> "tomas lozanoperez", "L.P. Kaelbling" -> "lp kaelbling" (accents are stripped by urlize, see removePathAccents). */}}
+{{- $s := replaceRE `[-.*'’]` "" . | urlize | lower }}
+{{- return trim (replaceRE `\s+` " " (replaceRE `[^a-z ]` "" (replace $s "-" " "))) " " }}

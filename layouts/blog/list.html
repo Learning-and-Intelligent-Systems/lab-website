@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="page-header">
+  <div class="wrap">
+    <h1>Blog</h1>
+    <p class="lede">{{ .Params.description }}</p>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom: 5rem">
+  {{- range .Pages.ByDate.Reverse }}
+  {{ partial "post-card.html" . }}
+  {{- else }}
+  <p class="empty">No posts yet.</p>
+  {{- end }}
+</section>
+{{ end }}

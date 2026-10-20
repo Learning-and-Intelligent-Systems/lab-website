@@ -1,0 +1,14 @@
+<article class="post-card">
+  <div class="info">
+    <p class="date">
+      {{ .Date.Format "January 2, 2006" }}
+      {{ if .Draft }}<span class="draft">Draft</span>{{ end }}
+    </p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="byline">Authors: {{ partial "author-list.html" . }}</p>
+    <p class="summary">{{ .Params.summary }}</p>
+  </div>
+  {{- with partial "cover.html" (dict "page" . "width" 480) }}
+  <img class="cover" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy" />
+  {{- end }}
+</article>

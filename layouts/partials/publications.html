@@ -1,0 +1,3 @@
+{{/* All entries of assets/publications.yaml, in file order. */}}
+{{- $pubs := resources.Get "publications.yaml" | transform.Unmarshal }}
+{{- return $pubs }}

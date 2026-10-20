@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{- $people := partialCached "people.html" . }}
+{{- $byName := partialCached "people-by-name.html" . }}
+{{- $pubs := slice }}
+{{- range .Params.publications }}
+  {{- with where (partialCached "publications.html" $) "key" . }}{{ $pubs = $pubs | append (index . 0) }}
+  {{- else }}{{ errorf "content/%s: publication %q not found (key in assets/publications.yaml)" $.File.Path . }}{{ end }}
+{{- end }}
+{{- /* Listed people, plus current lab members who authored the listed papers. */}}
+{{- $members := dict }}
+{{- range .Params.people }}
+  {{- with index $people . }}{{ $members = merge $members (dict .id .) }}
+  {{- else }}{{ errorf "content/%s: person %q not found (file name in assets/people, without .yaml)" $.File.Path . }}{{ end }}
+{{- end }}
+{{- range $pubs }}
+  {{- range .author }}
+    {{- with index $byName (partial "normalize-name.html" .) }}{{ if not .alumni }}{{ $members = merge $members (dict .id .) }}{{ end }}{{ end }}
+  {{- end }}
+{{- end }}
+{{- $list := slice }}
+{{- range $members }}{{ $list = $list | append . }}{{ end }}
+<article class="wrap-narrow project-page">
+  <p class="meta"><a href="{{ relURL "research/" }}">← Research</a></p>
+  <h1>{{ .Title }}</h1>
+  <p class="lede">{{ .Params.summary }}</p>
+  {{- with .Params.links }}
+  <p class="project-links">{{ range . }}<a class="button" href="{{ .url }}">{{ .label }}</a>{{ end }}</p>
+  {{- end }}
+  {{- with partial "cover.html" (dict "page" . "width" 1200) }}
+  <img class="cover" src="{{ .RelPermalink }}" alt="" />
+  {{- end }}
+  <div class="prose">{{ .Content }}</div>
+
+  {{- with $list }}
+  <h2 class="slash-title">People</h2>
+  <div class="grid">
+    {{- range sort . "sort" }}
+    {{ partial "person-card.html" . }}
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- with $pubs }}
+  <h2 class="slash-title">{{ if eq $.Params.kind "area" }}Selected Publications{{ else }}Publications{{ end }}</h2>
+  <ul class="pubs">
+    {{- range sort . "year" "desc" }}
+    {{ partial "publication.html" (dict "pub" . "byName" $byName) }}
+    {{- end }}
+  </ul>
+  {{- end }}
+</article>
+{{ end }}

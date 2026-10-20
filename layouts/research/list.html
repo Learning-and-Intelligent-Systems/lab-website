@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{- $all := .Pages }}
+{{- $projects := where $all "Params.kind" "!=" "area" }}
+{{- $sections := slice
+  (dict "title" "Research Areas" "items" (where $all "Params.kind" "area"))
+  (dict "title" "Current Projects" "items" (where $projects "Params.status" "!=" "past"))
+  (dict "title" "Past Projects" "items" (where $projects "Params.status" "past")) }}
+<section class="page-header">
+  <div class="wrap">
+    <h1>Research</h1>
+    <p>{{ .Params.description }} See <a href="{{ relURL "publications/" }}">Publications</a> for the full list of papers.</p>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom: 5rem">
+  {{- if not $all }}<p class="empty">Nothing here yet.</p>{{ end }}
+  {{- range $s := $sections }}
+  {{- with $s.items }}
+  <h2 class="slash-title">{{ $s.title }}</h2>
+  <div class="projects">
+    {{- range . }}
+    <a class="project" href="{{ .RelPermalink }}">
+      {{- with partial "cover.html" (dict "page" . "width" 600) }}
+      <img class="cover" src="{{ .RelPermalink }}" alt="" loading="lazy" />
+      {{- else }}
+      <div class="cover blank"></div>
+      {{- end }}
+      <h3>{{ .Title }}{{ if .Draft }} (draft){{ end }}</h3>
+      <p>{{ .Params.summary }}</p>
+    </a>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+</section>
+{{ end }}

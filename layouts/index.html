@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap-narrow">
+    <h1>The Learning <span class="orange">&amp;</span> Intelligent Systems Group</h1>
+    <div class="hero-body">
+      <div class="cta">
+        <a class="button" href="{{ relURL "blog/" }}">Blog</a>
+        <a class="button" href="https://www.youtube.com/channel/UCrc2tNCabNOI58lRqvGRNzg">YouTube Channel</a>
+      </div>
+      <div class="intro">
+        <h3>
+          Part of <a href="https://robotics.mit.edu/">Robotics@MIT</a> and <a href="https://ei.csail.mit.edu/">Embodied Intelligence@MIT</a>
+        </h3>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <h2 class="slash-title">Blogs</h2>
+    {{- range first 3 (where site.RegularPages "Section" "blog").ByDate.Reverse }}
+    {{ partial "post-card.html" . }}
+    {{- else }}
+    <p class="empty">No posts yet.</p>
+    {{- end }}
+    <p><a href="{{ relURL "blog/" }}">All posts →</a></p>
+  </div>
+</section>
+{{ end }}

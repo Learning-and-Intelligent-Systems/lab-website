@@ -9,27 +9,27 @@ You don't need to install anything: all of the steps below work in the GitHub we
 
 ## Add or update yourself
 
-1. Create `src/content/people/<first-last>.yaml`:
+1. Create `assets/people/<first-last>.yaml`:
 
    ```yaml
    name: "Jane Doe"
    role: phd                      # pi | postdoc | phd | meng | urop | visiting | staff | other | pet
    website: "https://janedoe.github.io"
    photo: ./jane-doe.jpg
-   aliases: ["J. Doe", "Jane Q. Doe"]   # optional: other spellings of your name in publications.bib
+   aliases: ["J. Doe", "Jane Q. Doe"]   # optional: other spellings of your name in publications.yaml
    ```
 
-2. Upload your photo next to it as `src/content/people/jane-doe.jpg`. A square-ish headshot of about 600×600 px and under 1 MB works best.
+2. Upload your photo next to it as `assets/people/jane-doe.jpg`. A square-ish headshot of about 600×600 px and under 1 MB works best.
 3. Open a PR.
 
 When you graduate, add `alumni: true`. Your entry moves to the Alumni list, grouped by the
 `role` you had in the lab.
 
-The file name (without `.yaml`) is your **id**, used to credit you on blog posts and projects.
+The file name (without `.yaml`) is your **id**, used to credit you on blog posts.
 
 ## Write a blog post
 
-1. Make a folder `src/content/blog/YYYY-MM-short-title/` with an `index.md`:
+1. Make a folder `content/blog/YYYY-MM-short-title/` with an `index.md`:
 
    ```md
    ---
@@ -47,48 +47,52 @@ The file name (without `.yaml`) is your **id**, used to credit you on blog posts
    Your post in Markdown. ![Figure 1](./figure1.png)
    ```
 
-2. Put images in the same folder.
+2. Put images in the same folder. Videos go in `static/media/blog/<post folder>/` and are embedded with
+   `<video src="../../media/blog/<post folder>/clip.mp4" autoplay loop muted playsinline></video>`.
 3. Open a PR. While `draft: true` is set, the post appears in the PR preview but not on the live site.
    Remove it when you're ready to publish.
 
 Everything after the `---` is regular Markdown: headings, lists, tables, code blocks and quotes all work.
-
-## Add a project
-
-> The Research section is on hold and not built into the site yet (its pages live in
-> `src/pages/_research/`; Astro skips folders starting with `_`). Project files are still validated.
-
-Create `src/content/projects/<name>.md`. See `src/content/projects/example-project.md` for every
-field. `people` takes people ids and `publications` takes BibTeX citation keys.
+For a caption under a figure, add `<p class="caption">…</p>` right after it.
 
 ## Add publications
 
-Append BibTeX entries to `src/content/publications.bib`. Besides the standard fields, you can add
-`url`, `pdf`, `code`, `website` and `doi`; these show up as links. A `note` is shown under the entry
-(e.g. `note = {Best Paper Award}`), and any `\href{url}{label}` inside it becomes another link.
-Entries are grouped by year and keep their file order within a year, so add new papers at the top.
+Add entries to the top of `assets/publications.yaml`:
 
-Authors whose names match someone in `src/content/people` (by `name` or `aliases`) are linked to
+```yaml
+- key: doe2026planning              # unique citation key
+  type: inproceedings               # BibTeX entry type
+  title: Planning with Learned Abstractions
+  author: [Jane Doe, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)   # or journal, school, institution, ...
+  year: 2026
+  url: https://arxiv.org/abs/...
+  # optional: pdf, code, website, doi (shown as links), note (e.g. Best Paper Award),
+  # links: [{label: Video, url: https://...}], and other BibTeX fields such as pages or volume
+```
+
+The BibTeX shown on the site is generated from these fields. Entries are grouped by year and keep
+their file order within a year, so add new papers at the top.
+
+Authors whose names match someone in `assets/people` (by `name` or `aliases`) are linked to
 their website automatically.
 
-## Post an opening
+## Add a project
 
-Edit `src/pages/opportunities.md`.
+> The Research section is on hold and not built into the site yet. Project pages live in
+> `research-on-hold/`; see `research-on-hold/example-project.md` for every field.
 
 ## If the build fails
 
 The CI check prints which file and field is wrong, for example:
 
 ```
-people → jane-doe data does not match collection schema.
-  role: Invalid option: expected one of "pi"|"postdoc"|"phd"|...
-src/content/blog/2026-11-my-post/index.md: authors "jane-doo" not found (file name in src/content/people, without .yaml)
+ERROR assets/people/jane-doe.yaml: role "student" must be one of pi, postdoc, phd, meng, urop, visiting, staff, pet, other
+ERROR content/blog/2026-11-my-post/index.md: author "jane-doo" not found (file name in assets/people, without .yaml)
 ```
 
 ## Shortcut for local contributors
 
 ```sh
-npm run new -- person "Jane Doe" phd
-npm run new -- post "My post title"
-npm run new -- project "Project name"
+hugo new content blog/2026-11-my-post-title    # creates content/blog/2026-11-my-post-title/index.md
 ```

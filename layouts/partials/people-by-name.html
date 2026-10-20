@@ -1,0 +1,11 @@
+{{/* Lookup from normalized name or alias to person, for linking publication authors. Pets don't write papers. */}}
+{{- $byName := dict }}
+{{- range partialCached "people.html" . }}
+  {{- if ne .role "pet" }}
+    {{- $p := . }}
+    {{- range (slice .name) | append .aliases }}
+      {{- $byName = merge $byName (dict (partial "normalize-name.html" .) $p) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- return $byName }}

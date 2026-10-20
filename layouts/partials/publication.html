@@ -1,0 +1,38 @@
+{{/* One entry of assets/publications.yaml. Context: dict "pub" and "byName" (from people-by-name.html). */}}
+{{- $p := .pub }}
+{{- $byName := .byName }}
+{{- $primary := or $p.url $p.pdf $p.website }}
+{{- $venue := or $p.journal $p.booktitle $p.school $p.institution $p.publisher $p.howpublished }}
+<li class="pub" id="{{ $p.key }}">
+  <span class="title">{{ with $primary }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}</span>
+  <span class="pub-authors">
+    {{- range $i, $a := $p.author }}{{ if $i }}, {{ end }}
+      {{- with index $byName (partial "normalize-name.html" $a) }}
+        {{- with .website }}<a href="{{ . }}">{{ $a }}</a>{{ else }}<strong>{{ $a }}</strong>{{ end }}
+      {{- else }}{{ $a }}{{ end }}
+    {{- end -}}
+  </span>
+  <span class="venue">{{ with $venue }}{{ . }}, {{ end }}{{ $p.year }}.</span>
+  {{- with $p.note }}
+  <span class="note">{{ . }}</span>
+  {{- end }}
+  <span class="links">
+    {{- with $p.pdf }}<a href="{{ . }}">PDF</a>{{ end }}
+    {{- with $p.website }}<a href="{{ . }}">Website</a>{{ end }}
+    {{- with $p.code }}<a href="{{ . }}">Code</a>{{ end }}
+    {{- range $p.links }}<a href="{{ .url }}">{{ strings.FirstUpper .label }}</a>{{ end }}
+    {{- with $p.doi }}<a href="{{ cond (hasPrefix . "http") . (printf "https://doi.org/%s" .) }}">DOI</a>{{ end }}
+    <details>
+      <summary>BibTeX</summary>
+      {{- $lines := slice }}
+      {{- range $f := slice "title" "author" "editor" "journal" "booktitle" "school" "institution" "organization" "publisher" "howpublished" "series" "volume" "number" "pages" "address" "month" "year" "note" "url" "doi" }}
+        {{- with index $p $f }}
+          {{- $v := "" }}
+          {{- if reflect.IsSlice . }}{{ $v = delimit . " and " }}{{ else if eq $f "title" }}{{ $v = printf "{%s}" . }}{{ else }}{{ $v = string . }}{{ end }}
+          {{- $lines = $lines | append (printf "  %s = {%s}" $f $v) }}
+        {{- end }}
+      {{- end }}
+      <pre>{{ printf "@%s{%s,\n%s\n}" $p.type $p.key (delimit $lines ",\n") }}</pre>
+    </details>
+  </span>
+</li>

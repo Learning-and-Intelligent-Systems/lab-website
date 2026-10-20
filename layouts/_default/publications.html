@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{- $pubs := partialCached "publications.html" . }}
+{{- $byName := partialCached "people-by-name.html" . }}
+{{- $years := slice }}
+{{- range $pubs }}{{ $years = $years | append .year }}{{ end }}
+<section class="page-header">
+  <div class="wrap">
+    <h1>Publications</h1>
+  </div>
+</section>
+<section class="wrap" style="padding-bottom: 5rem">
+  {{- range sort (uniq $years) "value" "desc" }}
+  <section class="year" data-year="{{ . }}">
+    <h2 id="y{{ . }}">{{ . }}</h2>
+    <ul class="pubs">
+      {{- range where $pubs "year" . }}
+      {{ partial "publication.html" (dict "pub" . "byName" $byName) }}
+      {{- end }}
+    </ul>
+  </section>
+  {{- else }}
+  <p class="empty">No publications yet. Add entries to <code>assets/publications.yaml</code>.</p>
+  {{- end }}
+</section>
+{{ end }}

@@ -1,0 +1,30 @@
+{{/*
+  Every person in assets/people, as a dict from id (file name without .yaml) to
+  {id, name, role, title, website, photo (image resource), alumni, aliases, sort}.
+  Fails the build on unknown fields or roles, like the old content schema did.
+*/}}
+{{- $roles := slice "pi" "postdoc" "phd" "meng" "urop" "visiting" "staff" "pet" "other" }}
+{{- $fields := slice "name" "role" "title" "website" "photo" "alumni" "aliases" }}
+{{- $people := dict }}
+{{- range resources.Match "people/*.yaml" }}
+  {{- $id := strings.TrimSuffix ".yaml" (path.Base .Name) }}
+  {{- $file := printf "assets/%s" (strings.TrimPrefix "/" .Name) }}
+  {{- $data := . | transform.Unmarshal }}
+  {{- range $k, $_ := $data }}
+    {{- if not (in $fields $k) }}{{ errorf "%s: unknown field %q (allowed: %s)" $file $k (delimit $fields ", ") }}{{ end }}
+  {{- end }}
+  {{- if not $data.name }}{{ errorf "%s: name is required" $file }}{{ end }}
+  {{- if not (in $roles $data.role) }}{{ errorf "%s: role %q must be one of %s" $file $data.role (delimit $roles ", ") }}{{ end }}
+  {{- $photo := false }}
+  {{- with $data.photo }}
+    {{- $photo = resources.Get (path.Join "people" (strings.TrimPrefix "./" .)) }}
+    {{- if not $photo }}{{ errorf "%s: photo %q not found next to the YAML file" $file . }}{{ end }}
+  {{- end }}
+  {{- /* Sort by last name, ignoring nicknames in quotes or parentheses. */}}
+  {{- $words := split (trim (replaceRE `\(.*?\)|“.*?”|".*?"|\s+` " " $data.name) " ") " " }}
+  {{- $sort := printf "%s %s" (index $words (sub (len $words) 1)) $data.name | lower }}
+  {{- $people = merge $people (dict $id (dict
+    "id" $id "name" $data.name "role" $data.role "title" $data.title "website" $data.website
+    "photo" $photo "alumni" (default false $data.alumni) "aliases" (default slice $data.aliases) "sort" $sort)) }}
+{{- end }}
+{{- return $people }}

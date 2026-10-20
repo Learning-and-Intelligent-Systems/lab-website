@@ -1,0 +1,3407 @@
+# LIS publications, newest first. The site groups them by year and keeps this file's order within a year,
+# so add new papers at the top. Field names follow BibTeX; the BibTeX shown on the site is built from them.
+#   key, type, title, author, year     required
+#   journal / booktitle / school / ...  the venue shown under the title
+#   url, pdf, code, website, doi        shown as links
+#   note                                shown under the entry, e.g. "Best Paper Award"
+#   links                               extra links: [{label: Video, url: https://...}]
+# Authors whose names match someone in assets/people (by name or aliases) are linked automatically.
+
+- key: kumar2026openworld
+  type: article
+  title: Open-World Task and Motion Planning Via Vision-Language Model Generated Constraints
+  author: [Nishanth Kumar, William Shen, Fabio Ramos, Dieter Fox, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Caelan Reed Garrett]
+  journal: IEEE Robotics and Automation Letters (RA-L)
+  year: 2026
+  url: https://ieeexplore.ieee.org/document/11361071
+
+- key: athalye2026pixels
+  type: article
+  title: 'From Pixels to Predicates: Learning Symbolic World Models Via Pretrained VLMs'
+  author: [Ashay Athalye*, Nishanth Kumar*, Tom Silver, Yichao Liang, Jiuguang Wang, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  journal: IEEE Robotics and Automation Letters (RA-L)
+  year: 2026
+  url: https://ieeexplore.ieee.org/document/11373861
+
+- key: shen2026tiptop
+  type: inproceedings
+  title: 'TiPToP: A Modular Open-Vocabulary Planning System for Robotic Manipulation'
+  author: [William Shen*, Nishanth Kumar*, Sahit Chintalapudi, Jie Wang, Christopher Watson, Edward Hu, Jing Cao, Dinesh Jayaraman, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  booktitle: arXiv:2603.09971
+  year: 2026
+  url: https://arxiv.org/pdf/2603.09971
+  doi: https://doi.org/10.48550/arXiv.2603.09971
+
+- key: anand2026which
+  type: article
+  title: Which Reconstruction Model Should a Robot Use? Routing Image-to-3D Models for Cost-Aware Robotic Manipulation
+  author: [Akash Anand, Aditya Agarwal, Leslie Pack Kaelbling]
+  editor: IEEE/RSJ
+  journal: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  publisher: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2026
+  url: https://arxiv.org/pdf/2603.27797
+
+- key: yao2026proxy
+  type: article
+  title: 'PROXY: Learning Object-Centric Manipulation Policies from a Single RGB-D Image'
+  author: [Maggie Huili Yao, Sahit Chintalapudi, Akash Anand, Megha Tippur, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Aditya Agarwal]
+  journal: 'RSS Workshop on Data-Centric Robotics: What Data Do Robots Really Need?; RSS Workshop on Diffusion for Robot Learning'
+  publisher: 'RSS Workshop on Data-Centric Robotics: What Data Do Robots Really Need?; RSS Workshop on Diffusion for Robot Learning'
+  year: 2026
+  url: https://openreview.net/pdf/3a9ec4dc42f7acd4a4b415bdbe75a4d07b4616ac.pdf
+
+- key: agarwal2025scenecomplete
+  type: article
+  title: 'SceneComplete: Open-World 3D Scene Completion in Cluttered Real World Environments for Robot Manipulation'
+  author: [Aditya Agarwal, Gaurav Singh, Bipasha Sen, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  editor: IEEE
+  journal: IEEE Robotics and Automation Letters (RA-L)
+  publisher: IEEE Robotics and Automation Letters (RA-L)
+  month: October
+  year: 2025
+  url: https://arxiv.org/pdf/2410.23643
+
+- key: jiang2025streaming
+  type: inproceedings
+  title: 'Streaming Flow Policy: Simplifying Diffusion/Flow-Matching Policies by Treating Action Trajectories as Flow Trajectories'
+  author: [Sunshine Jiang, Xiaolin Fang, Nicholas Roy, Tomás Lozano-Pérez, Leslie Kaelbling, Siddharth Ancha]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2025
+  url: https://siddancha.github.io/streaming-flow-policy/
+
+- key: wan2025infer
+  type: inproceedings
+  title: Infer Human’s Intentions Before Following Natural Language Instructions
+  author: [Yanming Wan, Yue Wu, Yiping Wang, Jiayuan Mao, Natasha Jaques]
+  booktitle: AAAI Conference on Artificial Intelligence
+  year: 2025
+  url: https://arxiv.org/pdf/2409.18073
+
+- key: wang2025agent
+  type: inproceedings
+  title: Agent Workflow Memory
+  author: [Zora Zhiruo Wang, Jiayuan Mao, Daniel Fried, Graham Neubig]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2025
+  url: https://arxiv.org/pdf/2409.07429
+
+- key: han2025creativity
+  type: inproceedings
+  title: Creativity or Brute Force? Using Brainteasers as a Window into the Problem-Solving Abilities of Large Language Models
+  author: [Simeng Han, Stephen Xia, Grant Zhang, Howard Dai, Chen Liu, Lichang Chen, Hoang H Nguyen, Hongyuan Mei, Jiayuan Mao, R. Thomas McCoy]
+  booktitle: Advances in Neural Information Processing Systems (NeurIPS)
+  year: 2025
+  url: https://arxiv.org/pdf/2505.10844
+
+- key: yau2025learning
+  type: inproceedings
+  title: Learning Linear Attention in Polynomial Time
+  author: [Morris Yau, Eykin Akyürek, Jiayuan Mao, Joshua B. Tenenbaum, Stefanie Jegelka, Jacob Andreas]
+  booktitle: Advances in Neural Information Processing Systems (NeurIPS)
+  year: 2025
+  url: https://arxiv.org/pdf/2410.10101
+
+- key: curtis2025llmguided
+  type: inproceedings
+  title: LLM-Guided Probabilistic Program Induction for POMDP Model Estim
+  author: [Aidan Curtis, Hao Tang, Thiago Veloso, Kevin Ellis, Joshua Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2025
+  url: https://arxiv.org/pdf/2505.02216
+
+- key: hsu2025what
+  type: inproceedings
+  title: What Makes a Maze Look Like a Maze?
+  author: [Joy Hsu, Jiayuan Mao, Joshua B. Tenenbaum, Noah D. Goodman, Jiajun Wu]
+  booktitle: ICLR 2025
+  year: 2025
+  url: https://arxiv.org/pdf/2409.08202.pdf
+
+- key: liu2025oneshot
+  type: inproceedings
+  title: One-Shot Manipulation Strategy Learning by Making Contact Analogies
+  author: [Yuyao Liu, Jiayuan Mao, Joshua Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: IEEE International Conference on Robotics and Automation (ICRA)
+  year: 2025
+  url: https://magic-2024.github.io/magic.pdf
+
+- key: yang2025guiding
+  type: inproceedings
+  title: Guiding Long-Horizon Task and Motion Planning with Vision Language Models
+  author: [Zhutian Yang, Caelan Garrett, Dieter Fox, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: ICRA
+  journal: ICRA
+  year: 2025
+  url: https://arxiv.org/abs/2410.02193
+
+- key: athalye2025predicate
+  type: article
+  title: Predicate Invention from Pixels via Pretrained Vision-Language Models
+  author: [Ashay Athalye*, Nishanth Kumar*, Tom Silver, Yichao Liang, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  journal: AAAI Workshop on Planning in the Era of Large Language Models
+  year: 2025
+  url: https://arxiv.org/abs/2501.00296
+
+- key: feng2025guided
+  type: inproceedings
+  title: Guided Exploration for Efficient Relational Model Learning
+  author: [Annie Feng, Nishanth Kumar, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  journal: The Multi-Disciplinary Conference on Reinforcement Learning and Decision Making (RLDM)
+  year: 2025
+  url: https://arxiv.org/abs/2502.06146
+
+- key: shen2025differentiable
+  type: inproceedings
+  title: Differentiable GPU-Parallelized Task and Motion Planning
+  author: [William Shen, Caelan Garrett, Nishanth Kumar, Ankit Goyal, Tucker Hermans, Leslie Pack Kaelbling, Tomás Lozano-Pérez, Fabio Ramos]
+  booktitle: 'Robotics: Science and Systems'
+  journal: 'Robotics: Science and Systems'
+  year: 2025
+  url: https://cutamp.github.io/
+
+- key: curtis2025flowbased
+  type: article
+  title: Flow-based Domain Randomization for Learning and Sequencing Robotic Skills
+  author: [Aidan Curtis, Eric Li, Michael Noseworthy, Nishad Gothoskar, Sachin Chitta, Hui Li, Leslie Pack Kaelbling, Nicole Carey]
+  journal: International Conference on Machine Learning (ICML)
+  year: 2025
+  url: https://arxiv.org/pdf/2502.01800
+
+- key: fang2025kalm
+  type: inproceedings
+  title: 'KALM: Keypoint Abstraction using Large Models for Object-Relative Imitation Learning'
+  author: [Xiaolin Fang*, Bo-Ruei Huang*, Jiayuan Mao*, Jasmine Shone, Joshua B. Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: IEEE International Conference on Robotics and Automation (ICRA)
+  year: 2025
+  url: https://kalm-il.github.io/
+
+- key: kaelbling2025rationally
+  type: inproceedings
+  title: Rationally Engineering Rational Robots
+  author: [Leslie Kaelbling, Tomas Lozano-Perez]
+  booktitle: Designing an Intelligence (George Konidaris Ed.) MIT Press
+  year: 2025
+  url: https://lis.csail.mit.edu/wp-content/uploads/2025/06/paper_mit_small.pdf
+
+- key: fang2024dimsam
+  type: inproceedings
+  title: 'DiMSam: Diffusion Models as Samplers for Task and Motion Planning under Partial Observability'
+  author: [Xiaolin Fang, Caelan Reed Garrett, Clemens Eppner, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Dieter Fox]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2024
+  url: https://arxiv.org/abs/2306.13196
+
+- key: kumar2024practice
+  type: inproceedings
+  title: 'Practice Makes Perfect: Planning to Learn Skill Parameter Policies'
+  author: [Nishanth Kumar, Tom Silver, Willie McClinton, Linfeng Zhao, Stephen Proulx, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Jennifer Barry]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2024
+  url: https://arxiv.org/pdf/2402.15025.pdf
+
+- key: curtis2024partially
+  type: article
+  title: Partially Observable Task and Motion Planning with Uncertainty and Risk Awareness
+  author: [Aidan Curtis, George Matheos, Nishad Gothoskar, Vikash Mansinghka, Joshua B. Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  journal: 'Robotics: Science and Systems (RSS)'
+  year: 2024
+  url: https://arxiv.org/abs/2403.10454
+
+- key: curtis2024trust
+  type: inproceedings
+  title: 'Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction'
+  author: [Aidan Curtis, Nishanth Kumar, Jing Cao, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: 'RSS Workshop on Lifelong Robot Learning: Generalization, Adaptation, and Deployment with Large Models'
+  year: 2024
+  url: https://drive.google.com/file/d/1uxwuSrsGyTCKHV9Qich1EaWUZ13V8ctA/view
+
+- key: fang2024embodied
+  type: inproceedings
+  title: Embodied Uncertainty-Aware Object Segmentation
+  author: [Xiaolin Fang, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2024
+  url: https://arxiv.org/abs/2408.04760
+
+- key: du2024compositional
+  type: inproceedings
+  title: 'Compositional Generative Modeling: A Single Model is Not All You Need'
+  author: [Yilun Du, Leslie Kaelbling]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2024
+  url: https://arxiv.org/abs/2402.01103
+
+- key: silver2024generalized
+  type: inproceedings
+  title: Generalized Planning in PDDL Domains with Pretrained Large Language Models
+  author: [Tom Silver, Soham Dan, Kavitha Srinivas, Joshua B. Tenenbaum, Leslie Pack Kaelbling, Michael Katz]
+  booktitle: AAAI
+  year: 2024
+  url: https://arxiv.org/pdf/2305.11014.pdf
+
+- key: curtis2024trustb
+  type: article
+  title: 'Trust the PRoC3S: Solving Long-Horizon Robotics Problems with LLMs and Constraint Satisfaction'
+  author: [Aidan Curtis, Nishanth Kumar, Jing Cao, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  journal: Conference on Robot Learning (CoRL)
+  year: 2024
+  url: https://arxiv.org/pdf/2406.05572
+
+- key: shaw2024practical
+  type: article
+  title: Towards Practical Finite Sample Bounds for Motion Planning in TAMP
+  author: [Seiji Shaw, Aidan Curtis, Leslie Pack Kaelbling, Tomás Lozano-Pérez, Nicholas Roy]
+  journal: Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2024
+  url: https://arxiv.org/pdf/2407.17394
+
+- key: li2024learning
+  type: article
+  title: 'Learning to Bridge the Gap: Efficient Novelty Recovery with Planning and Reinforcement Learning'
+  author: [Alicia Li, Nishanth Kumar, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  journal: NeurIPS 2024 Workshop on Open-World Agents
+  year: 2024
+  url: https://www.arxiv.org/pdf/2409.19226
+
+- key: du2024video
+  type: article
+  title: Video Language Planning
+  author: [Yilun Du, Mengjiao Yang, Pete Florence, Fei Xia, Ayzaan Wahid, Brian Ichter, Pierre Sermanet, Tianhe Yu, Pieter Abbeel, Joshua B Tenenbaum, Leslie Kaelbling, Andy Zeng, Jonathan Tompson]
+  journal: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://video-language-planning.github.io/
+
+- key: yang2024learning
+  type: article
+  title: Learning Interactive Real-World Simulators
+  author: [Mengjiao Yang, Yilun Du, Kamyar Ghasemipour, Jonathan Tompson, Leslie Kaelbling, Dale Schuurmans, Pieter Abbeel]
+  journal: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://universal-simulator.github.io/unisim/
+
+- key: du2024learning
+  type: article
+  title: Learning Iterative Reasoning through Energy Diffusion
+  author: [Yilun Du, Jiayuan Mao, Joshua B. Tenenbaum]
+  journal: International Conference on Machine Learning (ICML)
+  year: 2024
+  url: https://energy-based-model.github.io/ired/
+
+- key: du2024improving
+  type: article
+  title: Improving Factuality and Reasoning in Language Models through Multiagent Debate
+  author: [Yilun Du, Shuang Li, Antonio Torralba, Joshua B. Tenenbaum, Igor Mordatch]
+  journal: International Conference on Machine Learning
+  year: 2024
+  url: https://composable-models.github.io/llm_debate/
+
+- key: liu2024learning
+  type: inproceedings
+  title: Learning Planning Abstractions from Language
+  author: [Weiyu Liu, Geng Chen, Joy Hsu, Jiayuan Mao, Jiajun Wu]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://arxiv.org/pdf/2405.03864.pdf
+
+- key: ko2024learning
+  type: inproceedings
+  title: Learning to Act from Actionless Video through Dense Correspondences
+  author: [Po-Chen Ko, Jiayuan Mao, Yilun Du, Shao-Hua Sun, Joshua B. Tenenbaum]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://arxiv.org/pdf/2310.08576.pdf
+
+- key: wong2024learning
+  type: inproceedings
+  title: Learning Adaptive Planning Representations with Natural Language Guidance
+  author: [Lio Wong, Jiayuan Mao, Pratyusha Sharma, Zachary S. Siegel, Jiahai Feng, Noa Korneev, Joshua B. Tenenbaum, Jacob Andreas]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://arxiv.org/pdf/2312.08566.pdf
+
+- key: wang2024grounding
+  type: inproceedings
+  title: Grounding Language Plans in Demonstrations through Counter-factual Perturbations
+  author: [Yanwei Wang, Tsun-Hsuan Wang, Jiayuan Mao, Michael Hagenow, Julie Shah]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2024
+  url: https://arxiv.org/pdf/2403.17124.pdf
+
+- key: xu2024set
+  type: inproceedings
+  title: '“Set It Up!”: Functional Object Arrangement with Compositional Generative Models'
+  author: [Yiqing Xu, Jiayuan Mao, Yilun Du, Tomás Lozano-Pérez, Leslie Pack Kaelbling, David Hsu]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2024
+  url: https://arxiv.org/pdf/2405.11928
+
+- key: jiang2024finding
+  type: inproceedings
+  title: Finding Structure in Logographic Writing with Library Learning
+  author: [Guangyuan Jiang, Matthias Hofer, Jiayuan Mao, Lio Wong, Joshua B. Tenenbaum, Roger P. Levy]
+  booktitle: Annual Meeting of the Cognitive Science Society (CogSci)
+  year: 2024
+  url: https://arxiv.org/pdf/2405.06906.pdf
+
+- key: mao2024hybrid
+  type: inproceedings
+  title: Hybrid Declarative-Imperative Representations for Hybrid Discrete-Continuous Decision-Making
+  author: [Jiayuan Mao, Joshua B. Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2024
+  url: https://parasollab.web.illinois.edu/events/wafr2024/papers/68_Hybrid_Declarative_Imperati.pdf
+
+- key: li2024embodied
+  type: inproceedings
+  title: 'Embodied Agent Interface: A Single Line to Evaluate LLMs for Embodied Decision Making'
+  author: [Manling Li, Shiyu Zhao, Qineng Wang, Kangrui Wang, Yu Zhou, Sanjana Srivastava, Cem Gokmen, Tony Lee, Li Erran Li, Ruohan Zhang, Weiyu Liu, Percy Liang, Li Fei-Fei, Jiayuan Mao, Jiajun Wu]
+  booktitle: NeurIPS Datasets and Benchmarks Track
+  year: 2024
+  url: https://arxiv.org/pdf/2410.07166.pdf
+
+- key: liu2024blade
+  type: inproceedings
+  title: 'BLADE: Learning Compositional Behaviors from Demonstration and Language'
+  author: [Weiyu Liu, Neil Nie, Ruohan Zhang, Jiayuan Mao, Jiajun Wu]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2024
+  url: https://blade-bot.github.io/blade.pdf
+
+- key: chintalapudi2024bilevel
+  type: inproceedings
+  title: Bi-Level Belief Space Search for Compliant Part Mating Under Uncertainty
+  author: [Sahit Chintalapudi, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  booktitle: Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2024
+  url: https://arxiv.org/abs/2409.15774
+
+- key: silver2023predicate
+  type: inproceedings
+  title: Predicate Invention for Bilevel Planning
+  author: [Tom Silver, Rohan Chitnis, Nishanth Kumar, Willie McClinton, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Joshua Tenenbaum]
+  booktitle: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2023
+  url: https://arxiv.org/pdf/2203.09634.pdf
+
+- key: holladay2023robust
+  type: article
+  title: Robust Planning for Multi-Stage Forceful Manipulation
+  author: [Rachel Holladay, Tomás Lozano-Pérez, Alberto Rodriguez]
+  journal: International Journal of Robotics Research (IJRR)
+  year: 2023
+  url: https://journals.sagepub.com/doi/10.1177/02783649231198560
+  doi: 10.1177/02783649231198560
+
+- key: yang2023compositional
+  type: inproceedings
+  title: Compositional Diffusion-Based Continuous Constraint Solvers
+  author: [Zhutian Yang, Jiayuan Mao, Yilun Du, Jiajun Wu, Joshua B. Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2023
+  url: http://arxiv.org/abs/2309.00966
+
+- key: liu2023composable
+  type: inproceedings
+  title: Composable Part-Based Manipulation
+  author: [Weiyu Liu, Jiayuan Mao, Joy Hsu, Tucker Hermans, Animesh Garg, Jiajun Wu]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2023
+  url: https://openreview.net/pdf?id=o-K3HVUeEw
+
+- key: mao2023learning
+  type: inproceedings
+  title: Learning Resuable Manipulation Strategies
+  author: [Jiayuan Mao, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2023
+  url: https://openreview.net/pdf?id=ihqTtzS83VS
+
+- key: hsu2023whats
+  type: inproceedings
+  title: What’s Left? Concept Grounding with Logic-Enhanced Foundation Models
+  author: [Joy Hsu, Jiayuan Mao, Joshua B. Tenenbaum, Jiajun Wu]
+  booktitle: NeurIPS
+  year: 2023
+  url: https://arxiv.org/abs/2310.16035
+
+- key: mao2023what
+  type: inproceedings
+  title: What Planning Problem Can A Relational Neural Network Solve
+  author: [Jiayuan Mao, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling]
+  booktitle: NeurIPS
+  year: 2023
+  url: https://arxiv.org/abs/2312.03682
+
+- key: luo2023learning
+  type: inproceedings
+  title: Learning Rational Subgoals from Demonstrations and Instructions
+  author: [Zhezheng Luo, Jiayuan Mao, Jiajun Wu, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling]
+  booktitle: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2023
+  url: https://arxiv.org/abs/2303.05487
+
+- key: mendezmendez2023how
+  type: article
+  title: 'How to Reuse and Compose Knowledge for a Lifetime of Tasks: A Survey on Continual Learning and Functional Composition'
+  author: [Jorge Mendez-Mendez, Eric Eaton]
+  journal: Transactions on Machine Learning Research (TMLR)
+  year: 2023
+  note: Survey Certification
+  url: https://openreview.net/pdf?id=VynY6Bk03b
+
+- key: ejilemele2023continual
+  type: inproceedings
+  title: Continual Improvement of Threshold-Based Novelty Detection
+  author: [Abe Ejilemele, Jorge Mendez-Mendez]
+  booktitle: CoLLAs-23 Workshop Track
+  year: 2023
+  url: https://arxiv.org/pdf/2309.02551.pdf
+
+- key: mendezmendez2023embodied
+  type: inproceedings
+  title: Embodied Lifelong Learning for Task and Motion Planning
+  author: [Jorge Mendez-Mendez, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  booktitle: Proceedings of the 7th Conference on Robot Learning (CoRL-23)
+  year: 2023
+  url: https://proceedings.mlr.press/v229/mendez-mendez23a/mendez-mendez23a.pdf
+
+- key: curtis2023taskdirected
+  type: article
+  title: Task-Directed Exploration in Continuous POMDPs for Robotic Manipulation of Articulated Objects
+  author: [Aidan Curtis, Leslie Kaelbling, Siddarth Jain]
+  journal: ICRA
+  year: 2023
+  url: https://arxiv.org/pdf/2212.04554.pdf
+
+- key: muguiraiturralde2023visibilityaware
+  type: article
+  title: Visibility-Aware Navigation Among Movable Obstacles
+  author: [Jose Muguira-Iturralde, Aidan Curtis, Yilun Du, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  journal: ICRA
+  year: 2023
+  url: https://arxiv.org/pdf/2212.02671.pdf
+
+- key: yang2023sequencebased
+  type: inproceedings
+  title: Sequence-Based Plan Feasibility Prediction for Efficient Task and Motion Planning
+  author: [Zhutian Yang, Caelan Garrett, Tomás Lozano-Pérez, Leslie Kaelbling, Dieter Fox]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2023
+  url: https://piginet.github.io/
+
+- key: wang2023programmatically
+  type: inproceedings
+  title: Programmatically Grounded, Compositionally Generalizable Robotic Manipulation
+  author: [Renhao Wang, Jiayuan Mao, Joy Hsu, Hang Zhao, Jiajun Wu, Yang Gao]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2023
+  url: https://arxiv.org/abs/2304.13826
+
+- key: hsu2023ns3d
+  type: inproceedings
+  title: 'NS3D: Neuro-Symbolic Grounding of 3D Objects and Relations'
+  author: [Joy Hsu, Jiayuan Mao, Jiajun Wu]
+  booktitle: Conference on Computer Vision and Pattern Recognition (CVPR)
+  year: 2023
+  url: https://arxiv.org/abs/2303.13483
+
+- key: shen2023distilled
+  type: inproceedings
+  title: Distilled Feature Fields Enable Open-Ended Few-Shot Manipulation
+  author: [William Shen, Ge Yang, Alan Yu, Jansen Wong, Leslie Pack Kaelbling, Tomás Lozano-Pérez, Phillip Isola]
+  booktitle: CVPR Workshop on 3D Vision and Robotics
+  journal: CVPR 2023 Workshop on 3D Vision and Robotics
+  year: 2023
+  url: https://arxiv.org/abs/2308.07931
+
+- key: chun2023local
+  type: inproceedings
+  title: 'Local Neural Descriptor Fields: Locally Conditioned Object Representations for Manipulation'
+  author: [Ethan Chun, Yilun Du, Anthony Simeonov, Tomas Lozano-Perez, Leslie Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Robotics and Automation (ICRA)
+  year: 2023
+  url: https://arxiv.org/abs/2302.03573
+
+- key: li2023composing
+  type: inproceedings
+  title: Composing Ensembles of Pre-trained Models via Iterative Consensus
+  author: [Shuang Li, Yilun Du, Joshua B. Tenenbaum, Antonio Torralba, Igor Mordatch]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2023
+  url: https://arxiv.org/abs/2210.11522
+
+- key: ajay2023is
+  type: inproceedings
+  title: Is Conditional Generative Modeling all You Need for Decision-Making?
+  author: [Anurag Ajay, Yilun Du, Abhi Gupta, Joshua B. Tenenbaum, Tommi S. Jaakkola, Pulkit Agrawal]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2023
+  url: https://arxiv.org/pdf/2211.15657.pdf
+
+- key: chen2023planning
+  type: inproceedings
+  title: Planning with Sequence Models through Iterative Energy Minimization
+  author: [Hongyi Chen, Yilun Du, Yiye Chen, Joshua B. Tenenbaum, Patricio Antonio Vela]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2023
+  url: https://openreview.net/forum?id=cVFD6qE8gnY
+
+- key: du2023learning
+  type: inproceedings
+  title: Learning to Render Novel Views from Wide-Baseline Stereo Pairs
+  author: [Yilun Du, Cameron Smith, Ayush Tewari, Vincent Sitzmann]
+  booktitle: Computer Vision and Pattern Recognition (CVPR)
+  year: 2023
+  url: https://arxiv.org/abs/2304.08463
+
+- key: du2023reduce
+  type: inproceedings
+  title: 'Reduce, Reuse, Recycle: Compositional Generation with Energy-Based Diffusion Models and MCMC'
+  author: [Yilun Du, Conor Durkan, Robin Strudel, Joshua B. Tenenbaum, Sander Dieleman, Rob Fergus, Jascha Sohl-Dickstein, Arnaud Doucet, Will Grathwohl]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2023
+  url: https://arxiv.org/abs/2302.11552
+
+- key: liu2023structdiffusion
+  type: inproceedings
+  title: 'StructDiffusion: Language-Guided Creation of Physically-Valid Structures using Unseen Objects'
+  author: [Weiyu Liu, Yilun Du, Tucker Hermans, Sonia Chernova, Chris Paxton]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2023
+  url: https://arxiv.org/abs/2211.04604
+
+- key: chi2023diffusion
+  type: inproceedings
+  title: 'Diffusion Policy: Visuomotor Policy Learning via Action Diffusion'
+  author: [Cheng Chi, Siyuan Feng, Yilun Du, Zhenjia Xu, Eric Cousineau, Benjamin Burchfiel, Shuran Song]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2023
+  url: https://arxiv.org/abs/2303.04137
+
+- key: li2023embodied
+  type: inproceedings
+  title: Embodied Active Learning of Relational State Abstractions for Bilevel Planning
+  author: [Amber Li, Tom Silver]
+  booktitle: Conference on Lifelong Learning Agents (CoLLAs)
+  year: 2023
+  url: https://arxiv.org/abs/2303.04912
+
+- key: fang2023dimsam
+  type: inproceedings
+  title: 'DiMSam: Diffusion Models as Samplers for Task and Motion Planning under Partial Observability'
+  author: [Xiaolin Fang, Caelan Reed Garrett, Clemens Eppner, Tomás Lozano-Pérez, Leslie Pack Kaelbling, Dieter Fox]
+  booktitle: CoRL workshop on Learning Effective Abstractions for Planning
+  year: 2023
+  url: https://arxiv.org/abs/2306.13196
+
+- key: kumar2023overcoming
+  type: article
+  title: Overcoming the Pitfalls of Prediction Error in Operator Learning for Bilevel Planning
+  author: [Nishanth Kumar, Willie McClinton, Tomás Lozano-Pérez, Leslie Kaelbling]
+  journal: 'Robotics: Science and Systems (RSS) Workshop on Learning for Task and Motion Planning'
+  year: 2023
+  url: https://openreview.net/pdf?id=om70D3__925
+
+- key: fishman2023task
+  type: article
+  title: 'Task Scoping: Generating Task-Specific Simplifications of Open-Scope Planning Problems'
+  author: [Michael Fishman, Nishanth Kumar, Cameron Allen, Natasha Danas, Michael Littman, Stefanie Tellex, George Konidaris]
+  journal: IIJCAI Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)
+  year: 2023
+  url: https://openreview.net/pdf?id=L3J5yBbjOf
+
+- key: kumar2023learning
+  type: article
+  title: Learning Efficient Abstract Planning Models that Choose What to Predict
+  author: [Nishanth Kumar, Willie McClinton, Rohan Chitnis, Tom Silver, Tomás Lozano-Pérez, Leslie Kaelbling]
+  journal: Conference on Robot Learning (CoRL)
+  year: 2023
+  url: https://openreview.net/pdf?id=_gZLyRGGuo
+
+- key: shen2023distilledb
+  type: inproceedings
+  title: Distilled Feature Fields Enable Few-Shot Language-Guided Manipulation
+  author: [William Shen, Ge Yang, Alan Yu, Jansen Wong, Leslie Pack Kaelbling, Phillip Isola]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2023
+  url: https://arxiv.org/abs/2308.07931
+
+- key: yang2022pg3
+  type: inproceedings
+  title: 'PG3: Policy-Guided Planning for Generalized Policy Generation'
+  author: [Ryan Yang, Tom Silver, Aidan Curtis, Tomas Lozano-Perez, Leslie Kaelbling]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2022
+  url: https://arxiv.org/pdf/2204.10420.pdf
+
+- key: curtis2022discovering
+  type: inproceedings
+  title: Discovering State and Action Abstractions for Generalized Task and Motion Planning
+  author: [Aidan Curtis, Tom Silver, Joshua B. Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2022
+  url: https://www.aaai.org/AAAI22Papers/AAAI-3830.CurtisA.pdf
+
+- key: curtis2022longhorizon
+  type: inproceedings
+  title: Long-Horizon Manipulation of Unknown Objects via Task and Motion Planning with Estimated Affordances
+  author: [Aidan Curtis, Xiaolin Fang, Leslie Pack Kaelbling, Tomas Lozano-Perez, Caelan Reed Garrett]
+  booktitle: Proc. of The International Conference in Robotics and Automation (ICRA)
+  year: 2022
+  url: https://arxiv.org/pdf/2108.04145.pdf
+
+- key: gehring2022reinforcement
+  type: inproceedings
+  title: 'Reinforcement Learning for Classical Planning: Viewing Heuristics as Dense Reward Generators'
+  author: [Clement Gehring, Masataro Asai, Rohan Chitnis, Tom Silver, Leslie Pack Kaelbling, Shirin Sohrabi, Michael Katz]
+  booktitle: Proc. International Conference on Automated Planning and Scheduling (ICAPS)
+  year: 2022
+  url: https://arxiv.org/pdf/2109.14830.pdf
+
+- key: chitnis2022learning
+  type: inproceedings
+  title: Learning Neuro-Symbolic Relational Transition Models for Bilevel Planning
+  author: [Rohan Chitnis, Tom Silver, Joshua Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2022
+  url: https://arxiv.org/pdf/2105.14074.pdf
+
+- key: moses2022learning
+  type: inproceedings
+  title: Learning to Plan with Optimistic Action Models
+  author: [Caris Moses, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: ICRA Worksop on Scaling Robot Learning
+  year: 2022
+  url: http://people.csail.mit.edu/cmm386/publications/ICRA_WS2022_final.pdf
+
+- key: karnik2022fully
+  type: inproceedings
+  title: Fully Persistent Spatial Data Structures for Efficient Queries in Path-Dependent Motion Planning Applications
+  author: [Sathwik Karnik, Tomas Lozano-Perez, Leslie Pack Kaelbling, Gustavo Nunes Goretkin]
+  booktitle: Proc. of The International Conference in Robotics and Automation (ICRA)
+  year: 2022
+  url: https://arxiv.org/pdf/2206.02305.pdf
+
+- key: yang2022lets
+  type: inproceedings
+  title: 'Let’s Handle It: Generalizable Manipulation of Articulated Objects'
+  author: [Zhutian Yang, Aidan Curtis]
+  booktitle: ICLR Workshop on Generalizable Policy Learning in the Physical World
+  year: 2022
+  url: https://arxiv.org/abs/2202.11792
+
+- key: kim2022representation
+  type: article
+  title: Representation, learning, and planning algorithms for geometric task and motion planning
+  author: [Beomjoon Kim, Luke Shimanuki, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  journal: The International Journal of Robotics Research
+  volume: '41'
+  number: '2'
+  pages: 210–231
+  publisher: 'SAGE Publications Sage UK: London, England'
+  year: 2022
+  url: https://journals.sagepub.com/doi/pdf/10.1177/02783649211038280?fbclid=IwAR0treFWgB2XPomyQvlRTYdqr6fAzpfzPk4hQAM5KJBCXbNk-ADq0EZ0ruE
+
+- key: silver2022learning
+  type: inproceedings
+  title: Learning Neuro-Symbolic Skills for Bilevel Planning
+  author: [Tom Silver, Ashay Athalye, Joshua B. Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2022
+  url: https://arxiv.org/abs/2206.10680
+
+- key: du2022learning
+  type: inproceedings
+  title: Learning Object-Based State Estimators for Household Robots
+  author: [Yilun Du, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2022
+  url: https://yilundu.github.io/obm/
+
+- key: silver2022pddl
+  type: inproceedings
+  title: PDDL Planning With Pretrained Large Language Models
+  author: [Tom Silver, Varun Hariprasad, Reece Shuttleworth, Nishanth Kumar, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Foundation Models for Decision Making Workshop at Neural Information Processing Systems
+  year: 2022
+
+- key: wan2022handmethat
+  type: inproceedings
+  title: 'HandMeThat: Human-Robot Communication in Physical and Social Environments'
+  author: [Yanming Wan, Jiayuan Mao, Joshua B. Tenenbaum]
+  booktitle: NeurIPS Datasets and Benchmarks Track
+  year: 2022
+  url: https://openreview.net/pdf?id=nUTemM6v9sv
+
+- key: mao2022pdsketch
+  type: inproceedings
+  title: 'PDSketch: Integrated Domain Programming, Learning, and Planning'
+  author: [Jiayuan Mao, Tomás Lozano-Pérez, Joshua B. Tenenbaum, Leslie Pack Kaelbling]
+  booktitle: NeurIPS
+  year: 2022
+  url: https://arxiv.org/pdf/2303.05501.pdf
+
+- key: xiao2022sparse
+  type: inproceedings
+  title: Sparse and Local Hypergraph Reasoning Networks
+  author: [Guangxuan Xiao, Leslie Pack Kaelbling, Jiajun Wu, Jiayuan Mao]
+  booktitle: Learning on Graphs
+  year: 2022
+  url: https://arxiv.org/pdf/2303.05496.pdf
+
+- key: luo2022expressiveness
+  type: inproceedings
+  title: On the Expressiveness and Generalization of Hypergraph Neural Networks
+  author: [Zhezheng Luo, Jiayuan Mao, Joshua B. Tenenbaum, Leslie Pack Kaelbling]
+  booktitle: Learning on Graphs
+  year: 2022
+  url: https://arxiv.org/abs/2303.05490
+
+- key: yang2022sequencebased
+  type: inproceedings
+  title: Sequence-Based Plan Feasibility Prediction for Efficient Task and Motion Planning
+  author: [Zhutian Yang, Caelan Garrett, Dieter Fox]
+  booktitle: CoRL 2022 Workshop Long Horizon Planning
+  year: 2022
+  url: https://openreview.net/pdf?id=zWhwUoORD6
+
+- key: simeonov2022se3equivariant
+  type: inproceedings
+  title: SE(3)-Equivariant Relational Rearrangement with Neural Descriptor Fields
+  author: [Anthony Simeonov, Yilun Du, Yen-Chen Lin, Alberto Rodriguez, Leslie Kaelbling, Tomas Lozano-Perez, Pulkit Agrawal]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2022
+  url: https://arxiv.org/abs/2211.09786
+
+- key: janner2022planning
+  type: inproceedings
+  title: Planning with Diffusion for Flexible Behavior Synthesis
+  author: [Michael Janner, Yilun Du, Joshua B. Tenenbaum, Sergey Levine]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2022
+  url: https://arxiv.org/abs/2205.09991
+
+- key: simeonov2022neural
+  type: inproceedings
+  title: 'Neural Descriptor Fields: SE(3)-Equivariant Object Representations for Manipulation'
+  author: [Anthony Simeonov, Yilun Du, Andrea Tagliasacchi, Joshua B. Tenenbaum, Alberto Rodriguez, Pulkit Agrawal, Vincent Sitzmann]
+  booktitle: IEEE/RSJ International Conference on Robotics and Automation (ICRA)
+  year: 2022
+  url: https://arxiv.org/abs/2112.05124
+
+- key: garrett2021integrated
+  type: article
+  title: Integrated Task and Motion Planning
+  author: [Caelan Reed Garrett, Rohan Chitnis, Rachel Holladay, Beomjoon Kim, Tom Silver, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: Annual review of control, robotics, and autonomous systems
+  volume: '4'
+  year: 2021
+  url: https://arxiv.org/abs/2010.01083
+
+- key: mao2021temporal
+  type: inproceedings
+  title: Temporal and Object Quantification Networks
+  author: [Jiayuan Mao, Zhezheng Luo, Chuang Gan, Joshua B. Tenenbaum, Jiajun Wu, Leslie Pack Kaelbling, Tomer D. Ullman]
+  booktitle: Proc. International Joint Conference on Artificial Intelligence (IJCAI),
+  year: 2021
+  url: http://toqnet.csail.mit.edu/data/papers/2021IJCAI-TOQNet.pdf
+
+- key: huang2021robotic
+  type: article
+  title: 'Robotic additive construction of bar structures: unified sequence and motion planning'
+  author: [Yijiang Huang, Caelan R. Garrett, Ian Ting, Stefana Parascho, Caitlin T. Mueller]
+  journal: Construction Robotics
+  volume: '5'
+  pages: 115-130
+  year: 2021
+  url: https://arxiv.org/pdf/2105.11438.pdf
+  doi: https://doi.org/10.1007/s41693-021-00062-z
+
+- key: silver2021planning
+  type: inproceedings
+  title: Planning with Learned Object Importance in Large Problem Instances using Graph Neural Networks
+  author: [Tom Silver, Rohan Chitnis, Aidan Curtis, Joshua Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: AAAI
+  year: 2021
+  url: https://arxiv.org/pdf/2009.05613.pdf
+
+- key: chitnis2021glib
+  type: inproceedings
+  title: 'GLIB: Efficient Exploration for Relational Model-Based Reinforcement Learning via Goal-Literal Babbling'
+  author: [Rohan Chitnis, Tom Silver, Josh Tenenbaum, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: AAAI
+  year: 2021
+  url: https://arxiv.org/pdf/2001.08299.pdf
+
+- key: thompson2021shapebased
+  type: inproceedings
+  title: Shape-Based Transfer of Generic Skills
+  author: [Skye Thompson, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Proc. of The International Conference in Robotics and Automation (ICRA)
+  year: 2021
+  url: https://lis.csail.mit.edu/wp-content/uploads/2021/05/thompson_icra_2021_compressed.pdf
+
+- key: chen2021grounding
+  type: inproceedings
+  title: Grounding Physical Concepts of Objects and Events Through Dynamic Visual Reasoning
+  author: [Zhenfang Chen, Jiayuan Mao, Jiajun Wu, Kwan-Yee K. Wong, Joshua B. Tenenbaum, Chuang Gan]
+  booktitle: International Conference on Learning Representations
+  year: 2021
+  url: https://arxiv.org/pdf/2103.16564.pdf
+
+- key: holladay2021planning
+  type: inproceedings
+  title: Planning for Multi-stage Forceful Manipulation
+  author: [Rachel Holladay, Tomás Lozano-Pérez, Alberto Rodriguez]
+  booktitle: International Conference on Robotics and Automation (ICRA)
+  publisher: IEEE
+  year: 2021
+  url: https://arxiv.org/abs/2101.02679
+
+- key: silver2021learning
+  type: inproceedings
+  title: Learning Symbolic Operators for Task and Motion Planning
+  author: [Tom Silver, Rohan Chitnis, Josh Tenenbaum, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2021
+  url: https://arxiv.org/pdf/2103.00589.pdf
+
+- key: wang2021learning
+  type: article
+  title: Learning compositional models of robot skills for task and motion planning
+  author: [Zi Wang, Caelan Garrett, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: International Journal of Robotics Research
+  volume: '40'
+  number: '6'
+  pages: 866-894
+  year: 2021
+  url: https://arxiv.org/pdf/2006.06444.pdf
+  doi: https://doi.org/10.1177/02783649211004615
+
+- key: noseworthy2021active
+  type: inproceedings
+  title: Active Learning of Abstract Plan Feasibility
+  author: [Michael Noseworthy*, Caris Moses*, Isaiah Brand*, Sebastian Castro, Leslie Pack Kaelbling, Tomás Lozano-Pérez, Nicholas Roy]
+  booktitle: IEEE International Conference on Robotics and Automation (ICRA)
+  journal: IEEE International Conference on Robotics and Automation (ICRA)
+  publisher: IEEE International Conference on Robotics and Automation (ICRA)
+  organization: IEEE International Conference on Robotics and Automation (ICRA)
+  year: 2021
+  url: https://arxiv.org/pdf/2107.00683
+
+- key: yu2021robust
+  type: inproceedings
+  title: 'Robust Reinforcement Learning: A Constrained Game-theoretic Approach'
+  author: [Jing Yu, Clement Gehring, Florian Schäfer, Animashree Anandkumar]
+  booktitle: Learning for Dynamics and Control
+  year: 2021
+  url: https://lis.csail.mit.edu/wp-content/uploads/2021/10/yu-robust-2021.pdf
+
+- key: gehring2021reinforcement
+  type: inproceedings
+  title: 'Reinforcement Learning for Classical Planning: Viewing Heuristics as Dense Reward Generators'
+  author: [Clement Gehring*, Masataro Asai*, Rohan Chitnis, Tom Silver, Leslie Kaelbling, Shirin Sohrabi, Michael Katz]
+  booktitle: Planning and Reinforcement Learning Workshop at ICAPS
+  year: 2021
+  url: https://lis.csail.mit.edu/wp-content/uploads/2021/10/gehring-reinforcement-2021.pdf
+
+- key: alet2021tailoring
+  type: article
+  title: 'Tailoring: encoding inductive biases by optimizing unsupervised objectives at prediction time'
+  author: [Ferran Alet, Maria Bauza, Kenji Kawaguchi, Nurullah Giray Kuru, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  journal: NeurIPS
+  year: 2021
+  url: https://openreview.net/pdf?id=8pOPKfibVN
+
+- key: alet2021noether
+  type: article
+  title: 'Noether networks: meta-learning useful conserved quantities'
+  author: [Ferran Alet, Dylan Doblar, Allan Zhou, Joshua B. Tenenbaum, Kenji Kawaguchi, Chelsea Finn]
+  journal: NeurIPS
+  year: 2021
+  url: https://openreview.net/pdf?id=_NOwVKCmSo
+
+- key: alet2021largescale
+  type: article
+  title: A large-scale benchmark for few-shot program induction and synthesis
+  author: [Ferran Alet, Javier Lopez-Contreras, James Koppel, Max Nye, Armando Solar-Lezama, Tomas Lozano-Perez, Leslie Pack Kaelbling, Joshua B. Tenenbaum]
+  journal: ICML
+  year: 2021
+  url: https://lis.csail.mit.edu/progres
+
+- key: gehring2021understanding
+  type: article
+  title: Understanding End-to-End Model-Based Reinforcement Learning Methods as Implicit Parameterization
+  author: [Clement Gehring, Kenji Kawaguchi, Jiaoyang Huang, Leslie Pack Kaelbling]
+  journal: Conference on Neural Information Processing Systems (NeurIPS)
+  year: 2021
+  url: https://lis.csail.mit.edu/wp-content/uploads/2022/03/NeurIPS-2021-understanding-end-to-end-model-based-reinforcement-learning-methods-as-implicit-parameterization-Supplemental.pdf
+
+- key: chitnis2020camps
+  type: article
+  title: 'CAMPs: Learning Context-Specific Abstractions for Efficient Planning in Factored MDPs'
+  author: [Rohan Chitnis, Tom Silver, Beomjoon Kim, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: Conference on Robotic Learning (CoRL)
+  publisher: PMLR
+  month: November
+  year: 2020
+  url: https://arxiv.org/abs/2007.13202
+
+- key: kaelbling2020foundation
+  type: article
+  title: The foundation of efficient robot learning
+  author: [Leslie Pack Kaelbling]
+  journal: Science
+  volume: '369'
+  number: '6506'
+  pages: 915-916
+  month: August
+  year: 2020
+  url: https://science.sciencemag.org/content/369/6506/915.summary
+  doi: 10.1126/science.aaz7597
+
+- key: jeewajee2020adversariallylearned
+  type: article
+  title: Adversarially-learned Inference via an Ensemble of Discrete Undirected Graphical Models
+  author: [Adarsh K. Jeewajee, Leslie P. Kaelbling]
+  journal: Neural Information Processing Systems (NeurIPS)
+  month: December
+  year: 2020
+  url: https://arxiv.org/abs/2007.05033
+
+- key: alet2020metalearning
+  type: inproceedings
+  title: Meta-learning curiosity algorithms
+  author: [Ferran Alet, Martin Schneider, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2020
+  url: http://lis.csail.mit.edu/pubs/alet-schneider-iclr20.pdf
+
+- key: garrett2020pddlstream
+  type: inproceedings
+  title: 'PDDLStream: Integrating Symbolic Planners and Blackbox Samplers'
+  author: [Caelan R. Garrett, Tomas Lozano-Perez, Leslie P. Kaelbling]
+  booktitle: International Conference on Automated Planning and Scheduling (ICAPS)
+  year: 2020
+  url: https://arxiv.org/abs/1802.08705
+
+- key: garrett2020online
+  type: inproceedings
+  title: Online Replanning in Belief Space for Partially Observable Task and Motion Problems
+  author: [Caelan R. Garrett, Chris Paxton, Tomas Lozano-Perez, Leslie P. Kaelbling, Dieter Fox]
+  booktitle: International Conference on Robotics and Automation (ICRA)
+  year: 2020
+  url: https://arxiv.org/abs/1911.04577
+
+- key: jagtap2020adaptive
+  type: article
+  title: Adaptive Activation Functions Accelerate Convergence in Deep and Physics-informed Neural Networks
+  author: [Ameya D. Jagtap, Kenji Kawaguchi, George E. Karniadakis]
+  journal: Journal of Computational Physics
+  volume: '404'
+  pages: 109–136
+  year: 2020
+  url: https://www.sciencedirect.com/science/article/pii/S0021999119308411
+  doi: https://doi.org/10.1016/j.jcp.2019.109136
+
+- key: kawaguchi2020elimination
+  type: inproceedings
+  title: Elimination of All Bad Local Minima in Deep Learning
+  author: [Kenji Kawaguchi, Leslie Pack Kaelbling]
+  booktitle: 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2020
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-AISTATS20.pdf
+
+- key: kawaguchi2020ordered
+  type: inproceedings
+  title: 'Ordered SGD: A New Stochastic Optimization Framework for Empirical Risk Minimization'
+  author: [Kenji Kawaguchi, Haihao Lu]
+  booktitle: 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2020
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-aistats20a.pdf
+
+- key: kim2020monte
+  type: article
+  title: Monte Carlo Tree Search in continuous spaces using Voronoi optimistic optimization with regret bounds
+  author: [Beomjoon Kim, Kyungjae Lee, Sungbin Lim, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2020
+  url: http://lis.csail.mit.edu/pubs/kim-aaai20.pdf
+
+- key: silver2020fewshot
+  type: inproceedings
+  title: Few-shot Bayesian Imitation Learning with Logical Program Policies
+  author: [Tom Silver, Kelsey R. Allen, Alex K. Lew, Leslie Pack Kaelbling, Josh Tenenbaum]
+  booktitle: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2020
+  url: https://arxiv.org/pdf/1904.06317.pdf
+
+- key: schneider2020effective
+  type: techreport
+  title: Effective, interpretable algorithms for curiosity automatically discovered by evolutionary search
+  author: [Martin Schneider*, Ferran Alet*, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  school: MIT
+  month: April
+  year: 2020
+  url: https://lis.csail.mit.edu/wp-content/uploads/effective_interpretable_algorithms_for_curiosity-compressed.pdf
+
+- key: moses2020visual
+  type: article
+  title: Visual Prediction of Priors for Articulated Object Interaction
+  author: [Caris Moses*, Michael Noseworthy*, Leslie Pack Kaelbling, Tomas Lozano-Perez, Nicholas Roy]
+  journal: IEEE International Conference on Robotics and Automation (ICRA)
+  year: 2020
+  url: http://people.csail.mit.edu/cmm386/publications/vis_prediction_priors.pdf
+
+- key: garrett2020scalable
+  type: inproceedings
+  title: Scalable and Probabilistically Complete Planning for Robotic Spatial Extrusion
+  author: [Caelan R. Garrett, Yijiang Huang, Tomas Lozano-Perez, Caitlin T. Mueller]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2020
+  url: https://arxiv.org/abs/2002.02360
+
+- key: jagtap2020locally
+  type: article
+  title: Locally adaptive activation functions with slope recovery for deep and physics-informed neural networks
+  author: [Ameya D. Jagtap*, Kenji Kawaguchi*, George E. Karniadakis]
+  journal: 'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+  volume: '476'
+  pages: '20200334'
+  publisher: The Royal Society Publishing
+  year: 2020
+  url: https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.2020.0334
+
+- key: kim2019learning
+  type: article
+  title: Learning to guide task and motion planning using score-space representation
+  author: [Beomjoon Kim, Zi Wang, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: International Journal of Robotics Research
+  year: 2019
+  url: https://arxiv.org/abs/1807.09962
+  doi: 10.1177/0278364919848837
+
+- key: alet2019graph
+  type: inproceedings
+  title: 'Graph Element Networks: adaptive, structured computation and memory'
+  author: [Ferran Alet, Adarsh Keshav Jeewajee, Maria Bauza Villalonga, Alberto Rodriguez, Tomas Lozano-Perez, Leslie Kaelbling]
+  editor: Kamalika Chaudhuri and Ruslan Salakhutdinov
+  booktitle: Proceedings of the 36th International Conference on Machine Learning
+  series: Proceedings of Machine Learning Research
+  volume: '97'
+  pages: 212–222
+  publisher: PMLR
+  address: Long Beach, California, USA
+  month: 09–15 Jun
+  year: 2019
+  url: http://proceedings.mlr.press/v97/alet19a.html
+
+- key: amato2019modeling
+  type: article
+  title: Modeling and Planning with Macro-Actions in Decentralized POMDPs
+  author: [Christopher Amato, George Konidaris, Leslie Pack Kaelbling, Jonathan P. How]
+  journal: Journal of Artificial Intelligence Research
+  volume: '64'
+  pages: 817–859
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/amato-konidaris-jair19.pdf
+
+- key: kawaguchi2019effect
+  type: article
+  title: Effect of Depth and Width on Local Minima in Deep Learning
+  author: [Kenji Kawaguchi, Jiaoyang Huang, Leslie Pack Kaelbling]
+  journal: Neural Computation
+  volume: '31'
+  number: '7'
+  pages: 1462–1498
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2019
+
+- key: kawaguchi2019depth
+  type: article
+  title: Depth with Nonlinearity Creates No Bad Local Minima in ResNets
+  author: [Kenji Kawaguchi, Yoshua Bengio]
+  journal: Neural Networks
+  volume: '118'
+  pages: 167–174
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nn19
+
+- key: xia2019learning
+  type: inproceedings
+  title: Learning sparse relational transition models
+  author: [Victoria Xia, Zi Wang, Kelsey Allen, Tom Silver, Leslie Pack Kaelbling]
+  booktitle: International Conference on Learning Representations (ICLR)
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/xia-iclr19.pdf
+
+- key: kim2019adversarial
+  type: inproceedings
+  title: Adversarial actor-critic method for task and motion planning problems using planning experience
+  author: [Beomjoon Kim, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: AAAI Conference on Artificial Intelligence (AAAI)
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kim-aaai19.pdf
+
+- key: chitnis2019learning
+  type: inproceedings
+  title: Learning Quickly to Plan Quickly Using Modular Meta-Learning
+  author: [Rohan Chitnis, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Conference on Robotics and Automation (ICRA)
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/chitnis-icra19.pdf
+
+- key: karkus2019differentiable
+  type: inproceedings
+  title: Differentiable Algorithm Networks for Composable Robot Learning
+  author: [Peter Karkus, Xiao Ma, David Hsu, Leslie Pack Kaelbling, Wee Sun Lee, Tomas Lozano-Perez]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/karkus-rss19.pdf
+
+- key: chitnis2019learningb
+  type: article
+  title: Learning Compact Models for Planning with Exogenous Processes
+  author: [Rohan Chitnis, Tomas Lozano-Perez]
+  journal: Conference on Robot Learning
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/chitnis-corl19.pdf
+
+- key: kim2019learningb
+  type: article
+  title: Learning value functions with relational state representations for guiding task-and-motion planning
+  author: [Beomjoon Kim, Luke Shimanuki]
+  journal: Conference on Robot Learning
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kim-corl19.pdf
+
+- key: bacon2019lagrangian
+  type: inproceedings
+  title: A Lagrangian Method for Inverse Problems in Reinforcement Learning
+  author: [Pierre-Luc Bacon, Florian Schaefer, Clement Gehring, Animashree Anandkumar, Emma Brunskill]
+  booktitle: NeurIPS Optimization Foundations for Reinforcement Learning Workshop
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/bacon-optrl-2019.pdf
+
+- key: bauza2019omnipush
+  type: inproceedings
+  title: 'Omnipush: accurate, diverse, real-world dataset of pushing dynamics with RGB-D video'
+  author: [Maria Bauza, Ferran Alet, Yen-Chen Lin, Tomas Lozano-Perez, Leslie P. Kaelbling, Phillip Isola, Alberto Rodriguez]
+  booktitle: International Conference on Intelligent Robots and Systems (IROS)
+  year: 2019
+  url: http://mcube.mit.edu/omnipush-dataset/index.html
+
+- key: holladay2019forceandmotion
+  type: inproceedings
+  title: Force-And-Motion Constrained Planning for Tool Use
+  author: [Rachel Holladay, Tomas Lozano-Perez, Alberto Rodriguez]
+  booktitle: International Conference on Intelligent Robots and Systems (IROS)
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/holladay-iros19.pdf
+
+- key: kawaguchi2019gradient
+  type: inproceedings
+  title: Gradient Descent Finds Global Minima for Generalizable Deep Neural Networks of Practical Sizes
+  author: [Kenji Kawaguchi, Jiaoyang Huang]
+  booktitle: 57th Allerton Conference on Communication, Control, and Computing (Allerton)
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-allerton19.pdf
+
+- key: kawaguchi2019every
+  type: article
+  title: Every Local Minimum Value is the Global Minimum Value of Induced Model in Non-convex Machine Learning
+  author: [Kenji Kawaguchi, Jiaoyang Huang, Leslie Pack Kaelbling]
+  journal: Neural Computation
+  volume: '31'
+  number: '12'
+  pages: 2293–2323
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2-2019
+
+- key: alet2019neural
+  type: article
+  title: Neural Relational Inference with Fast Modular Meta-learning
+  author: [Ferran Alet, Erica Weng, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  editor: H. Wallach and H. Larochelle and A. Beygelzimer and F. d'Alché-Buc and E. Fox and R. Garnett
+  booktitle: Advances in Neural Information Processing Systems 32
+  journal: Advances in Neural Information Processing Systems 32
+  pages: 11804–11815
+  publisher: Curran Associates, Inc.
+  year: 2019
+  url: http://lis.csail.mit.edu/pubs/alet-neurips19.pdf
+
+- key: huang2018automated
+  type: article
+  title: Automated sequence and motion planning for robotic spatial extrusion of 3D trusses
+  author: [Yijiang Huang, Caelan R. Garrett, Caitlin T. Mueller]
+  journal: Construction Robotics
+  volume: '2'
+  number: '1'
+  pages: 15–39
+  month: Dec
+  year: 2018
+  url: https://arxiv.org/abs/1810.00998
+  doi: 10.1007/s41693-018-0012-z
+
+- key: goretkin2018look
+  type: article
+  title: 'Look before you sweep: Visibility-aware motion planning'
+  author: [Gustavo Goretkin, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: International Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2018
+  url: http://arxiv.org/abs/1901.06109
+
+- key: shimanuki2018hardness
+  type: article
+  title: Hardness of 3D Motion Planning Under Obstacle Uncertainty
+  author: [Luke Shimanuki, Brian Axelrod]
+  journal: International Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/shimanuki-wafr18.pdf
+
+- key: garrett2018samplingbased
+  type: article
+  title: Sampling-based methods for factored task and motion planning
+  author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  journal: The International Journal of Robotics Research
+  year: 2018
+  url: https://arxiv.org/abs/1801.00680
+  doi: 10.1177/0278364918802962
+
+- key: wang2018regret
+  type: inproceedings
+  title: Regret bounds for meta Bayesian optimization with an unknown Gaussian process prior
+  author: [Zi Wang, Beomjoon Kim, Leslie Pack Kaelbling]
+  booktitle: Neural Information Processing Systems (NeurIPS)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/wangkim-neurips18.pdf
+
+- key: gehring2018adaptable
+  type: inproceedings
+  title: Adaptable replanning with compressed linear action models for learning from demonstrations
+  author: [Clement Gehring, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/gehring-corl18.pdf
+
+- key: alet2018modular
+  type: inproceedings
+  title: Modular meta-learning
+  author: [Ferran Alet, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/alet-corl18.pdf
+
+- key: ajay2018augmenting
+  type: inproceedings
+  title: 'Augmenting Physical Simulators with Stochastic Neural Networks: Case Study of Planar Pushing and Bouncing'
+  author: [Anurag Ajay, Jiajun Wu, Nima Fazeli, Maria Bauza, Leslie Pack Kaelbling, Joshua B. Tenenbaum, Alberto Rodriguez]
+  booktitle: International Conference on Intelligent Robots and Systems (IROS)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/ajay-iros18.pdf
+
+- key: huang2018automatedb
+  type: article
+  title: Automated sequence and motion planning for robotic spatial extrusion of 3D trusses
+  author: [Yijiang Huang, Caelan R. Garrett, Caitlin T. Mueller]
+  journal: Construction Robotics
+  volume: '2'
+  pages: 15-39
+  year: 2018
+  url: https://arxiv.org/pdf/1810.00998.pdf
+  doi: https://doi.org/10.1007/s41693-018-0012-z
+
+- key: wang2018active
+  type: inproceedings
+  title: Active model learning and diverse action sampling for task and motion planning
+  author: [Zi Wang, Caelan Reed Garrett, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Conference on Intelligent Robots and Systems (IROS)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/wang-iros18.pdf
+
+- key: axelrod2018provably
+  type: inproceedings
+  title: Provably Safe Robot Navigation with Obstacle Uncertainty
+  author: [Brian Axelrod, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Journal of Robotics Research
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/axelrod-ijrr18.pdf
+
+- key: chitnis2018integrating
+  type: inproceedings
+  title: Integrating Human-Provided Information Into Belief State Representation Using Dynamic Factorization
+  author: [Rohan Chitnis, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Conference on Intelligent Robots and Systems (IROS)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/chitnis-iros18.pdf
+
+- key: anders2018robot
+  type: inproceedings
+  title: Robot Juggling
+  author: [Ariel Anders]
+  booktitle: 'EAAI-18: The 8th Symposium on Educational Advances in Artificial Intelligence'
+  year: 2018
+  url: http://modelai.gettysburg.edu/2018/juggling/
+
+- key: chitnis2018learning
+  type: inproceedings
+  title: Learning What Information to Give in Partially Observed Domains
+  author: [Rohan Chitnis, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/chitnis-corl18.pdf
+
+- key: kawaguchi2018generalization
+  type: inproceedings
+  title: Generalization in Deep Learning
+  author: [Kenji Kawaguchi, Leslie Pack Kaelbling, Yoshua Bengio]
+  booktitle: 'Mathematics of Deep Learning, Cambridge University Press, to appear. Prepint avaliable as: MIT-CSAIL-TR-2018-014, Massachusetts Institute of Technology'
+  year: 2018
+  url: https://lis.csail.mit.edu/wp-content/uploads/kklpkyb18.pdf
+
+- key: konidaris2018skills
+  type: article
+  title: 'From Skills to Symbols: Learning Symbolic Representations for Abstract High-Level Planning'
+  author: [George Konidaris, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: Journal of Artificial Intelligence Research
+  volume: '61'
+  pages: 215–289
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/konidaris-jair18.pdf
+
+- key: kim2018guiding
+  type: inproceedings
+  title: Guiding Search in Continuous State-action Spaces by Learning an Action Sampler from Off-target Search Experience
+  author: [Beomjoon Kim, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Proceedings of the 32th AAAI Conference on Artificial Intelligence (AAAI). To appear
+  organization: AAAI Press
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/kim-aaai18.pdf
+
+- key: kawaguchi2018deep
+  type: inproceedings
+  title: Deep Semi-Random Features for Nonlinear Function Approximation
+  author: [Kenji Kawaguchi, Bo Xie, Le Song]
+  booktitle: Proceedings of the 32th AAAI Conference on Artificial Intelligence (AAAI)
+  organization: AAAI Press
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-aaai18.pdf
+
+- key: anders2018reliably
+  type: inproceedings
+  title: Reliably arranging objects in uncertain domains
+  author: [Ariel S. Anders, Leslie P. Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/anders-icra18.pdf
+
+- key: wang2018batched
+  type: inproceedings
+  title: Batched Large-scale Bayesian Optimization in High-dimensional Spaces
+  author: [Zi Wang, Clement Gehring, Pushmeet Kohli, Stefanie Jegelka]
+  booktitle: International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2018
+  url: http://lis.csail.mit.edu/pubs/wang-aistats18.pdf
+
+- key: amato2017policy
+  type: article
+  title: Policy search for multi-robot coordination under uncertainty
+  author: [Christopher Amato, George Konidaris, Ariel Anders, Gabriel Cruz, Jonathan P How, Leslie P Kaelbling]
+  journal: The International Journal of Robotics Research
+  volume: '35'
+  number: '14'
+  pages: 1760-1778
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/amato-ijrr17.pdf
+  doi: 10.1177/0278364916679611
+
+- key: anders2017visual
+  type: inproceedings
+  title: Visual Servoing
+  author: [Ariel Anders, Sertac Karaman]
+  booktitle: 'EAAI-17: The 7th Symposium on Educational Advances in Artificial Intelligence'
+  year: 2017
+  url: http://modelai.gettysburg.edu/2017/visual-servo/index.html
+
+- key: preston2017electrowettingondielectric
+  type: inproceedings
+  title: Electrowetting-on-dielectric Actuation of a Spatial and Angular Manipulation Mems Stage
+  author: [Daniel J. Preston, Ariel Anders, Banafsheh Barabadi, Evelyn Tio, Yangying Zhu, DingRan Annie Dai, Evelyn N. Wang]
+  booktitle: The 30th IEEE International Conference on Micro Electro Mechanical Systems (MEMS 2017)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/preston-mems17.pdf
+
+- key: garrett2017ffrob
+  type: article
+  title: 'FFRob: Leveraging symbolic planning for efficient task and motion planning'
+  author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  journal: The International Journal of Robotics Research
+  year: 2017
+  url: https://arxiv.org/abs/1608.01335
+  doi: 10.1177/0278364917739114
+
+- key: karaman2017projectbased
+  type: inproceedings
+  title: 'Project-based, Collaborative, Algorithmic Robotics for High SchoolStudents: Programming Self-driving Race Cars at MIT'
+  author: [Sertac Karaman, Ariel Anders, Michael Boulet, Jane Connor andKenneth Gregson, Winter J Guerra, Owen Guldner, Mubarik Mohamoudand Brian Plancher, Robert Shin, John Vivilecchia]
+  booktitle: 2017 IEEE Integrated STEM Education Conference (ISEC) (ISEC'17)
+  address: Princeton, USA
+  month: mar
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/anders-isec-17.pdf
+
+- key: wang2017focused
+  type: inproceedings
+  title: Focused Model-Learning and Planning for Non-Gaussian Continuous State-Action Systems
+  author: [Zi Wang, Stefanie Jegelka, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/wang-icra17.pdf
+
+- key: wang2017maxvalue
+  type: inproceedings
+  title: Max-value Entropy Search for Efficient Bayesian Optimization
+  author: [Zi Wang, Stefanie Jegelka]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/wang-icml17b.pdf
+
+- key: wang2017batched
+  type: inproceedings
+  title: Batched High-dimensional Bayesian Optimization via Structural Kernel Learning
+  author: [Zi Wang, Chengtao Li, Stefanie Jegelka, Pushmeet Kohli]
+  booktitle: International Conference on Machine Learning (ICML)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/wang-icml17a.pdf
+
+- key: kim2017learning
+  type: inproceedings
+  title: Learning to guide task and motion planning using score-space representation
+  author: [Beomjoon Kim, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/kim-icra17.pdf
+
+- key: kaelbling2017learning
+  type: inproceedings
+  title: Learning composable models of parameterized skills
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/lpk/ICRA17.pdf
+
+- key: anders2017planning
+  type: techreport
+  title: Planning Robust Strategies for Constructing Multi-object Arrangements
+  author: [Ariel Anders, Leslie Kaelbling, Tomas Lozano-Perez]
+  school: CSAIL MIT
+  year: 2017
+  url: https://dspace.mit.edu/handle/1721.1/108510
+
+- key: garrett2017samplebased
+  type: inproceedings
+  title: Sample-Based Methods for Factored Task and Motion Planning
+  author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/garrett-rss17.pdf
+
+- key: axelrod2017provably
+  type: inproceedings
+  title: Provably Safe Robot Navigation with Obstacle Uncertainty
+  author: [Brian Axelrod, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: 'Robotics: Science and Systems (RSS)'
+  year: 2017
+  url: http://lis.csail.mit.edu/pubs/axelrod-rss-17.pdf
+
+- key: kaelbling2016implicit
+  type: inproceedings
+  title: Implicit Belief-Space Pre-images for Hierarchical Planning and Execution
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/lpk/icra16Final.pdf
+
+- key: nie2016searching
+  type: inproceedings
+  title: Searching for Physical Objects in Partially Known Environments
+  author: [Xinkun Nie, Lawson L.S. Wong, Leslie Pack Kaelbling]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/nie-icra2016-search.pdf
+
+- key: wong2016objectbased
+  type: inproceedings
+  title: Object-based World Modeling in Semi-Static Envrionments with Dependent Dirichlet Process Mixtures
+  author: [Lawson L.S. Wong, Thanard Kurutach, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/wong-ijcai16.pdf
+
+- key: garrett2016learning
+  type: inproceedings
+  title: Learning to Rank for Synthesizing Planning Heuristics
+  author: [Caelan Reed Garrett, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Int. Joint Conf. on Artificial Intelligence (IJCAI)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/garrett-ijcai16.pdf
+
+- key: preston2016electrowettingondielectric
+  type: article
+  title: Electrowetting-on-dielectric actuation of a vertical translation and angular manipulation stage
+  author: [Daniel J. Preston, Ariel Anders, Banafsheh Barabadi, Evelyn Tio, Yangying Zhu, DingRan Annie Dai, Evelyn N. Wang]
+  journal: Applied Physics Letters
+  volume: '109'
+  number: '24'
+  pages: '244102'
+  year: 2016
+  url: http://aip.scitation.org/doi/abs/10.1063/1.4971777
+  doi: 10.1063/1.4971777
+
+- key: deshpande2016decidability
+  type: inproceedings
+  title: Decidability of Semi-Holonomic Prehensile Task and Motion Planning
+  author: [Ashwin Deshpande, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/deshpande-WAFR16.pdf
+
+- key: grey2016humanoid
+  type: inproceedings
+  title: Humanoid manipulation planning using backward-forward search
+  author: [Michael X Grey, Caelan R Garrett, C Karen Liu, Aaron D Ames, Andrea L Thomaz]
+  booktitle: Intelligent Robots and Systems (IROS), 2016 IEEE/RSJ International Conference on
+  pages: 5467–5473
+  organization: IEEE
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/grey-iros16.pdf
+
+- key: kawaguchi2016global
+  type: article
+  title: Global Continuous Optimization with Error Bound and Fast Convergence
+  author: [Kenji Kawaguchi, Yu Maruyama, Xiaoyu Zheng]
+  journal: Journal of Artificial Intelligence Research (JAIR)
+  volume: '56'
+  pages: 153–195
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-jair16.pdf
+
+- key: kawaguchi2016deep
+  type: inproceedings
+  title: Deep Learning without Poor Local Minima
+  author: [Kenji Kawaguchi]
+  booktitle: Advances in Neural Information Processing Systems (NeurIPS)
+  year: 2016
+  links:
+  - {label: Talk, url: 'https://channel9.msdn.com/Events/Neural-Information-Processing-Systems-Conference/Neural-Information-Processing-Systems-Conference-NIPS-2016/Deep-Learning-without-Poor-Local-Minima'}
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nips16.pdf
+
+- key: wang2016optimization
+  type: inproceedings
+  title: Optimization as Estimation with Gaussian Processes in Bandit Settings
+  author: [Zi Wang, Bolei Zhou, Stefanie Jegelka]
+  booktitle: International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/wang-aistats16.pdf
+
+- key: kawaguchi2016bounded
+  type: inproceedings
+  title: Bounded Optimal Exploration in MDP
+  author: [Kenji Kawaguchi]
+  booktitle: Proceedings of the 30th AAAI Conference on Artificial Intelligence (AAAI)
+  pages: 1758–1764
+  organization: AAAI Press
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-aaai16.pdf
+
+- key: wang2016optimizationb
+  type: inproceedings
+  title: Optimization as Estimation with Gaussian Processes in Bandit Settings
+  author: [Zi Wang, Bolei Zhou, Stefanie Jegelka]
+  booktitle: International Conference on Artificial Intelligence and Statistics (AISTATS)
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/wang-aistats16.pdf
+
+- key: kawaguchi2016boundedb
+  type: inproceedings
+  title: Bounded Optimal Exploration in MDP
+  author: [Kenji Kawaguchi]
+  booktitle: Proceedings of the 30th AAAI Conference on Artificial Intelligence (AAAI)
+  pages: 1758–1764
+  organization: AAAI Press
+  year: 2016
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-aaai16.pdf
+
+- key: wong2015data
+  type: article
+  title: Data association for semantic world modeling from partial views
+  author: [Lawson L.S. Wong, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: International Journal of Robotics Research
+  volume: '34'
+  number: '7'
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/wong-ijrr2015-worldmodel.pdf
+
+- key: konidaris2015symbol
+  type: inproceedings
+  title: Symbol Acquisition for Probabilistic High-Level Planning
+  author: [G.D. Konidaris, L.P. Kaelbling, T. Lozano-Perez]
+  booktitle: Proceedings of the Twenty Fourth International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/konidaris-ijcai15.pdf
+
+- key: amato2015policy
+  type: inproceedings
+  title: Policy Search for Multi-Robot Coordination under Uncertainty
+  author: [C. Amato, G.D. Konidaris, A. Anders, G. Cruz, J.P. How, L.P. Kaelbling]
+  booktitle: 'Robotics: Science and Systems XI (RSS)'
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/amato-konidaris-rss15.pdf
+
+- key: amato2015planning
+  type: inproceedings
+  title: Planning for Decentralized Control of Multiple Robots Under Uncertainty
+  author: [C. Amato, G.D. Konidaris, G. Cruz, C. Maynor, J.P. How, L.P. Kaelbling]
+  booktitle: Proceedings of the 2015 IEEE International Conference on Robotics and Automation
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/amato-konidaris-icra15.pdf
+
+- key: lee2015hierarchical
+  type: inproceedings
+  title: Hierarchical planning for multi-contact non-prehensile manipulation
+  author: [Gilwoo Lee, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/gilwoo-iros15.pdf
+
+- key: garrett2015backwardforward
+  type: inproceedings
+  title: Backward-Forward Search for Manipulation Planning
+  author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2015
+  links:
+  - {label: movie, url: 'http://web.mit.edu/caelan/www/research/hbf/'}
+  url: http://lis.csail.mit.edu/pubs/garrett-iros15.pdf
+
+- key: kim2015generalizing
+  type: inproceedings
+  title: Generalizing over Uncertain Dynamics for Online Trajectory Generation
+  author: [Beomjoon Kim, Albert Kim, Hongkai Dai, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Symposium of Robotics Research (ISRR)
+  year: 2015
+  url: http://lis.csail.mit.edu/pubs/kim-isrr15.pdf
+
+- key: kawaguchi2015bayesian
+  type: inproceedings
+  title: Bayesian optimization with exponential convergence
+  author: [Kenji Kawaguchi, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Advances in Neural Information Processing Systems (NeurIPS)
+  pages: 2809–2817
+  year: 2015
+  links:
+  - {label: code, url: 'http://lis.csail.mit.edu/code/imgpo.html'}
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nips15.pdf
+
+- key: wong2014not
+  type: inproceedings
+  title: 'Not Seeing is Also Believing: Combining Object and Metric Spatial Information'
+  author: [Lawson L.S. Wong, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/wong-icra14.pdf
+
+- key: barragan2014interactive
+  type: inproceedings
+  title: Interactive Bayesian Identification of Kinematic Mechanisms
+  author: [Patrick R. Barragan, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/barragan-icra14.pdf
+
+- key: glover2014tracking
+  type: inproceedings
+  title: Tracking the Spin on a Ping Pong Ball with the Quaternion Bingham Filter
+  author: [Jared Glover, Leslie Pack Kaelbling]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/glover-icra14.pdf
+
+- key: dibangoye2014exploiting
+  type: inproceedings
+  title: Exploiting Separability in Multi-Agent Planning with Continuous-State MDPs.
+  author: [Jilles S. Dibangoye, Christopher Amato, Olivier Buffet, Francois Charpillet]
+  booktitle: Thirteenth International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS-14)
+  year: 2014
+  note: Best Paper Award
+  url: http://lis.csail.mit.edu/pubs/amato-aamas14.pdf
+
+- key: amato2014planning
+  type: inproceedings
+  title: Planning with Macro-Actions in Decentralized POMDPs
+  author: [Christopher Amato, George Konidaris, Leslie Pack Kaelbling]
+  booktitle: Thirteenth International Conference on Autonomous Agents and Multi-Agent Systems (AAMAS-14)
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/amato-konidaris-aamas14.pdf
+
+- key: konidaris2014constructing
+  type: inproceedings
+  title: Constructing Symbolic Representations for High-Level Planning
+  author: [George D. Konidaris, Leslie Kaelbling, Tomas Lozano-Perez]
+  booktitle: Proceedings of the Twenty-Eighth Conference on Artificial Intelligence
+  year: 2014
+  url: http://people.csail.mit.edu/gdk/pubs/orig_sym_aaai.pdf
+
+- key: lozanoperez2014constraintbased
+  type: inproceedings
+  title: A constraint-based method for solving sequential manipulation planning problems
+  author: [Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/tlpk-iros14.pdf
+
+- key: garrett2014ffrob
+  type: inproceedings
+  title: 'FFRob: An efficient heuristic for task and motion planning'
+  author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: International Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2014
+  links:
+  - {label: movie, url: 'http://web.mit.edu/caelan/www/research/ffrob/'}
+  url: http://lis.csail.mit.edu/pubs/garrett-wafr14.pdf
+
+- key: glover2014generalizing
+  type: inproceedings
+  title: Generalizing Policy Advice with Gaussian Process Bandits for Dynamic Skill Improvement
+  author: [Jared Glover, Charlotte Zhu]
+  booktitle: Proceedings of the Twenty-Eighth Conference on Artificial Intelligence
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/glover-aaai14.pdf
+
+- key: anders2014learning
+  type: mastersthesis
+  title: Learning a strategy for whole-arm grasping
+  author: [Ariel S. Anders]
+  school: Massachusetts Institute of Technology
+  year: 2014
+  url: http://lis.csail.mit.edu/pubs/anders-14.pdf
+
+- key: hadfieldmenell2013optimization
+  type: inproceedings
+  title: 'Optimization in the Now: Dynamic Peephole Optimization for Hierarchical Planning'
+  author: [Dylan Hadfield-Menell, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_1790_FI.pdf
+
+- key: wong2013manipulationbased
+  type: inproceedings
+  title: Manipulation-based Active Search for Occluded Objects
+  author: [Lawson L.S. Wong, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2013
+  links:
+  - {label: movie, url: 'http://lis.csail.mit.edu/movies/ICRA13_1782_VI_fi.mp4'}
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_1782_FI.pdf
+
+- key: holladay2013object
+  type: inproceedings
+  title: Object Placement as Inverse Motion Planning
+  author: [Anne Holladay, Jennifer Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2013
+  links:
+  - {label: movie, url: 'http://lis.csail.mit.edu/movies/ICRA13_1509_VI_fi.mp4'}
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_1509_FI.pdf
+
+- key: barry2013hierarchical
+  type: inproceedings
+  title: A Hierarchical Approach to Manipulation with Diverse Actions
+  author: [Jennifer Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2013
+  links:
+  - {label: movies, url: 'http://people.csail.mit.edu/jbarry/pr2/darrt/'}
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_2092_FI.pdf
+
+- key: kaelbling2013integrated
+  type: article
+  title: Integrated Task and Motion Planning in Belief Space
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: International Journal of Robotics Research
+  volume: '32'
+  number: '9'
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/tlp/IJRRBelFinal.pdf
+
+- key: goretkin2013optimal
+  type: inproceedings
+  title: Optimal Sampling-Based Planning for Linear-Quadratic Kinodynamic Systems
+  author: [G. Goretkin, A. Perez, R. Platt, G.D. Konidaris]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/goretkin-icra13.pdf
+
+- key: wong2013constructing
+  type: inproceedings
+  title: Constructing Semantic World Models from Partial Views
+  author: [Lawson L.S. Wong, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: 'Robotics: Science and Systems (RSS) Workshop on Robots in Clutter'
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/wong-rssws13.pdf
+
+- key: wong2013data
+  type: inproceedings
+  title: Data association for semantic world modeling from partial views
+  author: [Lawson L.S. Wong, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Symposium of Robotics Research
+  year: 2013
+  url: http://people.csail.mit.edu/lsw/papers/isrr2013-worldmodel.pdf
+
+- key: levihn2013foresight
+  type: inproceedings
+  title: Foresight and Reconsideration in Hierarchical Planning and Execution
+  author: [Martin Levihn, Leslie Pack Kaelbling, Tomas Lozano-Perez, Mike Stilman]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2013
+  links:
+  - {label: movies, url: 'http://lis.csail.mit.edu/bhpnNAMO'}
+  url: http://lis.csail.mit.edu/pubs/levihn-iros13.pdf
+
+- key: glover2013bingham
+  type: inproceedings
+  title: Bingham Procrustean Alignment for Object Detection in Clutter
+  author: [Jared Glover, Sanja Popovic]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/glover-iros13.pdf
+
+- key: kaelbling2013automatic
+  type: inproceedings
+  title: Automatic Synthesis of Rules for Planning in Belief Space
+  author: [Leslie Pack Kaelbling]
+  booktitle: RSS Workshop on Combined Robot Motion Planning and AI Planning for Practical Applications
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/lpk/kaelbling-rssws13.pdf
+
+- key: dibangoye2013optimally
+  type: inproceedings
+  title: Optimally Solving Dec-POMDPs as Continuous-State MDPs
+  author: [Jilles S. Dibangoye, Christopher Amato, Olivier Buffet, Francois Charpillet]
+  booktitle: Proceedings of the Twenty-Third International Joint Conference on Artificial Intelligence
+  month: August
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/DABC-IJCAI13.pdf
+
+- key: oliehoek2013incremental
+  type: article
+  title: Incremental Clustering and Expansion for Faster Optimal Planning in Decentralized POMDPs
+  author: [Frans A. Oliehoek, Matthijs T. J. Spaan, Christopher Amato, Shimon Whiteson]
+  journal: Journal of Artificial Intelligence Research
+  volume: '46'
+  pages: 449–509
+  year: 2013
+  url: http://www.jair.org/media/3804/live-3804-6917-jair.pdf
+
+- key: dibangoye2013producing
+  type: inproceedings
+  title: Producing Efficient Error-bounded Solutions for Transition Independent Decentralized MDPs
+  author: [Jilles S. Dibangoye, Christopher Amato, Arnaud Doniec, Francois Charpillet]
+  booktitle: Proceedings of the Twelfth International Conference on Autonomous Agents and Multiagent Systems
+  pages: 539–546
+  month: May
+  year: 2013
+  url: http://lis.csail.mit.edu/pubs/dibangoye-aamas13.pdf
+
+- key: oliehoek2012heuristic
+  type: inproceedings
+  title: Heuristic Search of Multiagent Influence Space
+  author: [Stefan Witwicki andFrans A. Oliehoek, Leslie P. Kaelbling]
+  booktitle: Proceedings of The International Joint Conference on Autonomous Agents and Multi Agent Systems
+  month: jun
+  year: 2012
+  url: http://people.csail.mit.edu/fao/docs/Oliehoek11EUMAS.pdf
+
+- key: oliehoek2012decentralized
+  type: incollection
+  title: Decentralized POMDPs
+  author: [Frans A. Oliehoek]
+  editor: Marco Wiering and Martijn Otterlo
+  booktitle: 'Reinforcement Learning: State of the Art'
+  series: Adaptation, Learning, and Optimization
+  volume: '12'
+  pages: 471-503
+  publisher: Springer Berlin Heidelberg
+  address: Berlin, Germany
+  year: 2012
+  note: 10.1007/978-3-642-27645-3_15
+  url: http://dx.doi.org/10.1007/978-3-642-27645-3_15
+
+- key: dibangoye2012scaling
+  type: inproceedings
+  title: Scaling Up Decentralized MDPs Through Heuristic Search
+  author: [Jilles S. Dibangoye, Christopher Amato, Arnaud Doniec]
+  booktitle: Proceedings of the Twenty-Eighth Conference on Uncertainty in Artificial Intelligence
+  month: August
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/dibangoye-uai12.pdf
+
+- key: amato2012diagnose
+  type: inproceedings
+  title: 'Diagnose and Decide: An Optimal Bayesian Approach'
+  author: [Christopher Amato, Emma Brunskill]
+  booktitle: Proceedings of the Workshop on Bayesian Optimization and Decision Making at NIPS 2012
+  month: December
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/amato-bayesianopt12.pdf
+
+- key: doshivelez2012transfer
+  type: inproceedings
+  title: Transfer Learning by Discovering Latent Task Parametrizations
+  author: [F. Doshi-Velez, G.D. Konidaris]
+  booktitle: NIPS 2012 Workshop on Bayesian Nonparametric Models for Reliable Planning And Decision-Making Under Uncertainty
+  month: December
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/doshi-velez-nips2012ws.pdf
+
+- key: macindoe2012pomcop
+  type: inproceedings
+  title: 'POMCoP: Belief Space Planning for Sidekicks in Cooperative Games'
+  author: [O. Macindoe, L. P. Kaelbling, T. Lozano-Perez]
+  booktitle: Proceedings of the 8th Annual AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment
+  month: October
+  year: 2012
+  note: Best Paper Award
+  url: http://lis.csail.mit.edu/pubs/macindoe-aiide12.pdf
+
+- key: niekum2012learning
+  type: inproceedings
+  title: Learning and Generalization of Complex Tasks from Unstructured Demonstrations
+  author: [S. Niekum, S. Osentoski, G.D. Konidaris, A.G. Barto]
+  booktitle: Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems
+  month: October
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/niekum-iros12.pdf
+
+- key: konidaris2012transfer
+  type: article
+  title: Transfer in Reinforcement Learning via Shared Features
+  author: [G.D. Konidaris, I. Scheidwasser, A.G. Barto]
+  journal: Journal of Machine Learning Research
+  volume: '13'
+  pages: 1333-1371
+  month: May
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/konidaris-jmlr12.pdf
+
+- key: silva2012learning
+  type: inproceedings
+  title: Learning Parameterized Skills
+  author: [B.C. da Silva, G.D. Konidaris, A.G. Barto]
+  booktitle: Proceedings of the Twenty Ninth International Conference on Machine Learning
+  month: June
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/dasilva-icml12.pdf
+
+- key: barry2012manipulation
+  type: inproceedings
+  title: Manipulation with Multiple Action Types
+  author: [J. Barry, K. Hsiao, L. P. Kaelbling, T. Lozano-Perez]
+  booktitle: International Symposium on Experimental Robotics
+  month: June
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/barry-iser12.pdf
+
+- key: konidaris2012robot
+  type: article
+  title: Robot Learning from Demonstration by Constructing Skill Trees
+  author: [G.D. Konidaris, S.R. Kuindersma, R.A. Grupen, A.G. Barto]
+  journal: International Journal of Robotics Research
+  volume: '31'
+  number: '3'
+  pages: 360-375
+  month: March
+  year: 2012
+  url: http://ijr.sagepub.com/content/31/3/360
+
+- key: perez2012lqrrrt
+  type: inproceedings
+  title: 'LQR-RRT*: Optimal Sampling-Based Motion Planning with Automatically Derived Extension Heuristics'
+  author: [A. Perez, R. Platt, G.D. Konidaris, L.P. Kaelbling, T. Lozano-Perez]
+  booktitle: Proceedings of the IEEE International Conference on Robotics and Automation
+  pages: 2537-2542
+  month: May
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/perez-icra12.pdf
+
+- key: nelson2012kinematics
+  type: article
+  title: Kinematics of reaching and implications for handedness in rhesus monkey infants
+  author: [E.L. Nelson, G.D. Konidaris, N.E. Berthier, M.C. Braun, M.S.F.X. Novak, S.J. Suomi, M.A. Novak]
+  journal: Developmental Psychobiology
+  volume: '54'
+  number: '4'
+  pages: 460-467
+  month: May
+  year: 2012
+  url: http://onlinelibrary.wiley.com/doi/10.1002/dev.20604/abstract
+
+- key: wong2012collisionfree
+  type: inproceedings
+  title: Collision-Free State Estimation
+  author: [Lawson L.S. Wong, Leslie P. Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA12_1987_FI.pdf
+
+- key: platt2012nongaussian
+  type: inproceedings
+  title: 'Non-Gaussian Belief Space Planning: Correctness and Complexity'
+  author: [Robert Platt, Leslie Kaelbling, Tomas Lozano-Perez, Russ Tedrake]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA12_1775_FI.pdf
+
+- key: kaelbling2012unifying
+  type: inproceedings
+  title: Unifying Perception, Estimation and Action for Mobile Manipulation via Belief Space Planning
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2012
+  url: http://lis.csail.mit.edu/pubs/tlp/ICRA12_1803_FI.pdf
+
+- key: oliehoek2012reasoning
+  type: inproceedings
+  title: Reasoning about Advisors for Seller Selection inE-Marketplaces via POMDPs
+  author: [Frans A. Oliehoek, Ashwini A. Gokhale, Jie Zhang]
+  booktitle: 15th International Workshop on Trust in Agent Societies (TRUST12)
+  month: jun
+  year: 2012
+  url: http://people.csail.mit.edu/fao/docs/Oliehoek12TRUST.pdf
+
+- key: oliehoek2012treebased
+  type: inproceedings
+  title: Tree-Based Solution Methods for Multiagent POMDPswith Delayed Communication
+  author: [Frans A. Oliehoek, Matthijs T. J. Spaan]
+  booktitle: Proceedings of the National Conference on Artificial Intelligence
+  month: jul
+  year: 2012
+  url: http://people.csail.mit.edu/fao/docs/Oliehoek12MSDM.pdf
+
+- key: oliehoek2012influencebased
+  type: inproceedings
+  title: Influence-Based Abstraction for Multiagent Systems
+  author: [Frans A. Oliehoek, Stefan Witwicki, Leslie P. Kaelbling]
+  booktitle: Proceedings of the National Conference on Artificial Intelligence
+  month: jul
+  year: 2012
+  url: http://people.csail.mit.edu/fao/docs/Oliehoek12AAAI_IBA.pdf
+
+- key: spaan2011scaling
+  type: inproceedings
+  title: Scaling Up Optimal Heuristic Search in Dec-POMDPs via Incremental Expansion
+  author: [Matthijs T. J. Spaan, Frans A. Oliehoek, Christopher Amato]
+  booktitle: Proceedings of the International Joint Conference on Artificial Intelligence
+  pages: 2027–2032
+  year: 2011
+  note: A version appeared in AAMAS Workshop on Multi-agent Sequential Decision Making in Uncertain Domains and as extended abstract in Proc. of 23rd Benelux Conference on Artificial Intelligence
+  url: http://people.csail.mit.edu/fao/docs/Spaan11IJCAI.pdf
+
+- key: bollini2011bakebot
+  type: inproceedings
+  title: 'Bakebot: Baking Cookies with the PR2'
+  author: [M. Bollini, J. Barry, D. Rus]
+  booktitle: IROS PR2 Workshop
+  month: September
+  year: 2011
+  note: Extended abstract.
+  url: http://www.iros2011.org/WorkshopsAndTutorialsProceedings/FW9/mbollini_mit.pdf
+
+- key: barry2011planning
+  type: inproceedings
+  title: Planning and Control under Uncertainty for the PR2
+  author: [J. Barry, M. Bollini, A. Holladay, L. Kaelbling, T. Lozano-Perez]
+  booktitle: IROS PR2 Workshop
+  month: September
+  year: 2011
+  note: Extended abstract.
+  url: http://www.iros2011.org/WorkshopsAndTutorialsProceedings/FW9/jbarry_mit.pdf
+
+- key: glover2011monte
+  type: inproceedings
+  title: Monte Carlo Pose Estimation with Quaternion Kernels and the Bingham Distribution
+  author: [J. Glover, G. Bradksi, R. Rusu]
+  booktitle: 'Proceedings of Robotics: Science and Systems'
+  year: 2011
+  url: http://www.mit.edu/~jglov/rss11.pdf
+
+- key: wingate2011bayesian
+  type: inproceedings
+  title: Bayesian Policy Search with Policy Priors
+  author: [David Wingate, Noah D. Goodman, Daniel M. Roy, Leslie P. Kaelbling, Joshua B. Tenenbaum]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2011
+  url: http://www.mit.edu/~wingated/papers/ijcaipp.pdf
+
+- key: konidaris2011autonomous
+  type: inproceedings
+  title: Autonomous Skill Acquisition on a Mobile Manipulator
+  author: [G.D. Konidaris, S.R. Kuindersma, R.A. Grupen, A.G. Barto]
+  booktitle: Proceedings of the Twenty-Fifth Conference on Artificial Intelligence
+  pages: 1468-1473
+  month: August
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/konidaris-aaai11b.pdf
+
+- key: konidaris2011value
+  type: inproceedings
+  title: Value Function Approximation in Reinforcement Learning using the Fourier Basis
+  author: [G.D. Konidaris, S. Osentoski, P.S. Thomas]
+  booktitle: Proceedings of the Twenty-Fifth Conference on Artificial Intelligence
+  pages: 380-385
+  month: August
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/konidaris-aaai11a.pdf
+
+- key: konidaris2011tdsubsub
+  type: inproceedings
+  title: 'TDγ: Re-evaluating Complex Backups in Temporal Difference Learning'
+  author: [G.D. Konidaris, S. Niekum, P.S. Thomas]
+  booktitle: Advances in Neural Information Processing Systems 24
+  pages: 2402-2410
+  month: December
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/konidaris-nips11.pdf
+
+- key: konidaris2011cst
+  type: inproceedings
+  title: 'CST: Constructing Skill Trees by Demonstration'
+  author: [G.D. Konidaris, S.R. Kuindersma, R.A. Grupen, A.G. Barto]
+  booktitle: Proceedings of the ICML Workshop on New Developments in Imitation Learning
+  month: July
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/konidaris-icmlws11.pdf
+
+- key: konidaris2011acquiring
+  type: inproceedings
+  title: Acquiring Transferrable Mobile Manipulation Skills
+  author: [G.D. Konidaris, S.R. Kuindersma, R.A. Grupen, A.G. Barto]
+  booktitle: 'The RSS 2011 Workshop on Mobile Manipulation: Learning to Manipulate'
+  month: June
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/konidaris-rssws11.pdf
+
+- key: kaelbling2011hierarchical
+  type: inproceedings
+  title: Hierarchical Task and Motion Planning in the Now
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE Conference on Robotics and Automation (ICRA)
+  year: 2011
+  note: Finalist, Best Manipulation Paper Award
+  url: http://people.csail.mit.edu/lpk/papers/hpnICRA11Final.pdf
+
+- key: platt2011efficient
+  type: inproceedings
+  title: Efficient planning in non-Gaussian belief spaces and its application to robot grasping
+  author: [Robert Platt, Leslie Pack Kaelbling, Tomas Lozano-Perez, Russ Tedrake]
+  booktitle: International Symposium on Robotics Research (ISRR)
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/platt_isrr2011_6.pdf
+
+- key: platt2011simultaneous
+  type: inproceedings
+  title: Simultaneous localization and grasping using belief space planning
+  author: [R. Platt, L. Kaelbling, T. Lozano-Perez, R. Tedrake]
+  booktitle: ICRA Workshop on manipulation under uncertainty
+  year: 2011
+  url: http://groups.csail.mit.edu/robotics-center/public_papers/Platt11b.pdf
+
+- key: platt2011efficientb
+  type: inproceedings
+  title: Efficient planning in non-Gaussian belief spaces and its application to robot grasping
+  author: [Robert Platt, Leslie Pack Kaelbling, Tomas Lozano-Perez, Russ Tedrake]
+  booktitle: International Symposium on Robotics Research (ISRR)
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/platt_isrr2011_6.pdf
+
+- key: platt2011simultaneousb
+  type: inproceedings
+  title: Simultaneous localization and grasping using belief space planning
+  author: [R. Platt, L. Kaelbling, T. Lozano-Perez, R. Tedrake]
+  booktitle: ICRA Workshop on manipulation under uncertainty
+  year: 2011
+  url: http://groups.csail.mit.edu/robotics-center/public_papers/Platt11b.pdf
+
+- key: kaelbling2011preimage
+  type: inproceedings
+  title: Pre-image backchaining in belief space for mobile manipulation
+  author: [Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Symposium on Robotics Research (ISRR)
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/ISRR11.pdf
+
+- key: barry2011deth
+  type: inproceedings
+  title: 'DetH*: approximate Hierarchical Solution of Large Markov Decision Processes'
+  author: [Jennifer L. Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/jbarryijcai11Final.pdf
+
+- key: hsiao2011robust
+  type: article
+  title: Robust grasping under object pose uncertainty
+  author: [Kaijen Hsiao, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  journal: Autonomous Robots
+  volume: '31'
+  number: '2'
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/HsaioAutonomousRobots11.pdf
+
+- key: nguyen2011capir
+  type: inproceedings
+  title: 'CAPIR: Collaborative Action Planning with Intention Recognition'
+  author: [Truong-Huy Dinh Nguyen, David Hsu, Wee-Sun Lee, Tze-Yun Leong, Leslie Pack Kaelbling, Tomas Lozano-Perez, Andrew Haydn Grant]
+  booktitle: Artificial Intelligence and Interactive Digital Entertainment Conference (AIIDE)
+  year: 2011
+  url: http://lis.csail.mit.edu/pubs/tlp/CAPIR.pdf
+
+- key: platt2010belief
+  type: inproceedings
+  title: Belief space planning assuming maximum likelihood observations
+  author: [Robert Platt, Russell Tedrake, Leslie Kaelbling, Tomas Lozano-Perez]
+  booktitle: Robotics Science and Systems Conference (RSS)
+  year: 2010
+  url: http://groups.csail.mit.edu/robotics-center/public_papers/Platt10.pdf
+
+- key: barry2010hierarchical
+  type: inproceedings
+  title: Hierarchical Solution of Large Markov Decision Processes
+  author: [Jennifer L. Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: ICAPS Workshop on Planning and Scheduling Under Uncertainty
+  year: 2010
+  url: http://people.csail.mit.edu/jbarry/papers/jbarryicaps10.pdf
+
+- key: hsiao2010taskdriven
+  type: inproceedings
+  title: Task-driven Tactile Exploration
+  author: [Kaijen Hsiao, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Robotics Science and Systems (RSS)
+  year: 2010
+  url: http://people.csail.mit.edu/lpk/papers/p29.pdf
+
+- key: temizer2010collision
+  type: inproceedings
+  title: Collision Avoidance for Unmanned Aircraft using Markov Decision Processes
+  author: [Selim Temizer, Mykel J. Kochenderfer, Leslie Pack Kaelbling, Tomas Lozano-Perez, James K. Kuchar]
+  booktitle: AIAA Guidance, Navigation and Control Conference
+  year: 2010
+  url: http://people.csail.mit.edu/lpk/papers/aiaa10.pdf
+
+- key: chiu2010classspecific
+  type: inproceedings
+  title: Class-Specific Grasping of 3D Objects from a Single 2D Image
+  author: [Han-Pang Chiu, Huan Liu, Leslie Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 2010
+  url: http://lis.csail.mit.edu/pubs/tlp/iros2010.pdf
+
+- key: brunskill2010planning
+  type: article
+  title: Planning in partially observable switching-mode continuous domains
+  author: [Emma Brunskill, Leslie Pack Kaelbling, Tomas Lozano-Perez, Nicholas Roy]
+  journal: Annals of Mathematics and Artificial Intelligence
+  year: 2010
+  url: http://people.csail.mit.edu/lpk/papers/amai_pomdp_continuous_brunskill.pdf
+
+- key: barry2009fast
+  type: mastersthesis
+  title: Fast Approximate Hierarchical Solution of MDPs
+  author: [J. Barry]
+  school: MIT
+  address: Cambridge, MA
+  month: June
+  year: 2009
+  url: https://dspace.mit.edu/handle/1721.1/53202
+
+- key: chiu2009learning
+  type: article
+  title: Learning to Generate Novel Views of Objects for Class Recognition.
+  author: [Han-Pang Chiu, Leslie P. Kaelbling andTomas Lozano-Perez]
+  journal: Computer Vision and Image Understanding
+  year: 2009
+  url: http://lis.csail.mit.edu/pubs/tlp/novel_views.pdf
+
+- key: hsiao2009relatively
+  type: inproceedings
+  title: Relatively Robust Grasping
+  author: [Kaijen Hsiao, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: International Conference on Automated Planning and Scheduling (ICAPS) Workshop on Bridging the Gap Between Task and Motion Planning
+  year: 2009
+  links:
+  - {label: Link, url: 'http://people.csail.mit.edu/bhaskara/icaps09-ws/'}
+  url: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.208.3476&rep=rep1&type=pdf
+
+- key: ross2009segmentation
+  type: article
+  title: 'Segmentation According to Natural Examples: Learning StaticSegmentation from Motion Segmentation'
+  author: [Michael G. Ross, Leslie Pack Kaelbling]
+  journal: IEEE Transactions on Pattern Analysis andMachine Intelligence
+  year: 2009
+  url: http://people.csail.mit.edu/lpk/papers/Ross_Kaelbling_SANE.pdf
+
+- key: brunskill2008continuousstate
+  type: inproceedings
+  title: Continuous-State POMDPs with Hybrid Dynamics
+  author: [Emma Brunskill, Leslie Kaelbling, Tomas Lozano-Perez, Nicholas Roy]
+  booktitle: International Symposium on Artificial Intelligence and Mathematics
+  year: 2008
+  url: http://lis.csail.mit.edu/pubs/tlp/brunskill_continuous.pdf
+
+- key: milch2008lifted
+  type: inproceedings
+  title: Lifted Probabilistic Inference with Counting Formulas
+  author: [Brian Milch, Luke S. Zettlemoyer, Kristian Kersting, Michael Haimes, Leslie Pack Kaelbling]
+  booktitle: Twenty Third Conference on Artificial Intelligence (AAAI)
+  year: 2008
+  url: http://people.csail.mit.edu/lpk/papers/mzkhk-aaai08.pdf
+
+- key: hsiao2008robust
+  type: inproceedings
+  title: Robust Belief-Based Execution of Manipulation Programs
+  author: [Kaijen Hsiao, Tomas Lozano-Perez, Leslie Pack Kaelbling]
+  booktitle: Eighth International Workshop on the Algorithmic Foundations of Robotics (WAFR)
+  year: 2008
+  url: http://lis.csail.mit.edu/pubs/tlp/wafr08.pdf
+
+- key: zettlemoyer2008multiagent
+  type: inproceedings
+  title: Multi-agent Filtering with Infinitely Nested Beliefs
+  author: [Luke S. Zettlemoyer, Brian Milch, Leslie PackKaelbling]
+  booktitle: Neural Information Processing Systems (NIPS)
+  year: 2008
+  url: http://people.csail.mit.edu/milch/papers/nips08filtering.pdf
+
+- key: varshasvskaya2008automated
+  type: article
+  title: Automated Design of Adaptive Controllers for Modular Robots Using Reinforcement Learning
+  author: [Paulina Varshasvskaya, Leslie Pack Kaelbling, Daniela Rus]
+  journal: International Journal of Robotics Research
+  volume: '27'
+  number: '3'
+  year: 2008
+  url: http://people.csail.mit.edu/lpk/papers/ijrr07preprint.pdf
+
+- key: varshavskaya2008efficient
+  type: inproceedings
+  title: Efficient Distributed Reinforcement Learning Through Agreement
+  author: [Paulina Varshavskaya, Leslie Pack Kaelbling, Daniela Rus]
+  booktitle: 9th International Symposium on Distributed Autonomous Robotic Systems (DARS)
+  year: 2008
+  url: http://people.csail.mit.edu/lpk/papers/dars08.pdf
+
+- key: roy2007efficient
+  type: inproceedings
+  title: Efficient Bayesian Task-level Transfer Learning
+  author: [Daniel M. Roy, Leslie Pack Kaelbling]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  year: 2007
+  url: http://web.mit.edu/droy/www/http://people.csail.mit.edu/lpk/papers/ijcai07-droy.pdf
+
+- key: deshpande2007learning
+  type: inproceedings
+  title: Learning Probabilistic Relational Dynamics for Multiple Tasks
+  author: [Ashwin Deshpande, Brian Milch, Luke S. Zettlemoyer, Leslie Pack Kaelbling]
+  booktitle: Conference on Uncertainty in Artificial Intelligence (UAI)
+  year: 2007
+  url: http://people.csail.mit.edu/lpk/papers/rule-transfer.pdf
+
+- key: zettlemoyer2007logical
+  type: inproceedings
+  title: Logical Particle Filtering
+  author: [Luke S. Zettlemoyer, Hanna M. Pasula, Leslie Pack Kaelbling]
+  booktitle: Dagstuhl Seminar on Probabilistic, Logical and Relational Learning
+  year: 2007
+  url: http://people.csail.mit.edu/lpk/papers/filter.pdf
+
+- key: hernandezgardiol2007actionspace
+  type: inproceedings
+  title: Action-Space Partitioning for Planning
+  author: [Natalia Hernandez-Gardiol, Leslie Pack Kaelbling]
+  booktitle: AAAI
+  pages: 980-986
+  year: 2007
+  url: http://people.csail.mit.edu/lpk/papers/nhg_lpk_aaai07.pdf
+
+- key: glashan2007grasping
+  type: inproceedings
+  title: 'Grasping POMDPs: Theory and Experiments'
+  author: [Ross Glashan, Kaijen Hsiao, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: 'Robotics Science and Systems Manipulation Workshop: Sensing and Adapting to the Real World'
+  year: 2007
+  url: http://www.willowgarage.com/sites/default/files/paper__grasping_pomdps_theory_and_experiments__glashan.pdf
+
+- key: hsiao2007grasping
+  type: inproceedings
+  title: Grasping POMDPs
+  author: [Kaijen Hsiao, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: IEEE International Conference on Robotics and Automation
+  year: 2007
+  url: http://lis.csail.mit.edu/pubs/tlp/pomdp-grasp-final.pdf
+
+- key: marthi2007learning
+  type: inproceedings
+  title: Learning Hierarchical Structure in Policies
+  author: [Bhaskara Marthi, Leslie Kaelbling, Tomas Lozano-Perez]
+  booktitle: NIPS Workshop on Hierarchical Organization of Behavior
+  year: 2007
+  url: http://people.csail.mit.edu/bhaskara/papers/nips07-hlearn.pdf
+
+- key: zettlemoyer2007learning
+  type: article
+  title: Learning Symbolic Models of Stochastic Domains
+  author: [Hanna Pasula andLuke S. Zettlemoyer, Leslie Pack Kaelbling]
+  journal: J. Artif. Intell. Res. (JAIR)
+  volume: '29'
+  year: 2007
+  url: http://people.csail.mit.edu/lpk/papers/zpk.pdf
+
+- key: finney2007predicting
+  type: inproceedings
+  title: Predicting Partial Paths from Planning Problem Parameters
+  author: [Sarah Finney, Leslie Pack Kaelbling, Tomas Lozano-Perez]
+  booktitle: Robotics Science and Systems
+  year: 2007
+  url: http://people.csail.mit.edu/lpk/papers/em_alg_small.pdf
+
+- key: kersting2007reasoning
+  type: inproceedings
+  title: Reasoning about Large Populations with Lifted Probabilistic Inference
+  author: [Kristian Kersting, Brian Milch, Luke Zettlemoyer, Michael Haimes, Leslie Kaelbling]
+  booktitle: NIPS Workshop on Statistical Network Models
+  year: 2007
+  url: http://people.csail.mit.edu/milch/papers/nips07-abstract.pdf
+
+- key: chiu2007virtual
+  type: inproceedings
+  title: Virtual Training for Multi-View Object Class Recognition.
+  author: [Han-Pang Chiu, Leslie Pack Kaelbling andTomas Lozano-Perez]
+  booktitle: CVPR
+  year: 2007
+  url: http://lis.csail.mit.edu/pubs/tlp/ChiuKaelblingTLP-cvpr07.pdf
+
+- key: hong2006protein
+  type: inproceedings
+  title: Protein side-chain placement through MAP estimation andproblem-size reduction
+  author: [Eun-Jong Hong, Tomas Lozano-Perez]
+  booktitle: 6th Workshop on Algorithms in Bioinformatics(WABI)
+  publisher: Springer
+  year: 2006
+  url: http://lis.csail.mit.edu/pubs/tlp/HongLozanoPerez.pdf
+
+- key: hsiao2006imitation
+  type: inproceedings
+  title: Imitation Learning of Whole-Body Grasps
+  author: [Kaijen Hsiao, Tomas Lozano-Perez]
+  booktitle: IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)
+  year: 2006
+  url: http://lis.csail.mit.edu/pubs/tlp/IROSpaper.pdf
+
+- key: chiu2006matching
+  type: inproceedings
+  title: Matching Interest Points Using Affine Invariant Concentric Circles
+  author: [Han-Pang Chiu, Tomas Lozano-Perez]
+  booktitle: Intl. Conference on Pattern Recognition (ICPR)
+  pages: 167-170
+  year: 2006
+  url: http://lis.csail.mit.edu/pubs/tlp/Matching-ICPR06.pdf
+
+- key: zettlemoyer2005learning
+  type: inproceedings
+  title: Learning Planning Rules in Stochastic Worlds
+  author: [L. Zettlemoyer, H. Pasula, L. Kaelbling]
+  booktitle: AAAI
+  year: 2005
+  url: http://people.csail.mit.edu/lpk/papers/2005/zpk-aaai05.pdf
+
+- key: rosenstein2005transfer
+  type: inproceedings
+  title: Transfer Learning with an Ensemble of Background Tasks
+  author: [Michael Rosenstein, Zvika Marx, Tom Dietterichand Leslie Pack Kaelbling]
+  booktitle: NIPS Workshop on Inductive Transfer
+  year: 2005
+  url: http://people.csail.mit.edu/lpk/papers/MarxRosensteinKaelblingDietterich-final.pdf
+
+- key: chang2004all
+  type: inproceedings
+  title: 'All learning is Local: Multi-agent Learning in Global Reward Games'
+  author: [Yu-Han Chang, Tracey Ho, Leslie Pack Kaelbling]
+  editor: Sebastian Thrun and Lawrence Saul and Bernhard Schölkopf
+  booktitle: Advances in Neural Information Processing Systems 16
+  publisher: MIT Press
+  address: Cambridge, MA
+  year: 2004
+  url: http://people.csail.mit.edu/lpk/papers/chang-nips03.pdf
+
+- key: pasula2004learning
+  type: inproceedings
+  title: Learning Probabilistic Relational Planning Rules
+  author: [H. Pasula, L. Zettlemoyer, L. Kaelbling]
+  booktitle: International Conference on Automated Planning and Scheduling (ICAPS)
+  year: 2004
+  url: http://people.csail.mit.edu/lpk/papers/pasula-icaps04.pdf
+
+- key: theocharous2004approximate
+  type: inproceedings
+  title: Approximate Planning in POMDPs with Macro-Actions
+  author: [Georgios Theocharous, Leslie Pack Kaelbling]
+  booktitle: Advances in Neural Information Processing Systems 16 (NIPS03)
+  year: 2004
+  url: http://people.csail.mit.edu/lpk/papers/theochar-nips03.pdf
+
+- key: gardiol2004envelopebased
+  type: inproceedings
+  title: Envelope-based Planning in Relational MDPs
+  author: [Natalia H. Gardiol, Leslie Pack Kaelbling]
+  booktitle: NIPS
+  volume: '16'
+  year: 2004
+  url: http://people.csail.mit.edu/lpk/papers/nhg_lpk_nips03.pdf
+
+- key: fajen2003dynamical
+  type: article
+  title: A dynamical model of visually-guided steering, obstacle avoidance, and route selection
+  author: [B. R. Fajen, W. H. Warren, S. Temizer, L. P. Kaelbling]
+  journal: International Journal of Computer Vision
+  year: 2003
+  url: http://people.csail.mit.edu/lpk/papers/fajen-warren-temizer-lpk.pdf
+
+- key: rienstra2002de
+  type: article
+  title: De novo determination of peptide structure with solid-state magic-angle spinning NMR spectroscopy.
+  author: [C. M. Rienstra, L. Tucker-Kellogg, C. P. Jaroniec, M. Hohwy, B. Reif, M. T. McMahon, B. Tidor, T. Lozano-Perez, R. G. Griffin]
+  journal: Proceedings of the National Academy of Sciences, USA
+  volume: '99'
+  number: '16'
+  pages: 10260–5
+  year: 2002
+  url: http://lis.csail.mit.edu/pubs/tlp/fmlf-pnas.pdf
+
+- key: shatkay2002learning
+  type: article
+  title: 'Learning Geometrically-Constrained Hidden Markov Models forRobot Navigation: Bridging theGeometrical-Topological Gap'
+  author: [Hagit Shatkay, Leslie Pack Kaelbling]
+  journal: Journal of Artificial Intelligence Research
+  year: 2002
+  url: http://arxiv.org/pdf/1106.0680.pdf
+
+- key: lane2002nearly
+  type: inproceedings
+  title: Nearly deterministic abstractions of Markov decision processes
+  author: [Terran Lane, Leslie Pack Kaelbling]
+  booktitle: 18th National Conference on Artificial Intelligence
+  year: 2002
+  url: http://people.csail.mit.edu/lpk/papers/2002/LaneKaelbling-AAAI2002.pdf
+
+- key: steinkraus2001visually
+  type: inproceedings
+  title: Visually Guided Topological Mapping for Mobile Robots
+  author: [Kurt A. Steinkraus, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the SPIE
+  volume: '4573'
+  year: 2001
+
+- key: peshkin2000learning
+  type: inproceedings
+  title: Learning to Cooperate via Policy Search
+  author: [Leonid Peshkin, Kee-Eung Kim, Nicolas Meuleau, Leslie Pack Kaelbling]
+  booktitle: Sixteenth Conference on Uncertainty in Artificial Intelligence (UAI-2000)
+  year: 2000
+  url: http://people.csail.mit.edu/lpk/papers/peshkinuai00.ps
+
+- key: smart2000practical
+  type: inproceedings
+  title: Practical Reinforcement Learning
+  author: [William D. Smart, Leslie Pack Kaelbling]
+  booktitle: International Conference on Machine Learning (ICML)
+  address: Palo Alto, California
+  year: 2000
+  url: http://people.csail.mit.edu/lpk/papers/smarticml00.ps
+
+- key: ortiz2000sampling
+  type: inproceedings
+  title: Sampling Methods for Action Selection in Influence Diagrams
+  author: [Luis E. Ortiz, Leslie Pack Kaelbling]
+  booktitle: AAAI/IAAI
+  pages: 378-385
+  year: 2000
+  url: http://people.csail.mit.edu/lpk/papers/ortizaaai00.ps
+
+- key: yang2000image
+  type: inproceedings
+  title: Image Database Retrieval With Multiple-Instance Learning Techniques
+  author: [C. Yang, T. Lozano-Perez]
+  booktitle: Intl. Conference on Data Engineering
+  year: 2000
+  url: http://lis.csail.mit.edu/pubs/tlp/image-database-yang.pdf
+
+- key: meuleau1999learning
+  type: inproceedings
+  title: Learning Finite-State Controllers for Partially Observable Environments.
+  author: [Nicolas Meuleau, Leonid Peshkin, Kee-Eung Kim, Leslie Pack Kaelbling]
+  booktitle: UAI
+  pages: 427-436
+  year: 1999
+  url: http://people.csail.mit.edu/lpk/papers/ml99.ps
+
+- key: moore1999multivaluefunctions
+  type: inproceedings
+  title: 'Multi-Value-Functions: Efficient Automatic Action Hierarchies for Multiple Goal MDPs'
+  author: [Andrew Moore, Leemon Baird, Leslie Pack Kaelbling]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  address: Stockholm, Sweden
+  year: 1999
+  url: http://www.autonlab.org/autonweb/14681/version/3/part/5/data/moore-multivalue.pdf
+
+- key: meuleau1999solving
+  type: inproceedings
+  title: Solving POMDPs by Searching the Space of Finite Policies
+  author: [Nicolas Meuleau, Kee-Eung Kim, Leslie Pack Kaelbling, Anthony R. Cassandra]
+  booktitle: UAI
+  year: 1999
+  url: http://people.csail.mit.edu/lpk/papers/uai992.ps
+
+- key: lakshmiratan1999framework
+  type: inproceedings
+  title: A Framework for Learning Query Concepts in Image Classification
+  author: [A. Lakshmi-Ratan, O. Maron, W. E. L. Grimson, T. Lozano-Perez]
+  booktitle: Computer Vision and Pattern Recognition Conference
+  year: 1999
+  url: http://lis.csail.mit.edu/pubs/tlp/image-database-ratan-maron.pdf
+
+- key: maron1998framework
+  type: inproceedings
+  title: A Framework for Multiple Instance Learning
+  author: [Oded Maron, Tomas Lozano-Perez]
+  booktitle: Advances in Neural Information Processing Systems 10
+  publisher: MIT Press
+  address: Cambridge, MA
+  year: 1998
+  url: http://lis.csail.mit.edu/pubs/tlp/maron98framework.pdf
+
+- key: wang1998ambipack
+  type: article
+  title: 'AmbiPack: a systematic algorithm for packing of macromolecular structures withambiguous distance constraints'
+  author: [C.S. Wang, T. Lozano-Perez, B. Tidor]
+  journal: Proteins
+  volume: '32'
+  number: '1'
+  pages: 26–42
+  year: 1998
+  url: http://lis.csail.mit.edu/pubs/tlp/ambipack.pdf
+
+- key: shatkay1998heading
+  type: inproceedings
+  title: Heading in the Right Direction
+  author: [Hagit Shatkay, Leslie Pack Kaelbling]
+  booktitle: International Conference on Machine Learning (ICML)
+  address: Madison, Wisconsin
+  year: 1998
+  url: http://people.csail.mit.edu/lpk/papers/heading.ps
+
+- key: hauskrecht1998hierarchical
+  type: inproceedings
+  title: Hierarchical Solution of Markov Decision Processes Using MacroActions
+  author: [Milos Hauskrecht, Nicolas Meuleau, Craig Boutilier, Leslie Pack Kaelbling, Thomas Dean]
+  booktitle: Conference on Uncertainty in Artificial Intelligence (UAI)
+  address: Madison, Wisconsin
+  year: 1998
+  url: http://people.csail.mit.edu/lpk/papers/macros.ps
+
+- key: kaelbling1998planning
+  type: article
+  title: Planning and Acting in Partially Observable Stochastic Domains
+  author: [Leslie Pack Kaelbling, Michael L. Littman, Anthony R. Cassandra]
+  journal: Artificial Intelligence
+  volume: '101'
+  year: 1998
+  url: http://people.csail.mit.edu/lpk/papers/aij98-pomdp.pdf
+
+- key: meuleau1998solving
+  type: inproceedings
+  title: Solving Very Large Weakly Coupled Markov Decision Processes
+  author: [Nicolas Meuleau, Milos Hauskrecht, Kee-Eung Kim, Leonid Peshkin, Leslie Pack Kaelbling, Thomas Dean, Craig Boutilier]
+  booktitle: National Conference on Artificial Intelligence (AAAI)
+  publisher: AAAI Press
+  address: Madison, Wisconsin
+  year: 1998
+  url: http://people.csail.mit.edu/lpk/papers/mtd.ps
+
+- key: shatkay1997learning
+  type: inproceedings
+  title: Learning Topological Maps from Weak Odometric Information
+  author: [Hagit Shatkay, Leslie Pack Kaelbling]
+  booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
+  address: Nagoya, Japan
+  year: 1997
+  url: http://people.csail.mit.edu/lpk/papers/ijcai97.ps
+
+- key: dietterich1997solving
+  type: article
+  title: Solving the multiple instance problem with axis-parallel rectangles
+  author: [Thomas G. Dietterich, Richard H. Lathrop, Tomas Lozano-Perez]
+  journal: Artificial Intelligence
+  volume: '89'
+  number: '1'
+  pages: 31–71
+  year: 1997
+  url: http://lis.csail.mit.edu/pubs/tlp/multiple-instance-aij.pdf
+
+- key: kaelbling1996reinforcement
+  type: article
+  title: 'Reinforcement Learning: A Survey'
+  author: [Leslie Pack Kaelbling, Michael L. Littman, Andrew P. Moore]
+  journal: Journal of Artificial Intelligence Research
+  volume: '4'
+  pages: 237-285
+  year: 1996
+  url: http://people.csail.mit.edu/lpk/papers/rl-survey.ps
+
+- key: cassandra1996acting
+  type: inproceedings
+  title: 'Acting under uncertainty: Discrete Bayesian models for mobile robot navigation'
+  author: [Anthony R. Cassandra, Leslie Pack Kaelbling, James A. Kurien]
+  booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+  year: 1996
+  url: http://people.csail.mit.edu/lpk/papers/iros96.ps
+
+- key: grimson1996automatic
+  type: article
+  title: An Automatic Registration Method for Frameless Stereotaxy, ImageGuided Surgery, and Enhanced Reality Visualization
+  author: [W. Eric L. Grimson, Tomas Lozano-Perez, William M. Wells III, Gil J. Ettinger, Steve J. White, Ron Kikinis]
+  journal: IEEE Transaction on Medical Imaging
+  volume: '15'
+  number: '2'
+  pages: 129–140
+  year: 1996
+  url: http://lis.csail.mit.edu/pubs/tlp/frameless-stereotaxy-ieee-tami.pdf
+
+- key: littman1995complexity
+  type: inproceedings
+  title: On the Complexity of Solving Markov Decision Problems
+  author: [Michael L. Littman, Thomas L. Dean, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Eleventh International Conference on Uncertainty inArtificial Intelligence
+  year: 1995
+  url: http://people.csail.mit.edu/lpk/papers/uai95.ps
+
+- key: rosenschein1995situated
+  type: article
+  title: A Situated View of Representation and Control
+  author: [Stanley J. Rosenschein, Leslie Pack Kaelbling]
+  journal: Artificial Intelligence
+  volume: '72'
+  number: '2'
+  year: 1995
+  url: http://people.csail.mit.edu/lpk/papers/sitaut.ps
+
+- key: littman1995efficient
+  type: techreport
+  title: Efficient dynamic-programming updates in partially observable Markov decision processes
+  author: [Michael L. Littman, Anthony R. Cassandra, Leslie Pack Kaelbling]
+  school: Brown University
+  address: Providence, Rhode Island
+  year: 1995
+  url: http://cs.brown.edu/research/pubs/techreports/reports/CS-95-19.html
+
+- key: duchon1995ecological
+  type: inproceedings
+  title: 'Ecological Robotics: Controlling Behavior with Optical Flow'
+  author: [Andrew Duchon, William Warren, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Conference of the Cognitive Science Society
+  year: 1995
+  url: http://people.csail.mit.edu/lpk/papers/cogsci95.ps
+
+- key: basye1995learning
+  type: article
+  title: 'Learning Dynamics: System Identification for Perceptually Challenged Agents'
+  author: [Kenneth Basye, Thomas Dean, Leslie Pack Kaelbling]
+  journal: Artificial Intelligence
+  volume: '72'
+  number: '1'
+  year: 1995
+  url: http://people.csail.mit.edu/lpk/papers/maplearn.ps
+
+- key: littman1995learning
+  type: inproceedings
+  title: 'Learning Policies for Partially Observable Environments: Scaling Up'
+  author: [Michael L. Littman, Anthony R. Cassandra, Leslie Pack Kaelbling]
+  booktitle: International Conference on Machine Learning (ICML)
+  publisher: Morgan Kaufmann
+  year: 1995
+  url: http://people.csail.mit.edu/lpk/papers/ml95.ps
+
+- key: dean1995planning
+  type: article
+  title: Planning Under Time Constraints in Stochastic Domains
+  author: [Thomas Dean, Leslie Pack Kaelbling, Jak Kirman, Ann Nicholson]
+  journal: Artificial Intelligence
+  volume: '76'
+  year: 1995
+  url: http://lis.csail.mit.edu/pubs/lpk/plexus.pdf
+
+- key: wilson1995twohanded
+  type: article
+  title: Two-Handed Assembly Sequencing
+  author: [R. H. Wilson, L. Kavraki, T. Lozano-Perez, J. C. Latombe]
+  journal: International Journal of Robotics Research
+  volume: '14'
+  number: '4'
+  pages: 335–350
+  year: 1995
+  url: http://lis.csail.mit.edu/pubs/tlp/two-handed-sequencing.pdf
+
+- key: cassandra1994acting
+  type: inproceedings
+  title: Acting Optimally in Partially Observable Stochastic Domains
+  author: [Anthony R. Cassandra, Leslie Pack Kaelbling, Michael L. Littman]
+  booktitle: Proceedings of the Twelfth National Conference on Artificial Intelligence
+  address: Seattle, WA
+  year: 1994
+  note: AAAI Classic Paper Award, 2013
+  url: http://people.csail.mit.edu/lpk/papers/aaai94.ps
+
+- key: cassandra1994algorithms
+  type: techreport
+  title: Algorithms for Partially Observable Markov Decision Processes
+  author: [Anthony R. Cassandra, Leslie Pack Kaelbling, Michael L. Littman]
+  school: Brown University
+  address: Providence, Rhode Island
+  year: 1994
+
+- key: kaelbling1994associative
+  type: article
+  title: 'Associative Reinforcement Learning: A Generate and Test Algorithm'
+  author: [Leslie Pack Kaelbling]
+  journal: Machine Learning
+  volume: '15'
+  year: 1994
+  url: http://people.csail.mit.edu/lpk/papers/general2.ps
+
+- key: kaelbling1994associativeb
+  type: article
+  title: 'Associative Reinforcement Learning: Functions in k-DNF'
+  author: [Leslie Pack Kaelbling]
+  journal: Machine Learning
+  volume: '15'
+  year: 1994
+  url: http://people.csail.mit.edu/lpk/papers/general1.ps
+
+- key: kaelbling1994learning
+  type: mastersthesis
+  title: Learning Hierarchies in Stochastic Domains
+  author: [Leslie Pack Kaelbling, Ronny Ashar]
+  editor: Russell Greiner
+  booktitle: Computational Learning Theory and Natural Learning Systems
+  publisher: MIT Press
+  year: 1994
+  url: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.407.6116&rep=rep1&type=pdf
+
+- key: nicholson1994approximate
+  type: inproceedings
+  title: Toward Approximate Planning in Very Large Stochastic Domains
+  author: [Ann Nicholson, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the AAAI Spring Symposium on Decision Theoretic Planning
+  address: Stanford, California
+  year: 1994
+  url: https://www.aaai.org/Papers/Symposia/Spring/1994/SS-94-06/SS94-06-028.pdf
+
+- key: grimson1994automatic
+  type: inproceedings
+  title: An Automatic Registration Methodfor Frameless Stereotaxy, Image Guided Surgery, and Enhanced RealityVisualization
+  author: [W. E. L. Grimson, T. Lozano-Perez, W.M. Wells III, G.J. Ettinger andS.J. White, R. Kikinis]
+  booktitle: Computer Vision and Pattern RecognitionConference
+  year: 1994
+  url: http://lis.csail.mit.edu/pubs/tlp/frameless-stereotaxy-cvpr.pdf
+
+- key: welgrimson1993automatic
+  type: inproceedings
+  title: An Automatic Tube Inspection System that Finds Cylinders inRange Data
+  author: [W.E.L.Grimson, T. Lozano-Perez, N. Noble, S.J. White]
+  booktitle: Computer Vision and Pattern Recognition Conference (CVPR)
+  pages: 446–452
+  year: 1993
+  url: http://lis.csail.mit.edu/pubs/tlp/tube-inspection.pdf
+
+- key: dean1993deliberation
+  type: inproceedings
+  title: Deliberation Scheduling for Time-Critical Sequential Decision Making
+  author: [Thomas Dean, Leslie Pack Kaelbling, Jak Kirman, Ann Nicholson]
+  booktitle: Proceedings of the Ninth International Conference on Uncertainty in Artificial Intelligence
+  address: Washington, DC
+  year: 1993
+  url: http://lis.csail.mit.edu/pubs/lpk/deanUAI93.pdf
+
+- key: kaelbling1993hierarchical
+  type: inproceedings
+  title: 'Hierarchical Learning in Stochastic Domains: Preliminary Results'
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Tenth International Conference on Machine Learning
+  publisher: Morgan Kaufmann
+  address: Amherst, Massachusetts
+  year: 1993
+  url: http://people.csail.mit.edu/lpk/papers/ml93.ps
+
+- key: kaelbling1993learning
+  type: inproceedings
+  title: Learning to Achieve Goals
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Thirteenth International Joint Conference on Artificial Intelligence
+  publisher: Morgan Kaufmann
+  address: Chambery, France
+  year: 1993
+  url: http://people.csail.mit.edu/lpk/papers/ijcai93.ps
+
+- key: dean1993planning
+  type: inproceedings
+  title: Planning with Deadlines in Stochastic Domains
+  author: [Thomas Dean, Leslie Pack Kaelbling, Jak Kirman, Ann Nicholson]
+  booktitle: Proceedings of the Eleventh National Conference on Artificial Intelligence
+  address: Washington, DC
+  year: 1993
+  url: http://lis.csail.mit.edu/pubs/lpk/deanAAAI93.pdf
+
+- key: wilson1993assembly
+  type: inproceedings
+  title: Assembly Sequencing for Arbitrary Motions
+  author: [Tomas Lozano-Perez andRandall H. Wilson]
+  booktitle: IEEE International Conference on Robotics and Automation
+  pages: 527-532
+  year: 1993
+  url: http://lis.csail.mit.edu/pubs/tlp/assembly-sequencing.pdf
+
+- key: dietterich1993comparison
+  type: inproceedings
+  title: A Comparison of Dynamic Reposing and TangentDistance for Drug Activity Prediction
+  author: [T. G. Dietterich, A. Jain, R. H. Lathrop, T. Lozano-Perez]
+  booktitle: Neural Information Processing Systems (NIPS) Conference
+  year: 1993
+  url: http://lis.csail.mit.edu/pubs/tlp/nips-dynamic-reposing.pdf
+
+- key: lozanoperez1992handey
+  type: book
+  title: 'HANDEY: A Robot Task Planner'
+  author: [Tomas Lozano-Perez, Joseph L. Jones, Emanuel Mazer, Patrick A. O'Donnell]
+  publisher: MIT Press
+  year: 1992
+  url: http://people.csail.mit.edu/tlp/publications/Handey.pdf
+
+- key: kaelbling1991compiling
+  type: techreport
+  title: Compiling Operator Descriptions into Reactive Strategies using Goal Regression
+  author: [Leslie Pack Kaelbling]
+  school: Teleos Research
+  address: Palo Alto, California
+  year: 1991
+
+- key: kaelbling1991foundations
+  type: article
+  title: Foundations of Learning in Autonomous Agents
+  author: [Leslie Pack Kaelbling]
+  journal: Robotics and Autonomous Systems
+  volume: '8'
+  number: '1'
+  year: 1991
+  note: Also published in Toward Learning Robots, W. Van de Velde, Ed., MIT Press, 1991
+
+- key: chapman1991input
+  type: inproceedings
+  title: 'Input Generalization in Delayed Reinforcement Learning: An Algorithm and Performance Comparisons'
+  author: [David Chapman, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the International Joint Conference on Artificial Intelligence
+  address: Sydney, Australia
+  year: 1991
+  url: http://ijcai.org/Past%20Proceedings/IJCAI-91-VOL2/PDF/018.pdf
+
+- key: lozanoperez1991parallel
+  type: inproceedings
+  title: Parallel Robot Motion Planning
+  author: [T. Lozano-Perez, P. A. O'Donnell]
+  booktitle: Proceedings of the IEEE International Conference on Robotics and Automation
+  year: 1991
+  url: http://lis.csail.mit.edu/pubs/tlp/parallel-motion-planning.pdf
+
+- key: kaelbling1990action
+  type: article
+  title: Action and Planning in Embedded Agents
+  author: [Leslie Pack Kaelbling, Stanley J. Rosenschein]
+  journal: Robotics and Autonomous Systems
+  volume: '6'
+  number: '1'
+  pages: 35-48
+  year: 1990
+  note: 'Also published in Designing Autonomous Agents: Theory and Practice from Biology to Engineering and Back, Pattie Maes, editor, The MIT Press/Elsevier, 1991.'
+  url: https://cse-robotics.engr.tamu.edu/dshell/cs631/papers/kaelbling90action.pdf
+
+- key: drummond1990integrated
+  type: inproceedings
+  title: 'Integrated Agent Architectures: Benchmark Tasks and Evaluation Metrics'
+  author: [Mark E. Drummond, Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Workshop on Innovative Approaches to Planning, Scheduling, and Control
+  pages: 408-411
+  publisher: Morgan Kaufmann
+  address: San Diego, California
+  year: 1990
+
+- key: kaelbling1990learning
+  type: inproceedings
+  title: Learning Functions in k-DNF from Reinforcement
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Seventh International Conference on Machine Learning
+  pages: 162-169
+  publisher: Morgan Kaufmann
+  address: Austin, Texas
+  year: 1990
+
+- key: kaelbling1990learningb
+  type: phdthesis
+  title: Learning in Embedded Systems
+  author: [Leslie Pack Kaelbling]
+  school: Stanford University
+  address: Stanford, California
+  year: 1990
+  note: Appeared as Learning in Embedded Systems, MIT Press
+  url: http://mitpress.mit.edu/book-home.tcl?isbn=0262111748
+
+- key: kaelbling1990specifying
+  type: inproceedings
+  title: Specifying Complex Behavior for Computer Agents
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Workshop on Innovative Approaches to Planning, Scheduling, and Control
+  pages: 433-438
+  publisher: Morgan Kaufmann
+  address: San Diego, California
+  year: 1990
+
+- key: pollard1990grasp
+  type: inproceedings
+  title: Grasp Stability and Feasibility for an Arm with and Articulated Hand
+  author: [Nancy S. Pollard, Tomas Lozano-Perez]
+  booktitle: IEEE International Conference on Robotics and Automation (ICRA)
+  pages: 1581–1587
+  year: 1990
+  url: http://lis.csail.mit.edu/pubs/tlp/grasp-stability-pollard.pdf
+
+- key: jones1990planning
+  type: inproceedings
+  title: Planning Two-Fingered Grasps for Pick-and-Place Operations on Polyhedra
+  author: [Joseph L. Jones, Tomas Lozano-Perez]
+  booktitle: IEEE International Conference on Robotics and Automation
+  pages: 683–687.
+  year: 1990
+  url: http://lis.csail.mit.edu/pubs/tlp/two-finger-grasps-jones.pdf
+
+- key: kaelbling1989formal
+  type: inproceedings
+  title: A Formal Framework for Learning in Embedded Systems
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Sixth International Workshop on Machine Learning
+  pages: 350-353
+  publisher: Morgan Kaufmann
+  address: Ithaca, New York
+  year: 1989
+  url: https://dl.acm.org/doi/10.5555/102118.102214
+
+- key: rosenschein1989integrating
+  type: inproceedings
+  title: Integrating Planning and Reactive Control
+  author: [Stanley J. Rosenschein, Leslie Pack Kaelbling]
+  booktitle: Proceedings of NASA/JPL Conference on Space Telerobotics
+  address: Pasadena, California
+  year: 1989
+  url: https://ntrs.nasa.gov/api/citations/19900019761/downloads/19900019761.pdf
+
+- key: lozanoperez1989tasklevel
+  type: article
+  title: Task-Level Planning of Pick-and-Place Robot Motions
+  author: [Tomas Lozano-Perez, Joseph Jones, Emmanuel Mazer, Patrick A. O'Donnell]
+  journal: IEEE Computer
+  volume: '22'
+  pages: 21–29
+  year: 1989
+  url: http://lis.csail.mit.edu/pubs/tlp/task-level-planning-ieee-computer.pdf
+
+- key: caine1989assembly
+  type: inproceedings
+  title: Assembly Strategies for Chamferless Parts
+  author: [Michael E Caine, Tomas Lozano-Perez, Warren P. Seering]
+  booktitle: IEEE Robotics and Automation Conference (ICRA)
+  pages: 472–477
+  year: 1989
+  url: http://lis.csail.mit.edu/pubs/tlp/assembly-strategies-caine.pdf
+
+- key: odonnell1989deadlockfree
+  type: inproceedings
+  title: Deadlock-Free and Collision-Free Coordination of Two Robot Manipulators
+  author: [Patrick A. O'Donnell, Tomas Lozano-Perez]
+  booktitle: IEEE Robotics and Automation Conference
+  pages: 484–489
+  year: 1989
+  url: http://lis.csail.mit.edu/pubs/tlp/coordination-o-donnell.pdf
+
+- key: kaelbling1988goals
+  type: inproceedings
+  title: Goals as Parallel Program Specifications
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the Seventh National Conference on Artificial Intelligence
+  address: Minneapolis-St. Paul, Minnesota
+  year: 1988
+  url: https://www.aaai.org/Papers/AAAI/1988/AAAI88-011.pdf
+
+- key: kaelbling1988rex
+  type: techreport
+  title: Rex Programmer’s Manual
+  author: [Leslie Pack Kaelbling, Nathan J. Wilson]
+  school: Artificial Intelligence Center, SRI International
+  number: '381'
+  address: Menlo Park, California
+  year: 1988
+  url: https://apps.dtic.mil/sti/pdfs/ADA461661.pdf
+
+- key: lozanoperez1987simple
+  type: article
+  title: A Simple Motion Planning Algorithm for General Robot Manipulators
+  author: [Tomas Lozano-Perez]
+  journal: IEEE Journal of Robotics and Automation
+  volume: '3'
+  number: '3'
+  pages: 224–238
+  year: 1987
+  url: http://lis.csail.mit.edu/pubs/tlp/simple-motion-planning.pdf
+
+- key: kaelbling1987architecture
+  type: techreport
+  title: An Architecture for Intelligent Reactive Systems
+  author: [Leslie Pack Kaelbling]
+  editor: Michael P. Georgeff and Amy L. Lansky
+  booktitle: Reasoning About Actions and Plans
+  pages: 395-410
+  publisher: Morgan Kaufmann
+  year: 1987
+  note: Reprinted in Readings in Planning, J. Allen, J. Hendler, and A. Tate, eds., Morgan Kaufmann, 1990
+  url: https://www.sri.com/wp-content/uploads/pdf/565.pdf
+
+- key: kaelbling1987learning
+  type: techreport
+  title: Learning as an Increase in Knowledge
+  author: [Leslie Pack Kaelbling]
+  school: Center for the Study of Language and Information
+  address: Stanford, California
+  year: 1987
+
+- key: grimson1987localizing
+  type: article
+  title: Localizing Overlapping Parts by Searching the Interpretation Tree
+  author: [W.E.L. Grimson, T. Lozano-Perez]
+  journal: PAMI
+  volume: '9'
+  number: '4'
+  pages: 469-482
+  month: July
+  year: 1987
+  url: http://lis.csail.mit.edu/pubs/tlp/interpretation_tree.pdf
+
+- key: kaelbling1987rex
+  type: inproceedings
+  title: 'Rex: A Symbolic Language for the Design and Parallel Implementation of Embedded Systems'
+  author: [Leslie Pack Kaelbling]
+  booktitle: Proceedings of the AIAA Conference on Computers in Aerospace
+  address: Wakefield, Massachusetts
+  year: 1987
+  url: https://arc.aiaa.org/doi/abs/10.2514/6.1987-2822
+
+- key: lozanoperez1987finding
+  type: inproceedings
+  title: Finding Cylinders in Range Data
+  author: [T. Lozano-Perez, W. E. L. Grimson, S. J. White]
+  booktitle: International Conference on Robotics and Automation
+  pages: 202–207
+  year: 1987
+  url: http://lis.csail.mit.edu/pubs/tlp/finding-cylinders-icra-87.pdf
+
+- key: tournassoud1987regrasping
+  type: inproceedings
+  title: Regrasping
+  author: [P. Tournassoud, T. Lozano-Perez, E. Mazer]
+  booktitle: IEEE InternationalConference on Robotics and Automation
+  pages: 1924–1928
+  year: 1987
+  url: http://lis.csail.mit.edu/pubs/tlp/regrasping-icra-87.pdf
+
+- key: lozanoperez1987handey
+  type: inproceedings
+  title: 'HANDEY: A Robot System that Recognizes, Plans, and Manipulates'
+  author: [T. Lozano-Perez, J. L. Jones, E. Mazer, P. A. O'Donnell, W. E. L. Grimson andP. Tournassoud, A. Lanusse]
+  booktitle: IEEE International Conference on Robotics andAutomation
+  pages: 843=-849
+  year: 1987
+  url: http://lis.csail.mit.edu/pubs/tlp/handey-icra-87.pdf
+
+- key: erdmann1986multiple
+  type: article
+  title: On Multiple Moving Objects
+  author: [Michael Erdmann, Tomas Lozano-Perez]
+  journal: Algorithmica
+  volume: '2'
+  pages: 1419–1424
+  year: 1986
+  url: http://lis.csail.mit.edu/pubs/tlp/multiple-moving.pdf
+
+- key: rosenschein1986synthesis
+  type: incollection
+  title: The Synthesis of Digital Machines with Provable Epistemic Properties
+  author: [Stanley J. Rosenschein, Leslie Pack Kaelbling]
+  editor: Joseph Halpern
+  booktitle: Proceedings of the Conference on Theoretical Aspects of Reasoning About Knowledge
+  pages: 83-98
+  publisher: Morgan Kaufmann
+  year: 1986
+  url: http://tark.org/proceedings/tark_mar19_86/p83-rosenschein.pdf
+
+- key: lozanoperez1986offline
+  type: inproceedings
+  title: Off-Line Planning for On-Line Object Localization
+  author: [T. Lozano-Perez, W.E.L.Grimson]
+  booktitle: ACM/IEEE Computer Society Joint Computer Conference
+  pages: 127–132
+  year: 1986
+  url: http://lis.csail.mit.edu/pubs/tlp/off-line-plan-for-obj-localization.pdf
+
+- key: grimson1985recognition
+  type: inproceedings
+  title: Recognition and Localization of Overlapping Parts in Two and Three Dimensions
+  author: [W. E. L. Grimson, T. Lozano-Perez]
+  booktitle: IEEE International Conference on Robotics and Automation
+  pages: 61–66
+  year: 1985
+  url: http://lis.csail.mit.edu/pubs/tlp/recognition-icra-85.pdf
+
+- key: grimson1984modelbased
+  type: article
+  title: Model-Based Recognition and Localization from Sparse Range or Tactile Data
+  author: [W.E.L. Grimson, T. Lozano-Perez]
+  journal: International Journal of Robotics Research
+  volume: '3'
+  number: '3'
+  pages: 3-35
+  year: 1984
+  url: http://lis.csail.mit.edu/pubs/tlp/AIM-738.pdf
+
+- key: lozanoperez1984automatic
+  type: article
+  title: Automatic Synthesis of Fine-Motion Strategies for Robots
+  author: [Tomas Lozano-Perez, Matthew Mason, Russell H. Taylor]
+  journal: International Journal of Robotics Research
+  volume: '3'
+  number: '1'
+  year: 1984
+  url: http://dspace.mit.edu/handle/1721.1/5640
+
+- key: gaston1984tactile
+  type: article
+  title: 'Tactile Recognition and Localization Using Object Models: The Case of Polyhedra on a Plane'
+  author: [P. C. Gaston, T. Lozano-Perez]
+  journal: IEEE Trans. on PAMI
+  volume: '6'
+  pages: 257–265
+  year: 1984
+  url: http://lis.csail.mit.edu/pubs/tlp/AIM-705.pdf
+
+- key: grimson1984modelbasedb
+  type: inproceedings
+  title: Model-Based Recognition and Localization from Tactile Data
+  author: [W. E. L. Grimson, T. Lozano-Perez]
+  booktitle: IEEE International Conference on Robotics and Automation
+  pages: 61–66
+  year: 1984
+  url: http://lis.csail.mit.edu/pubs/tlp/recognition-icra-84.pdf
+
+- key: lozanoperez1983robot
+  type: article
+  title: Robot Programming
+  author: [Tomas Lozano-Perez]
+  journal: Proceedings of the IEEE
+  volume: '71'
+  pages: 821–841
+  year: 1983
+  url: http://lis.csail.mit.edu/pubs/tlp/robot-programming.pdf
+
+- key: brooks1983subdivision
+  type: inproceedings
+  title: A Subdivision Algorithm in Configuration Space for Findpath with Rotation
+  author: [R. A. Brooks, T. Lozano-Perez]
+  booktitle: Eighth Int. Joint Conf. on Artificial Intelligence
+  year: 1983
+  url: http://lis.csail.mit.edu/pubs/tlp/AIM-684.pdf
+
+- key: lozanoperez1983spatial
+  type: article
+  title: 'Spatial Planning: A Configuration Space Approach'
+  author: [Tomas Lozano-Perez]
+  journal: IEEE Transactions on Computers
+  volume: '32'
+  pages: 108–120
+  year: 1983
+  url: http://lis.csail.mit.edu/pubs/tlp/spatial-planning.pdf
+
+- key: lozanoperez1981automatic
+  type: article
+  title: Automatic planning of manipulator transfer movements
+  author: [Tomas Lozano-Perez]
+  journal: IEEE Transactions on Systems, Man, and Cybernetics
+  volume: '11'
+  pages: 681–698
+  year: 1981
+  url: http://lis.csail.mit.edu/pubs/tlp/automatic-planning-transfer-motions.pdf
+
+- key: wesley1980geometric
+  type: article
+  title: A Geometric Modeling System for Automated Mechanical Assembly
+  author: [M. A. Wesley, T. Lozano-Perez, L. I. Lieberman, M. A. Lavin, D. D. Grossman]
+  journal: IBM Journal of Rsearch and Development
+  volume: '24'
+  number: '1'
+  pages: 64–74
+  year: 1980
+  url: http://lis.csail.mit.edu/pubs/tlp/ibm-journal-r&d-1980.pdf
+
+- key: lozanoperez1979algorithm
+  type: article
+  title: An Algorithm for Planning Collison-Free Paths Among Polyhedral Obstacles
+  author: [Tomas Lozano-Perez, M. A. Wesley]
+  journal: Communications of the ACM
+  volume: '22'
+  pages: 560–570
+  year: 1979
+  url: http://lis.csail.mit.edu/pubs/tlp/collision-free-planning-cacm.pdf
+
+- key: lozanoperez1977parsing
+  type: article
+  title: Parsing Intensity Profiles
+  author: [Tomas Lozano-Perez]
+  journal: Computer Graphics and Image Processing
+  volume: '6'
+  number: '1'
+  pages: 43–60
+  year: 1977
+  url: http://dspace.mit.edu/bitstream/handle/1721.1/5796/AIM-329.pdf
+
+- key: rothnie1974attribute
+  type: article
+  title: Attribute Based File Organization in a Paged Memory Environment
+  author: [James B. Rothnie, Tomas Lozano]
+  journal: Communications of the ACM
+  volume: '17'
+  pages: 63–69
+  year: 1974
+  url: http://lis.csail.mit.edu/pubs/tlp/rothnie-lozano.pdf

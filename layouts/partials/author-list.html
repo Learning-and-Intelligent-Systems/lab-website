@@ -1,0 +1,14 @@
+{{/* Byline for a blog post: people ids from `authors`, then `external_authors`. */}}
+{{- $people := partialCached "people.html" . }}
+{{- $all := slice }}
+{{- range .Params.authors }}
+  {{- $p := index $people . }}
+  {{- if not $p }}{{ errorf "content/%s: author %q not found (file name in assets/people, without .yaml)" $.File.Path . }}{{ end }}
+  {{- $all = $all | append (dict "name" $p.name "url" $p.website) }}
+{{- end }}
+{{- range .Params.external_authors }}{{ $all = $all | append (dict "name" .name "url" .url) }}{{ end }}
+{{- with $all }}
+<span class="authors">
+  {{- range $i, $a := . }}{{ if $i }}, {{ end }}{{ with $a.url }}<a href="{{ . }}">{{ $a.name }}</a>{{ else }}<span>{{ $a.name }}</span>{{ end }}{{ end -}}
+</span>
+{{- end }}

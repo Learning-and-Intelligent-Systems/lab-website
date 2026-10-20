@@ -1,0 +1,8 @@
+{{/* The page's `cover` image (a file in its folder), scaled down to at most `width` pixels wide. */}}
+{{- $img := false }}
+{{- with .page.Params.cover }}
+  {{- $img = $.page.Resources.GetMatch (strings.TrimPrefix "./" .) }}
+  {{- if not $img }}{{ errorf "content/%s: cover %q not found in the post's folder" $.page.File.Path . }}{{ end }}
+  {{- if gt $img.Width $.width }}{{ $img = $img.Resize (printf "%dx" $.width) }}{{ end }}
+{{- end }}
+{{- return $img }}

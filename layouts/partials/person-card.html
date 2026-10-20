@@ -1,0 +1,11 @@
+{{- if .website }}<a class="person" href="{{ .website }}">{{ else }}<div class="person">{{ end }}
+  {{- with .photo }}
+  {{- $img := .Fill "400x400 Center" }}
+  <img class="photo" src="{{ $img.RelPermalink }}" width="400" height="400" alt="{{ $.name }}" loading="lazy" />
+  {{- else }}
+  {{- $initials := slice }}
+  {{- range split .name " " }}{{ with findRE `^[A-Za-z]` . }}{{ $initials = $initials | append (index . 0) }}{{ end }}{{ end }}
+  <div class="photo placeholder" aria-hidden="true">{{ delimit (first 2 $initials) "" }}</div>
+  {{- end }}
+  <span class="name">{{ .name }}</span>
+{{ if .website }}</a>{{ else }}</div>{{ end }}
