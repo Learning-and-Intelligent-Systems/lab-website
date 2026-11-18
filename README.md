@@ -2,7 +2,8 @@
 
 Source for the [Learning & Intelligent Systems Group](https://lis.csail.mit.edu) website, built with
 [Hugo](https://gohugo.io). It is a fully static site: content lives in Markdown and YAML files, there is
-no JavaScript build step and no npm, and every PR gets a preview link.
+no JavaScript build step and no npm, and every PR gets a preview link. Merged changes go live when a
+maintainer runs `deploy.sh` (see [Deploying](#deploying)).
 
 **Want to add yourself, a blog post, or a publication? See [CONTRIBUTING.md](CONTRIBUTING.md).**
 
@@ -49,8 +50,28 @@ redirect to the new ones through the `aliases` field in each post.
 | `ci.yml` | every PR and push to `main` | image size check, `hugo` build (fails on bad people ids, roles or fields) |
 | `pr-preview.yml` | PRs | builds with drafts visible and publishes to GitHub Pages under `/pr-preview/pr-N/`; removed when the PR closes |
 
-Deployment: the CSAIL web servers build this repository with Hugo and serve the result, so merging
-to `main` is all it takes.
+### Deploying
+
+Merging to `main` does **not** update the live site. CSAIL serves lis.csail.mit.edu from a plain AFS
+directory (`/afs/csail.mit.edu/u/v/vubt/public_html/lis`, set in `deploy.sh`), so someone with write
+access to it builds and copies the site by hand after merging:
+
+```sh
+ssh login.csail.mit.edu
+cd lab-website             # first time: git clone https://github.com/Learning-and-Intelligent-Systems/lab-website
+tokens                     # no csail.mit.edu token listed? run: kinit && aklog
+./deploy.sh -n             # optional dry run: lists what would change
+./deploy.sh
+```
+
+`deploy.sh` builds whatever is on `origin/main` (not local edits) with the Hugo installed on the
+CSAIL machines, then rsyncs it into the AFS directory. Changes are live as soon as it finishes. It
+refuses to run without an AFS token, with uncommitted changes, or if the target directory lacks its
+marker file, so a wrong path can't wipe another folder.
+
+The directory is in one person's AFS home for now. Moving it (e.g. to `/afs/csail.mit.edu/group/lis/`)
+means copying the files, asking CSAIL TIG to point the domain at the new path, and updating `TARGET` in
+`deploy.sh`.
 
 One-time setup:
 

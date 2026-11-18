@@ -2,7 +2,8 @@
 
 Everything on the site is a plain file in this repo. To change something, edit or add a file and
 open a pull request. A bot comments on the PR with a **preview link** within a couple of minutes, so
-you can see the change before it goes live. Once a maintainer merges it, it deploys automatically.
+you can see the change before it goes live. Once a maintainer merges it, they publish it to the live
+site (usually the same day).
 
 You don't need to install anything: all of the steps below work in the GitHub web editor
 ("Add file" → "Create new file" / "Upload files"). If you'd rather work locally, see the README.
