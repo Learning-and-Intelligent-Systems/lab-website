@@ -53,8 +53,10 @@ redirect to the new ones through the `aliases` field in each post.
 ### Deploying
 
 Merging to `main` does **not** update the live site. CSAIL serves lis.csail.mit.edu from a plain AFS
-directory (`/afs/csail.mit.edu/u/v/vubt/public_html/lis`, set in `deploy.sh`), so someone with write
-access to it builds and copies the site by hand after merging:
+directory (`/afs/csail.mit.edu/group/lis/site`, set in `deploy.sh`), so a member of the `lis` AFS
+group builds and copies the site by hand after merging. To check membership, run `pts membership lis`
+on a CSAIL machine; any member can add you with `pts adduser <username> lis`. A newly added member
+needs a fresh token (`aklog`) before they can write.
 
 ```sh
 ssh login.csail.mit.edu
@@ -69,9 +71,13 @@ CSAIL machines, then rsyncs it into the AFS directory. Changes are live as soon 
 refuses to run without an AFS token, with uncommitted changes, or if the target directory lacks its
 marker file, so a wrong path can't wipe another folder.
 
-The directory is in one person's AFS home for now. Moving it (e.g. to `/afs/csail.mit.edu/group/lis/`)
-means copying the files, asking CSAIL TIG to point the domain at the new path, and updating `TARGET` in
-`deploy.sh`.
+Group membership also gives write access to everything else in `/afs/csail.mit.edu/group/lis`
+(old wikis, repositories, research data), so never point rsync or `rm` at anything there by hand.
+The group volume is close to its quota; if a deploy fails with "disk quota exceeded", ask CSAIL TIG.
+
+To move the site, change `TARGET` in `deploy.sh`, merge, and deploy. The script creates the new
+directory, gives the web server (`www`) read access, and adds the marker. Then ask CSAIL TIG to point
+the domain at the new path and delete the old directory.
 
 One-time setup:
 

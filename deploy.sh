@@ -8,48 +8,67 @@
 # The live site updates as soon as the copy finishes.
 set -euo pipefail
 
-# Where lis.csail.mit.edu is served from. To move the site, copy it to the new directory, ask TIG
-# to point the domain there, and change this line.
-TARGET=/afs/csail.mit.edu/u/v/vubt/public_html/lis
+# Where lis.csail.mit.edu is served from. To move the site, change this line, deploy, ask TIG to
+# point the domain at the new directory, then delete the old one.
+TARGET=/afs/csail.mit.edu/group/lis/site
 
 # Only deploy into a directory that has this file, so a wrong TARGET can't wipe another folder.
 MARKER=.lis-website-deploy-target
 
-DRY_RUN=
-[[ "${1:-}" == "-n" ]] && DRY_RUN=--dry-run
+# Everything runs inside main, which bash parses in full before running. The git checkout below
+# can rewrite this file, and bash would otherwise read the new version mid-run.
+main() {
+  local dry_run=
+  [[ "${1:-}" == "-n" ]] && dry_run=--dry-run
+
+  cd "$(dirname "$0")"
+
+  command -v hugo >/dev/null || die "hugo not found (login.csail.mit.edu has it in /usr/bin)."
+  [[ -d /afs/csail.mit.edu ]] || die "no AFS here; run this on a CSAIL machine such as login.csail.mit.edu."
+  tokens 2>/dev/null | grep -q 'csail.mit.edu' || die "no AFS token; run 'kinit && aklog' first."
+
+  # Deploy exactly what is on GitHub's main branch, not local edits.
+  [[ -z "$(git status --porcelain)" ]] || die "uncommitted changes in $(pwd); commit, stash or discard them first."
+  git fetch --quiet origin main
+  if ! git diff --quiet HEAD origin/main -- deploy.sh; then
+    # A newer deploy.sh (e.g. a new TARGET) is on main: switch to it and run that one instead.
+    git checkout --quiet --detach origin/main
+    exec ./deploy.sh "$@"
+  fi
+  git checkout --quiet --detach origin/main
+  echo "deploy: building $(git log -1 --format='%h %s')"
+
+  # First deploy: create the directory with its marker, readable by the web server.
+  if [[ ! -e "$TARGET/$MARKER" ]]; then
+    if [[ -d "$TARGET" && -n "$(ls -A "$TARGET")" ]]; then
+      die "$TARGET is not empty and has no $MARKER file. Refusing to overwrite it."
+    fi
+    if [[ -n "$dry_run" ]]; then
+      echo "deploy: first deploy; would create $TARGET"
+      return
+    fi
+    mkdir -p "$TARGET"
+    # Subdirectories copy this ACL when rsync creates them.
+    fs setacl "$TARGET" www rl
+    touch "$TARGET/$MARKER"
+  fi
+
+  # Global, not local: the EXIT trap runs after main has returned.
+  out=$(mktemp -d)
+  trap 'rm -rf "$out"' EXIT
+  hugo --minify --panicOnWarning --destination "$out"
+
+  # --checksum skips files whose content didn't change; the marker is protected from --delete.
+  rsync -rl --checksum --delete --filter="protect $MARKER" $dry_run --itemize-changes "$out"/ "$TARGET"/
+
+  if [[ -n "$dry_run" ]]; then
+    echo "deploy: dry run, nothing changed."
+  else
+    echo "deploy: done, $TARGET updated."
+  fi
+}
 
 die() { echo "deploy: $*" >&2; exit 1; }
 
-cd "$(dirname "$0")"
-
-command -v hugo >/dev/null || die "hugo not found (login.csail.mit.edu has it in /usr/bin)."
-[[ -d /afs/csail.mit.edu ]] || die "no AFS here; run this on a CSAIL machine such as login.csail.mit.edu."
-tokens 2>/dev/null | grep -q 'csail.mit.edu' || die "no AFS token; run 'kinit && aklog' first."
-
-# Deploy exactly what is on GitHub's main branch, not local edits.
-[[ -z "$(git status --porcelain)" ]] || die "uncommitted changes in $(pwd); commit, stash or discard them first."
-git fetch --quiet origin main
-git checkout --quiet --detach origin/main
-echo "deploy: building $(git log -1 --format='%h %s')"
-
-# First deploy: create the directory (it inherits the parent's AFS ACL) and its marker.
-if [[ ! -e "$TARGET/$MARKER" ]]; then
-  if [[ -d "$TARGET" && -n "$(ls -A "$TARGET")" ]]; then
-    die "$TARGET is not empty and has no $MARKER file. Refusing to overwrite it."
-  fi
-  if [[ -n "$DRY_RUN" ]]; then
-    echo "deploy: first deploy; would create $TARGET"
-    exit 0
-  fi
-  mkdir -p "$TARGET"
-  touch "$TARGET/$MARKER"
-fi
-
-OUT=$(mktemp -d)
-trap 'rm -rf "$OUT"' EXIT
-hugo --minify --panicOnWarning --destination "$OUT"
-
-# --checksum skips files whose content didn't change; the marker is protected from --delete.
-rsync -rl --checksum --delete --filter="protect $MARKER" $DRY_RUN --itemize-changes "$OUT"/ "$TARGET"/
-
-[[ -n "$DRY_RUN" ]] && echo "deploy: dry run, nothing changed." || echo "deploy: done, https://lis.csail.mit.edu is live."
+main "$@"
+exit
