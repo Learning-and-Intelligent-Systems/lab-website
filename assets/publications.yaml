@@ -1681,8 +1681,7 @@
   author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2015
-  links:
-  - {label: movie, url: 'http://web.mit.edu/caelan/www/research/hbf/'}
+  website: https://web.mit.edu/caelan/www/research/hbf/
   url: http://lis.csail.mit.edu/pubs/garrett-iros15.pdf
 
 - key: kim2015generalizing
@@ -1700,8 +1699,7 @@
   booktitle: Advances in Neural Information Processing Systems (NeurIPS)
   pages: 2809–2817
   year: 2015
-  links:
-  - {label: code, url: 'http://lis.csail.mit.edu/code/imgpo.html'}
+  code: https://lis.csail.mit.edu/code/imgpo.html
   url: http://lis.csail.mit.edu/pubs/kawaguchi-nips15.pdf
 
 - key: wong2014not
@@ -1767,8 +1765,7 @@
   author: [Caelan Reed Garrett, Tomas Lozano-Perez, Leslie Pack Kaelbling]
   booktitle: International Workshop on the Algorithmic Foundations of Robotics (WAFR)
   year: 2014
-  links:
-  - {label: movie, url: 'http://web.mit.edu/caelan/www/research/ffrob/'}
+  website: https://web.mit.edu/caelan/www/research/ffrob/
   url: http://lis.csail.mit.edu/pubs/garrett-wafr14.pdf
 
 - key: glover2014generalizing
@@ -1802,7 +1799,7 @@
   booktitle: IEEE Conference on Robotics and Automation (ICRA)
   year: 2013
   links:
-  - {label: movie, url: 'http://lis.csail.mit.edu/movies/ICRA13_1782_VI_fi.mp4'}
+  - {label: Video, url: 'https://lis.csail.mit.edu/movies/ICRA13_1782_VI_fi.mp4'}
   url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_1782_FI.pdf
 
 - key: holladay2013object
@@ -1812,7 +1809,7 @@
   booktitle: IEEE Conference on Robotics and Automation (ICRA)
   year: 2013
   links:
-  - {label: movie, url: 'http://lis.csail.mit.edu/movies/ICRA13_1509_VI_fi.mp4'}
+  - {label: Video, url: 'https://lis.csail.mit.edu/movies/ICRA13_1509_VI_fi.mp4'}
   url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_1509_FI.pdf
 
 - key: barry2013hierarchical
@@ -1821,8 +1818,7 @@
   author: [Jennifer Barry, Leslie Pack Kaelbling, Tomas Lozano-Perez]
   booktitle: IEEE Conference on Robotics and Automation (ICRA)
   year: 2013
-  links:
-  - {label: movies, url: 'http://people.csail.mit.edu/jbarry/pr2/darrt/'}
+  website: https://people.csail.mit.edu/jbarry/pr2/darrt/
   url: http://lis.csail.mit.edu/pubs/tlp/ICRA13_2092_FI.pdf
 
 - key: kaelbling2013integrated
@@ -1865,8 +1861,7 @@
   author: [Martin Levihn, Leslie Pack Kaelbling, Tomas Lozano-Perez, Mike Stilman]
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems
   year: 2013
-  links:
-  - {label: movies, url: 'http://lis.csail.mit.edu/bhpnNAMO'}
+  website: https://lis.csail.mit.edu/bhpnNAMO/
   url: http://lis.csail.mit.edu/pubs/levihn-iros13.pdf
 
 - key: glover2013bingham
