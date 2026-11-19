@@ -7,6 +7,16 @@
 #   links                               extra links: [{label: Video, url: https://...}]
 # Authors whose names match someone in assets/people (by name or aliases) are linked automatically.
 
+- key: agarwal2026feijoa
+  type: inproceedings
+  title: 'Feijoa: Task-Driven Grounding and Execution for Mobile Manipulation'
+  author: [Aditya Agarwal*, William Shen*, Sahit Chintalapudi†, Lucy Cai†, Nishanth Kumar, Aidan Curtis, Travis Manderson, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: arXiv:2611.04080
+  year: 2026
+  url: https://arxiv.org/pdf/2611.04080
+  doi: https://doi.org/10.48550/arXiv.2611.04080
+  website: https://williamshen-nz.github.io/feijoa/
+
 - key: kumar2026openworld
   type: article
   title: Open-World Task and Motion Planning Via Vision-Language Model Generated Constraints
@@ -14,6 +24,7 @@
   journal: IEEE Robotics and Automation Letters (RA-L)
   year: 2026
   url: https://ieeexplore.ieee.org/document/11361071
+  website: https://nishanthjkumar.com/owl-tamp/
 
 - key: athalye2026pixels
   type: article
@@ -22,6 +33,7 @@
   journal: IEEE Robotics and Automation Letters (RA-L)
   year: 2026
   url: https://ieeexplore.ieee.org/document/11373861
+  website: https://pix2pred.csail.mit.edu/
 
 - key: shen2026tiptop
   type: inproceedings
@@ -52,6 +64,7 @@
   publisher: 'RSS Workshop on Data-Centric Robotics: What Data Do Robots Really Need?; RSS Workshop on Diffusion for Robot Learning'
   year: 2026
   url: https://openreview.net/pdf/3a9ec4dc42f7acd4a4b415bdbe75a4d07b4616ac.pdf
+  website: https://skymanaditya1.github.io/proxy-website/
 
 - key: agarwal2025scenecomplete
   type: article
@@ -63,6 +76,7 @@
   month: October
   year: 2025
   url: https://arxiv.org/pdf/2410.23643
+  website: https://scenecomplete.github.io/
 
 - key: jiang2025streaming
   type: inproceedings
@@ -107,11 +121,12 @@
 
 - key: curtis2025llmguided
   type: inproceedings
-  title: LLM-Guided Probabilistic Program Induction for POMDP Model Estim
+  title: LLM-Guided Probabilistic Program Induction for POMDP Model Estimation
   author: [Aidan Curtis, Hao Tang, Thiago Veloso, Kevin Ellis, Joshua Tenenbaum, Tomas Lozano-Perez, Leslie Pack Kaelbling]
   booktitle: Conference on Robot Learning (CoRL)
   year: 2025
   url: https://arxiv.org/pdf/2505.02216
+  code: https://github.com/aidan-curtis/pomdp_coder
 
 - key: hsu2025what
   type: inproceedings
