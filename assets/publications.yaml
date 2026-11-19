@@ -1444,7 +1444,7 @@
 - key: karaman2017projectbased
   type: inproceedings
   title: 'Project-based, Collaborative, Algorithmic Robotics for High SchoolStudents: Programming Self-driving Race Cars at MIT'
-  author: [Sertac Karaman, Ariel Anders, Michael Boulet, Jane Connor andKenneth Gregson, Winter J Guerra, Owen Guldner, Mubarik Mohamoudand Brian Plancher, Robert Shin, John Vivilecchia]
+  author: [Sertac Karaman, Ariel Anders, Michael Boulet, Jane Connor, Kenneth Gregson, Winter J Guerra, Owen Guldner, Mubarik Mohamoud, Brian Plancher, Robert Shin, John Vivilecchia]
   booktitle: 2017 IEEE Integrated STEM Education Conference (ISEC) (ISEC'17)
   address: Princeton, USA
   month: mar
@@ -1917,7 +1917,7 @@
 - key: oliehoek2012heuristic
   type: inproceedings
   title: Heuristic Search of Multiagent Influence Space
-  author: [Stefan Witwicki andFrans A. Oliehoek, Leslie P. Kaelbling]
+  author: [Stefan Witwicki, Frans A. Oliehoek, Leslie P. Kaelbling]
   booktitle: Proceedings of The International Joint Conference on Autonomous Agents and Multi Agent Systems
   month: jun
   year: 2012
@@ -2328,7 +2328,7 @@
 - key: chiu2009learning
   type: article
   title: Learning to Generate Novel Views of Objects for Class Recognition.
-  author: [Han-Pang Chiu, Leslie P. Kaelbling andTomas Lozano-Perez]
+  author: [Han-Pang Chiu, Leslie P. Kaelbling, Tomas Lozano-Perez]
   journal: Computer Vision and Image Understanding
   year: 2009
   url: http://lis.csail.mit.edu/pubs/tlp/novel_views.pdf
@@ -2340,7 +2340,7 @@
   booktitle: International Conference on Automated Planning and Scheduling (ICAPS) Workshop on Bridging the Gap Between Task and Motion Planning
   year: 2009
   links:
-  - {label: Link, url: 'http://people.csail.mit.edu/bhaskara/icaps09-ws/'}
+  - {label: Workshop, url: 'https://web.archive.org/web/20130802100900/http://people.csail.mit.edu/bhaskara/icaps09-ws/'}
   url: https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.208.3476&rep=rep1&type=pdf
 
 - key: ross2009segmentation
@@ -2461,7 +2461,7 @@
 - key: zettlemoyer2007learning
   type: article
   title: Learning Symbolic Models of Stochastic Domains
-  author: [Hanna Pasula andLuke S. Zettlemoyer, Leslie Pack Kaelbling]
+  author: [Hanna Pasula, Luke S. Zettlemoyer, Leslie Pack Kaelbling]
   journal: J. Artif. Intell. Res. (JAIR)
   volume: '29'
   year: 2007
@@ -2486,7 +2486,7 @@
 - key: chiu2007virtual
   type: inproceedings
   title: Virtual Training for Multi-View Object Class Recognition.
-  author: [Han-Pang Chiu, Leslie Pack Kaelbling andTomas Lozano-Perez]
+  author: [Han-Pang Chiu, Leslie Pack Kaelbling, Tomas Lozano-Perez]
   booktitle: CVPR
   year: 2007
   url: http://lis.csail.mit.edu/pubs/tlp/ChiuKaelblingTLP-cvpr07.pdf
@@ -2528,7 +2528,7 @@
 - key: rosenstein2005transfer
   type: inproceedings
   title: Transfer Learning with an Ensemble of Background Tasks
-  author: [Michael Rosenstein, Zvika Marx, Tom Dietterichand Leslie Pack Kaelbling]
+  author: [Michael Rosenstein, Zvika Marx, Tom Dietterich, Leslie Pack Kaelbling]
   booktitle: NIPS Workshop on Inductive Transfer
   year: 2005
   url: http://people.csail.mit.edu/lpk/papers/MarxRosensteinKaelblingDietterich-final.pdf
@@ -2919,7 +2919,7 @@
 - key: grimson1994automatic
   type: inproceedings
   title: An Automatic Registration Methodfor Frameless Stereotaxy, Image Guided Surgery, and Enhanced RealityVisualization
-  author: [W. E. L. Grimson, T. Lozano-Perez, W.M. Wells III, G.J. Ettinger andS.J. White, R. Kikinis]
+  author: [W. E. L. Grimson, T. Lozano-Perez, W.M. Wells III, G.J. Ettinger, S.J. White, R. Kikinis]
   booktitle: Computer Vision and Pattern RecognitionConference
   year: 1994
   url: http://lis.csail.mit.edu/pubs/tlp/frameless-stereotaxy-cvpr.pdf
@@ -2974,7 +2974,7 @@
 - key: wilson1993assembly
   type: inproceedings
   title: Assembly Sequencing for Arbitrary Motions
-  author: [Tomas Lozano-Perez andRandall H. Wilson]
+  author: [Tomas Lozano-Perez, Randall H. Wilson]
   booktitle: IEEE International Conference on Robotics and Automation
   pages: 527-532
   year: 1993
@@ -3241,7 +3241,7 @@
 - key: lozanoperez1987handey
   type: inproceedings
   title: 'HANDEY: A Robot System that Recognizes, Plans, and Manipulates'
-  author: [T. Lozano-Perez, J. L. Jones, E. Mazer, P. A. O'Donnell, W. E. L. Grimson andP. Tournassoud, A. Lanusse]
+  author: [T. Lozano-Perez, J. L. Jones, E. Mazer, P. A. O'Donnell, W. E. L. Grimson, P. Tournassoud, A. Lanusse]
   booktitle: IEEE International Conference on Robotics andAutomation
   pages: 843=-849
   year: 1987
