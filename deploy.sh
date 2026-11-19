@@ -16,10 +16,10 @@ TARGET=/afs/csail.mit.edu/group/lis/site
 MARKER=.lis-website-deploy-target
 
 # Folders from the pre-2020 site that old publication links still point to (/pubs/..., /movies/...).
-# They stay in the group volume's docroot and are served through symlinks in TARGET, which this
-# script creates and protects from rsync --delete. The web server needs `www rl` on each.
-LEGACY_DIR=/afs/csail.mit.edu/group/lis/docroot
-LEGACY_LINKS=(pubs movies code bhpnNAMO)
+# They were copied by hand into TARGET from /afs/csail.mit.edu/group/lis/docroot (CSAIL's web
+# server won't follow symlinks to files owned by other users) and are not in this repo, so rsync
+# --delete must leave them alone. Add new PDFs for /pubs directly to $TARGET/pubs.
+LEGACY_DIRS=(pubs movies code bhpnNAMO)
 
 # Everything runs inside main, which bash parses in full before running. The git checkout below
 # can rewrite this file, and bash would otherwise read the new version mid-run.
@@ -64,25 +64,14 @@ main() {
   trap 'rm -rf "$out"' EXIT
   hugo --minify --panicOnWarning --destination "$out"
 
-  # --checksum skips files whose content didn't change. The marker and legacy symlinks are
+  # --checksum skips files whose content didn't change. The marker and legacy folders are
   # protected from --delete, so the build must not produce files at those paths.
   local filters=(--filter="protect /$MARKER") name
-  for name in "${LEGACY_LINKS[@]}"; do
-    [[ ! -e "$out/$name" ]] || die "the build contains /$name, which is reserved for the legacy $LEGACY_DIR/$name link."
-    filters+=(--filter="protect /$name")
+  for name in "${LEGACY_DIRS[@]}"; do
+    [[ ! -e "$out/$name" ]] || die "the build contains /$name, which is reserved for the legacy folder $TARGET/$name."
+    filters+=(--filter="protect /$name/")
   done
   rsync -rl --checksum --delete "${filters[@]}" $dry_run --itemize-changes "$out"/ "$TARGET"/
-
-  for name in "${LEGACY_LINKS[@]}"; do
-    if [[ -L "$TARGET/$name" || -e "$TARGET/$name" ]]; then
-      continue
-    elif [[ -n "$dry_run" ]]; then
-      echo "deploy: would link /$name -> $LEGACY_DIR/$name"
-    else
-      ln -s "$LEGACY_DIR/$name" "$TARGET/$name"
-      echo "deploy: linked /$name -> $LEGACY_DIR/$name"
-    fi
-  done
 
   if [[ -n "$dry_run" ]]; then
     echo "deploy: dry run, nothing changed."
