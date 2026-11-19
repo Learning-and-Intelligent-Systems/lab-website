@@ -39,8 +39,8 @@ html {
 body { background: var(--bg); min-height: 100vh; display: flex; flex-direction: column; }
 main { flex: 1; }
 
-h1, h2, h3, h4, h5 { font-family: var(--font-head); font-weight: 600; color: var(--ink); }
-h1 { font-weight: 700; }
+/* The original site used Futura Std Bold for every heading; Jost 700 is the closest free match. */
+h1, h2, h3, h4, h5 { font-family: var(--font-head); font-weight: 700; color: var(--ink); }
 h1 { font-size: 3rem; line-height: 1.15; }
 h2 { font-size: 2rem; line-height: 2.625rem; margin-bottom: 1.625rem; }
 h3 { font-size: 1.25rem; margin-bottom: 1rem; }
@@ -70,13 +70,35 @@ img { max-width: 100%; height: auto; display: block; }
 .page-header p { max-width: 46rem; }
 .page-header h1 + p { margin-top: 1.5rem; }
 
+/* Title with the triangle graphic (People, Publications), positioned as on the original site. */
+.page-header.with-triangle { padding: 7.5rem 0 7.5rem; }
+.page-title { position: relative; }
+.page-title h1 { padding-left: 120px; }
+.page-title .triangle { position: absolute; left: 0; top: 4.5rem; width: auto; height: 280px; }
+.page-header.small .page-title .triangle { top: 20px; height: 200px; }
+.page-intro { max-width: 920px; padding: 2rem 0 0 240px; }
+.page-header.small .page-intro { padding-left: 200px; }
+.page-intro .intro-title { font-size: 1.125rem; line-height: 1.625rem; margin-bottom: 1.625rem; }
+.page-intro p:last-child { margin-bottom: 0; }
+@media (max-width: 760px) {
+  .page-header.with-triangle { padding: 5rem 0 3rem; }
+  .page-title h1, .page-intro, .page-header.small .page-intro { padding-left: 0; }
+  .page-title .triangle { display: none; }
+}
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* 404 page */
+.not-found-links { margin: 0 0 1.625rem 1.5rem; }
+.not-found-links li { margin-bottom: 0.5rem; }
+
 .button {
   display: inline-block;
   background: var(--orange);
   color: #fff;
   font-family: var(--font-head);
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 14px 24px;
 }
 .button:hover { background: var(--purple); color: #fff; text-decoration: none; }
@@ -132,7 +154,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: #fff;
   font-family: var(--font-head);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   border-top: 4px solid transparent;
   padding: 1.25rem 1.5rem 1.5rem;
   text-decoration: none;
@@ -168,7 +190,7 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-logos { display: flex; flex-direction: column; gap: 1.5rem; flex: 0 0 80px; }
 .footer-main { border-top: 4px solid var(--rule); padding-top: 2rem; flex: 1; }
 .footer-main ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0 2rem; margin-bottom: 1.5rem; }
-.footer-main li a { font-family: var(--font-head); font-weight: 600; font-size: 1rem; line-height: 2rem; }
+.footer-main li a { font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 2rem; }
 .copyright { color: var(--faint); font-size: 0.875rem; margin: 0; }
 .copyright a { font-weight: 400; }
 @media (max-width: 760px) {
@@ -219,7 +241,7 @@ img { max-width: 100%; height: auto; display: block; }
 .person .name {
   background: var(--orange);
   font-family: var(--font-head);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.05rem;
   padding: 0.6rem 0.8rem;
   transition: background 0.1s ease-in;
@@ -232,9 +254,10 @@ a.person:hover .name { background: var(--purple); }
 .pis { display: flex; flex-wrap: wrap; gap: 2.5rem 4rem; }
 .pi { display: flex; align-items: center; gap: 1.5rem; flex: 1 1 min(380px, 100%); }
 .pi > a { flex: 0 0 200px; }
-.pi img { width: 200px; height: 200px; object-fit: cover; }
-.pi h3 { margin-bottom: 0.5rem; font-size: 1.4rem; }
-.pi p { margin: 0; }
+.pi img { width: 200px; height: 215px; object-fit: cover; border-bottom: 15px solid var(--orange); transition: border-color 0.1s ease-in; }
+.pi a:hover img { border-bottom-color: var(--purple); }
+.pi h3 { margin-bottom: 1.25rem; font-size: 1.25rem; line-height: 1.75rem; }
+.pi p { margin: 0; font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 1.5rem; }
 .people .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 2.5rem 1.5rem; }
 .people h4 { margin: 2rem 0 0.75rem; }
 .alumni { list-style: none; columns: 4 200px; column-gap: 2rem; }
@@ -262,8 +285,28 @@ a.person:hover .name { background: var(--purple); }
   .post-card .cover { width: 100%; flex-basis: auto; }
 }
 
+/* Blog list page: larger cards separated by black rules, as on the original site. */
+.blog-list { padding-top: 7.5rem; padding-bottom: 5rem; }
+.blog-list .post-card { border-top: 2px solid #000; padding: 35px 0; gap: 50px; }
+.blog-list .post-card:first-of-type { border-top: 0; padding-top: 0; }
+.blog-list .post-card .date { font-family: var(--font-head); font-weight: 700; font-size: 1rem; color: var(--ink); margin-bottom: 0.625rem; }
+.blog-list .post-card h3 { font-size: 2.25rem; line-height: 1.2; margin-bottom: 0.5rem; }
+.blog-list .post-card .byline { font-size: 1.125rem; font-weight: 700; color: var(--muted); margin-bottom: 0.5rem; }
+.blog-list .post-card .summary { font-size: 1.125rem; line-height: 2rem; color: #555; }
+.blog-list .post-card .cover { width: 30%; flex: 0 0 30%; align-self: flex-start; }
+@media (max-width: 760px) {
+  .blog-list { padding-top: 3rem; }
+  .blog-list .post-card h3 { font-size: 1.75rem; }
+  .blog-list .post-card .cover { width: 100%; flex-basis: auto; }
+}
+
+/* Orange "Blog // The Latest News from LIS" bar on the blog pages */
+.blog-banner { background: var(--orange); color: #fff; padding: 10px 0; font-size: 1.3125rem; line-height: 2.625rem; }
+.blog-banner a { color: #fff; font-family: var(--font-head); font-weight: 700; }
+.blog-banner a:hover { color: #fff; }
+
 /* Blog post page */
-.post-page { padding-top: 9rem; padding-bottom: 5rem; }
+.post-page { padding-top: 7.5rem; padding-bottom: 5rem; }
 .post-page h1 { margin: 1rem 0; font-size: 2.6rem; }
 .post-page .byline { margin-bottom: 2rem; }
 .post-page .cover { margin-bottom: 2.5rem; width: 100%; }
@@ -273,23 +316,35 @@ a.person:hover .name { background: var(--purple); }
 }
 
 /* Publications */
-.year h2 { margin: 2.5rem 0 0.5rem; }
-.year:first-child h2 { margin-top: 0; }
-.pubs { padding: 0; }
-.pub { list-style: none; padding: 1rem 0; border-top: 1px solid #ddd; display: flex; flex-direction: column; gap: 0.2rem; }
-.pub .title { font-family: var(--font-head); font-size: 1.15rem; font-weight: 600; }
-.pub .title a { color: var(--ink); }
+/* Year headings with a thick black rule, entries with orange buttons on the right, as on the original site. */
+.year-title { font-size: 1.125rem; line-height: 1.625rem; border-bottom: 4px solid #000; margin: 2.5rem 0 0; padding-bottom: 0.25rem; }
+.year:first-child .year-title { margin-top: 0; }
+.pubs { padding: 0 0 1rem; }
+.pub { list-style: none; position: relative; padding: 1.25rem 0; display: grid; grid-template-columns: minmax(0, 1fr) 30%; column-gap: 5%; align-items: center; }
+.pub-text { margin: 0; font-size: 1rem; line-height: 1.5rem; }
+.pub .title a { color: var(--orange); }
 .pub .title a:hover { color: var(--purple); }
-.pub-authors, .pub .venue { font-size: 0.95rem; color: #333; }
-.pub-authors a { font-weight: 400; }
-.pub .venue { font-style: italic; }
-.pub .note { font-size: 0.9rem; color: var(--purple); font-weight: 700; }
-.pub .links { display: flex; flex-wrap: wrap; gap: 0 1rem; font-size: 0.85rem; align-items: baseline; }
-.pub details { width: 100%; }
-.pub details summary { display: inline; cursor: pointer; color: var(--orange); font-weight: 700; }
-.pub .links:has(a) details { width: auto; }
-.pub details[open] { width: 100%; }
-.pub pre { background: var(--bg-alt); padding: 0.75rem; font-size: 0.8rem; overflow-x: auto; margin-top: 0.5rem; white-space: pre-wrap; }
+.pub-authors a { font-weight: 400; color: inherit; }
+.pub-authors a:hover { color: var(--purple); }
+.pub .note { display: block; font-size: 0.9rem; color: var(--purple); font-weight: 700; }
+.pub .links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+.pub-button {
+  background: var(--orange); color: #fff; cursor: pointer; display: inline-block;
+  font-family: var(--font-head); font-size: 1rem; font-weight: 700; line-height: 1;
+  padding: 14px 16px; text-transform: uppercase; transition: background 0.1s ease-in;
+}
+.pub-button:hover { background: var(--purple); color: #fff; text-decoration: none; }
+/* BibTeX toggle: the checkbox is hidden; its label is the BIBTEX button. */
+.bib-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.bib-toggle:checked ~ .links label { background: var(--purple); }
+.bib-toggle:focus-visible ~ .links label { outline: 2px solid var(--purple); outline-offset: 2px; }
+.pub .bibtex { display: none; grid-column: 1 / -1; background: var(--bg-alt); padding: 0.75rem; font-size: 0.8rem; overflow-x: auto; margin-top: 1rem; white-space: pre-wrap; }
+.bib-toggle:checked ~ .bibtex { display: block; }
+@media (max-width: 760px) {
+  .pub { grid-template-columns: 1fr; row-gap: 0.75rem; }
+  .pub .links { justify-content: flex-start; }
+  .pub-button { padding: 10px 12px; font-size: 0.9rem; }
+}
 
 /* Research (on hold, see content/research/_index.md) */
 .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2.5rem; margin-bottom: 3rem; }

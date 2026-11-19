@@ -10,12 +10,7 @@
 {{- $people = sort $people "sort" }}
 {{- $current := where $people "alumni" false }}
 {{- $alumni := where $people "alumni" true }}
-<section class="page-header">
-  <div class="wrap">
-    <h1>Meet the Team</h1>
-    <p class="lede">{{ .Params.description }}</p>
-  </div>
-</section>
+{{ partial "page-header.html" (dict "title" "Meet the Team" "intro" (printf "<h2 class=\"intro-title\">%s</h2>%s" .Params.description .Content)) }}
 
 <section class="wrap people">
   <h2 class="slash-title">Principal Investigators</h2>

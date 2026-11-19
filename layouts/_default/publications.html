@@ -3,15 +3,11 @@
 {{- $byName := partialCached "people-by-name.html" . }}
 {{- $years := slice }}
 {{- range $pubs }}{{ $years = $years | append .year }}{{ end }}
-<section class="page-header">
-  <div class="wrap">
-    <h1>Publications</h1>
-  </div>
-</section>
+{{ partial "page-header.html" (dict "title" "Publications" "small" true "intro" (printf "<p>%s</p>" .Params.description)) }}
 <section class="wrap" style="padding-bottom: 5rem">
   {{- range sort (uniq $years) "value" "desc" }}
   <section class="year" data-year="{{ . }}">
-    <h2 id="y{{ . }}">{{ . }}</h2>
+    <h2 class="year-title" id="y{{ . }}">{{ . }}</h2>
     <ul class="pubs">
       {{- range where $pubs "year" . }}
       {{ partial "publication.html" (dict "pub" . "byName" $byName) }}

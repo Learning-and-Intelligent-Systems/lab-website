@@ -2,7 +2,14 @@
 <section class="page-header">
   <div class="wrap">
     <h1>Page not found</h1>
-    <p class="lede">That page doesn't exist (anymore). Try the <a href="{{ relURL "" }}">home page</a>.</p>
+    <p class="lede">This page doesn't exist, or it was on our old website and has moved.</p>
+    <p>You might find what you were looking for here:</p>
+    <ul class="not-found-links">
+      <li><a href="{{ relURL "publications/" }}">Publications</a>: every paper, with PDFs and BibTeX</li>
+      <li><a href="{{ relURL "people/" }}">People</a>: current members and alumni</li>
+      <li><a href="{{ relURL "blog/" }}">Blog</a>: posts from the group</li>
+      <li><a href="{{ relURL "" }}">Home page</a></li>
+    </ul>
   </div>
 </section>
 {{ end }}

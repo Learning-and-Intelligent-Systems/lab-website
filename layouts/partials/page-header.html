@@ -1,0 +1,15 @@
+{{/*
+  Page title with the triangle graphic from the original site.
+  Context: dict "title", "intro" (HTML shown under the title, optional), "small" (smaller triangle, optional).
+*/}}
+<section class="page-header with-triangle{{ if .small }} small{{ end }}">
+  <div class="wrap">
+    <div class="page-title">
+      <img class="triangle" src="{{ relURL "images/header-triangle.svg" }}" width="146" height="280" alt="" aria-hidden="true">
+      <h1>{{ .title }}</h1>
+    </div>
+    {{- with .intro }}
+    <div class="page-intro">{{ . | safeHTML }}</div>
+    {{- end }}
+  </div>
+</section>

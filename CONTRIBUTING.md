@@ -23,6 +23,9 @@ You don't need to install anything: all of the steps below work in the GitHub we
 2. Upload your photo next to it as `assets/people/jane-doe.jpg`. A square-ish headshot of about 600×600 px and under 1 MB works best.
 3. Open a PR.
 
+People are listed by last name within each group. To change that, add `order: 1` (or any whole
+number; lower comes first, everyone else counts as 100).
+
 When you graduate, add `alumni: true`. Your entry moves to the Alumni list, grouped by the
 `role` you had in the lab.
 

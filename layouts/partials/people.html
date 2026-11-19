@@ -4,7 +4,7 @@
   Fails the build on unknown fields or roles, like the old content schema did.
 */}}
 {{- $roles := slice "pi" "postdoc" "phd" "meng" "urop" "visiting" "staff" "pet" "other" }}
-{{- $fields := slice "name" "role" "title" "website" "photo" "alumni" "aliases" }}
+{{- $fields := slice "name" "role" "title" "website" "photo" "alumni" "aliases" "order" }}
 {{- $people := dict }}
 {{- range resources.Match "people/*.yaml" }}
   {{- $id := strings.TrimSuffix ".yaml" (path.Base .Name) }}
@@ -20,9 +20,12 @@
     {{- $photo = resources.Get (path.Join "people" (strings.TrimPrefix "./" .)) }}
     {{- if not $photo }}{{ errorf "%s: photo %q not found next to the YAML file" $file . }}{{ end }}
   {{- end }}
-  {{- /* Sort by last name, ignoring nicknames in quotes or parentheses. */}}
+  {{- /* Sort by the optional `order` number (lower first, default 100), then by last name,
+         ignoring nicknames in quotes or parentheses. */}}
+  {{- $order := default 100 $data.order }}
+  {{- if not (findRE `^\d+$` (string $order)) }}{{ errorf "%s: order %q must be a whole number" $file $order }}{{ end }}
   {{- $words := split (trim (replaceRE `\(.*?\)|“.*?”|".*?"|\s+` " " $data.name) " ") " " }}
-  {{- $sort := printf "%s %s" (index $words (sub (len $words) 1)) $data.name | lower }}
+  {{- $sort := printf "%04d %s %s" (int $order) (index $words (sub (len $words) 1)) $data.name | lower }}
   {{- $people = merge $people (dict $id (dict
     "id" $id "name" $data.name "role" $data.role "title" $data.title "website" $data.website
     "photo" $photo "alumni" (default false $data.alumni) "aliases" (default slice $data.aliases) "sort" $sort)) }}

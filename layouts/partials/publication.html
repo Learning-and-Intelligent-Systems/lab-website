@@ -3,36 +3,39 @@
 {{- $byName := .byName }}
 {{- $primary := or $p.url $p.pdf $p.website }}
 {{- $venue := or $p.journal $p.booktitle $p.school $p.institution $p.publisher $p.howpublished }}
+{{- $bibId := printf "bib-%s" $p.key }}
 <li class="pub" id="{{ $p.key }}">
-  <span class="title">{{ with $primary }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}</span>
-  <span class="pub-authors">
-    {{- range $i, $a := $p.author }}{{ if $i }}, {{ end }}
-      {{- with index $byName (partial "normalize-name.html" $a) }}
-        {{- with .website }}<a href="{{ . }}">{{ $a }}</a>{{ else }}<strong>{{ $a }}</strong>{{ end }}
-      {{- else }}{{ $a }}{{ end }}
-    {{- end -}}
-  </span>
-  <span class="venue">{{ with $venue }}{{ . }}, {{ end }}{{ $p.year }}.</span>
-  {{- with $p.note }}
-  <span class="note">{{ . }}</span>
-  {{- end }}
+  {{- /* Checkbox that shows the BibTeX below the entry; its label is the BIBTEX button. No JavaScript needed. */}}
+  <input type="checkbox" class="bib-toggle" id="{{ $bibId }}">
+  <p class="pub-text">
+    <span class="title">{{ with $primary }}<a href="{{ . }}">{{ $p.title }}</a>{{ else }}{{ $p.title }}{{ end }}</span>
+    (<span class="pub-authors">
+      {{- range $i, $a := $p.author }}{{ if $i }}, {{ end }}
+        {{- with index $byName (partial "normalize-name.html" $a) }}
+          {{- with .website }}<a href="{{ . }}">{{ $a }}</a>{{ else }}{{ $a }}{{ end }}
+        {{- else }}{{ $a }}{{ end }}
+      {{- end -}}
+    </span>),
+    <span class="venue">{{ with $venue }}In {{ . }}, {{ end }}{{ $p.year }}.</span>
+    {{- with $p.note }}
+    <span class="note">{{ . }}</span>
+    {{- end }}
+  </p>
   <span class="links">
-    {{- with $p.pdf }}<a href="{{ . }}">PDF</a>{{ end }}
-    {{- with $p.website }}<a href="{{ . }}">Website</a>{{ end }}
-    {{- with $p.code }}<a href="{{ . }}">Code</a>{{ end }}
-    {{- range $p.links }}<a href="{{ .url }}">{{ strings.FirstUpper .label }}</a>{{ end }}
-    {{- with $p.doi }}<a href="{{ cond (hasPrefix . "http") . (printf "https://doi.org/%s" .) }}">DOI</a>{{ end }}
-    <details>
-      <summary>BibTeX</summary>
-      {{- $lines := slice }}
-      {{- range $f := slice "title" "author" "editor" "journal" "booktitle" "school" "institution" "organization" "publisher" "howpublished" "series" "volume" "number" "pages" "address" "month" "year" "note" "url" "doi" }}
-        {{- with index $p $f }}
-          {{- $v := "" }}
-          {{- if reflect.IsSlice . }}{{ $v = delimit . " and " }}{{ else if eq $f "title" }}{{ $v = printf "{%s}" . }}{{ else }}{{ $v = string . }}{{ end }}
-          {{- $lines = $lines | append (printf "  %s = {%s}" $f $v) }}
-        {{- end }}
-      {{- end }}
-      <pre>{{ printf "@%s{%s,\n%s\n}" $p.type $p.key (delimit $lines ",\n") }}</pre>
-    </details>
+    <label for="{{ $bibId }}" class="pub-button">BibTeX</label>
+    {{- with or $p.pdf $p.url }}<a class="pub-button" href="{{ . }}">PDF</a>{{ end }}
+    {{- with $p.website }}<a class="pub-button" href="{{ . }}">Website</a>{{ end }}
+    {{- with $p.code }}<a class="pub-button" href="{{ . }}">Code</a>{{ end }}
+    {{- range $p.links }}<a class="pub-button" href="{{ .url }}">{{ .label }}</a>{{ end }}
+    {{- with $p.doi }}<a class="pub-button" href="{{ cond (hasPrefix . "http") . (printf "https://doi.org/%s" .) }}">DOI</a>{{ end }}
   </span>
+  {{- $lines := slice }}
+  {{- range $f := slice "title" "author" "editor" "journal" "booktitle" "school" "institution" "organization" "publisher" "howpublished" "series" "volume" "number" "pages" "address" "month" "year" "note" "url" "doi" }}
+    {{- with index $p $f }}
+      {{- $v := "" }}
+      {{- if reflect.IsSlice . }}{{ $v = delimit . " and " }}{{ else if eq $f "title" }}{{ $v = printf "{%s}" . }}{{ else }}{{ $v = string . }}{{ end }}
+      {{- $lines = $lines | append (printf "  %s = {%s}" $f $v) }}
+    {{- end }}
+  {{- end }}
+  <pre class="bibtex">{{ printf "@%s{%s,\n%s\n}" $p.type $p.key (delimit $lines ",\n") }}</pre>
 </li>
