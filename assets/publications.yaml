@@ -31,6 +31,7 @@
   year: 2026
   url: https://arxiv.org/pdf/2603.09971
   doi: https://doi.org/10.48550/arXiv.2603.09971
+  website: https://tiptop-robot.github.io/
 
 - key: anand2026which
   type: article
@@ -41,6 +42,7 @@
   publisher: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2026
   url: https://arxiv.org/pdf/2603.27797
+  website: https://scout-model-routing.github.io/
 
 - key: yao2026proxy
   type: article
@@ -68,7 +70,8 @@
   author: [Sunshine Jiang, Xiaolin Fang, Nicholas Roy, Tomás Lozano-Pérez, Leslie Kaelbling, Siddharth Ancha]
   booktitle: Conference on Robot Learning (CoRL)
   year: 2025
-  url: https://siddancha.github.io/streaming-flow-policy/
+  url: https://arxiv.org/pdf/2505.21851
+  website: https://streaming-flow-policy.github.io/
 
 - key: wan2025infer
   type: inproceedings
@@ -125,6 +128,7 @@
   booktitle: IEEE International Conference on Robotics and Automation (ICRA)
   year: 2025
   url: https://magic-2024.github.io/magic.pdf
+  website: https://magic-2024.github.io/
 
 - key: yang2025guiding
   type: inproceedings
@@ -134,6 +138,7 @@
   journal: ICRA
   year: 2025
   url: https://arxiv.org/abs/2410.02193
+  website: https://zt-yang.github.io/vlm-tamp-robot/
 
 - key: athalye2025predicate
   type: article
@@ -158,7 +163,8 @@
   booktitle: 'Robotics: Science and Systems'
   journal: 'Robotics: Science and Systems'
   year: 2025
-  url: https://cutamp.github.io/
+  url: https://arxiv.org/pdf/2411.11833
+  website: https://cutamp.github.io/
 
 - key: curtis2025flowbased
   type: article
@@ -174,7 +180,8 @@
   author: [Xiaolin Fang*, Bo-Ruei Huang*, Jiayuan Mao*, Jasmine Shone, Joshua B. Tenenbaum, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
   booktitle: IEEE International Conference on Robotics and Automation (ICRA)
   year: 2025
-  url: https://kalm-il.github.io/
+  url: https://arxiv.org/pdf/2410.23254
+  website: https://kalm-il.github.io/
 
 - key: kaelbling2025rationally
   type: inproceedings
@@ -191,6 +198,7 @@
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2024
   url: https://arxiv.org/abs/2306.13196
+  website: https://sites.google.com/view/dimsam-tamp
 
 - key: kumar2024practice
   type: inproceedings
@@ -223,6 +231,7 @@
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2024
   url: https://arxiv.org/abs/2408.04760
+  website: https://sites.google.com/view/embodied-uncertain-seg
 
 - key: du2024compositional
   type: inproceedings
@@ -270,7 +279,8 @@
   author: [Yilun Du, Mengjiao Yang, Pete Florence, Fei Xia, Ayzaan Wahid, Brian Ichter, Pierre Sermanet, Tianhe Yu, Pieter Abbeel, Joshua B Tenenbaum, Leslie Kaelbling, Andy Zeng, Jonathan Tompson]
   journal: International Conference on Learning Representations (ICLR)
   year: 2024
-  url: https://video-language-planning.github.io/
+  url: https://arxiv.org/pdf/2310.10625
+  website: https://video-language-planning.github.io/
 
 - key: yang2024learning
   type: article
@@ -278,7 +288,8 @@
   author: [Mengjiao Yang, Yilun Du, Kamyar Ghasemipour, Jonathan Tompson, Leslie Kaelbling, Dale Schuurmans, Pieter Abbeel]
   journal: International Conference on Learning Representations (ICLR)
   year: 2024
-  url: https://universal-simulator.github.io/unisim/
+  url: https://arxiv.org/pdf/2310.06114
+  website: https://universal-simulator.github.io/unisim/
 
 - key: du2024learning
   type: article
@@ -286,7 +297,8 @@
   author: [Yilun Du, Jiayuan Mao, Joshua B. Tenenbaum]
   journal: International Conference on Machine Learning (ICML)
   year: 2024
-  url: https://energy-based-model.github.io/ired/
+  url: https://arxiv.org/pdf/2406.11179
+  website: https://energy-based-model.github.io/ired/
 
 - key: du2024improving
   type: article
@@ -294,7 +306,8 @@
   author: [Yilun Du, Shuang Li, Antonio Torralba, Joshua B. Tenenbaum, Igor Mordatch]
   journal: International Conference on Machine Learning
   year: 2024
-  url: https://composable-models.github.io/llm_debate/
+  url: https://arxiv.org/pdf/2305.14325
+  website: https://composable-models.github.io/llm_debate/
 
 - key: liu2024learning
   type: inproceedings
@@ -303,6 +316,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2024
   url: https://arxiv.org/pdf/2405.03864.pdf
+  website: https://parl2024.github.io/
 
 - key: ko2024learning
   type: inproceedings
@@ -311,6 +325,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2024
   url: https://arxiv.org/pdf/2310.08576.pdf
+  website: https://flow-diffusion.github.io/
 
 - key: wong2024learning
   type: inproceedings
@@ -327,6 +342,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2024
   url: https://arxiv.org/pdf/2403.17124.pdf
+  website: https://yanweiw.github.io/glide/
 
 - key: xu2024set
   type: inproceedings
@@ -383,6 +399,7 @@
   booktitle: AAAI Conference on Artificial Intelligence (AAAI)
   year: 2023
   url: https://arxiv.org/pdf/2203.09634.pdf
+  code: https://github.com/Learning-and-Intelligent-Systems/predicators/releases/tag/march-2022-experiments
 
 - key: holladay2023robust
   type: article
@@ -392,6 +409,8 @@
   year: 2023
   url: https://journals.sagepub.com/doi/10.1177/02783649231198560
   doi: 10.1177/02783649231198560
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=r1L-gxufFuY'}
 
 - key: yang2023compositional
   type: inproceedings
@@ -400,6 +419,7 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2023
   url: http://arxiv.org/abs/2309.00966
+  website: https://diffusion-ccsp.github.io/
 
 - key: liu2023composable
   type: inproceedings
@@ -408,6 +428,7 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2023
   url: https://openreview.net/pdf?id=o-K3HVUeEw
+  website: https://cpmcorl2023.github.io/
 
 - key: mao2023learning
   type: inproceedings
@@ -432,6 +453,7 @@
   booktitle: NeurIPS
   year: 2023
   url: https://arxiv.org/abs/2312.03682
+  website: https://concepts-ai.com/p/goal-regression-width/
 
 - key: luo2023learning
   type: inproceedings
@@ -488,7 +510,8 @@
   author: [Zhutian Yang, Caelan Garrett, Tomás Lozano-Pérez, Leslie Kaelbling, Dieter Fox]
   booktitle: 'Robotics: Science and Systems (RSS)'
   year: 2023
-  url: https://piginet.github.io/
+  url: https://arxiv.org/pdf/2211.01576
+  website: https://piginet.github.io/
 
 - key: wang2023programmatically
   type: inproceedings
@@ -497,6 +520,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2023
   url: https://arxiv.org/abs/2304.13826
+  website: https://progport.github.io/
 
 - key: hsu2023ns3d
   type: inproceedings
@@ -514,6 +538,7 @@
   journal: CVPR 2023 Workshop on 3D Vision and Robotics
   year: 2023
   url: https://arxiv.org/abs/2308.07931
+  website: https://f3rm.github.io/
 
 - key: chun2023local
   type: inproceedings
@@ -522,6 +547,7 @@
   booktitle: IEEE/RSJ International Conference on Robotics and Automation (ICRA)
   year: 2023
   url: https://arxiv.org/abs/2302.03573
+  website: https://elchun.github.io/lndf/
 
 - key: li2023composing
   type: inproceedings
@@ -538,6 +564,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2023
   url: https://arxiv.org/pdf/2211.15657.pdf
+  website: https://anuragajay.github.io/decision-diffuser/
 
 - key: chen2023planning
   type: inproceedings
@@ -546,6 +573,7 @@
   booktitle: International Conference on Learning Representations (ICLR)
   year: 2023
   url: https://openreview.net/forum?id=cVFD6qE8gnY
+  website: https://hychen-naza.github.io/projects/LEAP/
 
 - key: du2023learning
   type: inproceedings
@@ -554,6 +582,7 @@
   booktitle: Computer Vision and Pattern Recognition (CVPR)
   year: 2023
   url: https://arxiv.org/abs/2304.08463
+  website: https://yilundu.github.io/wide_baseline/
 
 - key: du2023reduce
   type: inproceedings
@@ -562,6 +591,7 @@
   booktitle: International Conference on Machine Learning (ICML)
   year: 2023
   url: https://arxiv.org/abs/2302.11552
+  website: https://energy-based-model.github.io/reduce-reuse-recycle/
 
 - key: liu2023structdiffusion
   type: inproceedings
@@ -570,6 +600,7 @@
   booktitle: 'Robotics: Science and Systems (RSS)'
   year: 2023
   url: https://arxiv.org/abs/2211.04604
+  website: https://structdiffusion.github.io/
 
 - key: chi2023diffusion
   type: inproceedings
@@ -586,6 +617,7 @@
   booktitle: Conference on Lifelong Learning Agents (CoLLAs)
   year: 2023
   url: https://arxiv.org/abs/2303.04912
+  code: https://github.com/Learning-and-Intelligent-Systems/predicators/releases/tag/active-predicate-learning-23
 
 - key: fang2023dimsam
   type: inproceedings
@@ -594,6 +626,7 @@
   booktitle: CoRL workshop on Learning Effective Abstractions for Planning
   year: 2023
   url: https://arxiv.org/abs/2306.13196
+  website: https://sites.google.com/view/dimsam-tamp
 
 - key: kumar2023overcoming
   type: article
@@ -626,6 +659,7 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2023
   url: https://arxiv.org/abs/2308.07931
+  website: https://f3rm.github.io/
 
 - key: yang2022pg3
   type: inproceedings
@@ -634,6 +668,7 @@
   booktitle: International Joint Conference on Artificial Intelligence (IJCAI)
   year: 2022
   url: https://arxiv.org/pdf/2204.10420.pdf
+  code: https://github.com/ryangpeixu/pg3
 
 - key: curtis2022discovering
   type: inproceedings
@@ -666,6 +701,8 @@
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2022
   url: https://arxiv.org/pdf/2105.14074.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=marSAqmd6IM'}
 
 - key: moses2022learning
   type: inproceedings
@@ -710,6 +747,9 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2022
   url: https://arxiv.org/abs/2206.10680
+  code: https://github.com/Learning-and-Intelligent-Systems/predicators/releases/tag/skill-learning-june-2022
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=PbFZP8rPuGg'}
 
 - key: du2022learning
   type: inproceedings
@@ -717,7 +757,8 @@
   author: [Yilun Du, Tomas Lozano-Perez, Leslie Pack Kaelbling]
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2022
-  url: https://yilundu.github.io/obm/
+  url: https://arxiv.org/pdf/2011.03183
+  website: https://yilundu.github.io/obm/
 
 - key: silver2022pddl
   type: inproceedings
@@ -733,6 +774,7 @@
   booktitle: NeurIPS Datasets and Benchmarks Track
   year: 2022
   url: https://openreview.net/pdf?id=nUTemM6v9sv
+  website: https://sites.google.com/view/hand-me-that/
 
 - key: mao2022pdsketch
   type: inproceedings
@@ -741,6 +783,7 @@
   booktitle: NeurIPS
   year: 2022
   url: https://arxiv.org/pdf/2303.05501.pdf
+  website: https://pdsketch.csail.mit.edu/
 
 - key: xiao2022sparse
   type: inproceedings
@@ -749,6 +792,7 @@
   booktitle: Learning on Graphs
   year: 2022
   url: https://arxiv.org/pdf/2303.05496.pdf
+  website: https://spaloc.csail.mit.edu/
 
 - key: luo2022expressiveness
   type: inproceedings
@@ -765,6 +809,7 @@
   booktitle: CoRL 2022 Workshop Long Horizon Planning
   year: 2022
   url: https://openreview.net/pdf?id=zWhwUoORD6
+  website: https://piginet.github.io/
 
 - key: simeonov2022se3equivariant
   type: inproceedings
@@ -773,6 +818,7 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2022
   url: https://arxiv.org/abs/2211.09786
+  website: https://anthonysimeonov.github.io/r-ndf/
 
 - key: janner2022planning
   type: inproceedings
@@ -781,6 +827,7 @@
   booktitle: International Conference on Machine Learning (ICML)
   year: 2022
   url: https://arxiv.org/abs/2205.09991
+  website: https://diffusion-planning.github.io/
 
 - key: simeonov2022neural
   type: inproceedings
@@ -789,6 +836,7 @@
   booktitle: IEEE/RSJ International Conference on Robotics and Automation (ICRA)
   year: 2022
   url: https://arxiv.org/abs/2112.05124
+  website: https://yilundu.github.io/ndf/
 
 - key: garrett2021integrated
   type: article
@@ -806,6 +854,7 @@
   booktitle: Proc. International Joint Conference on Artificial Intelligence (IJCAI),
   year: 2021
   url: http://toqnet.csail.mit.edu/data/papers/2021IJCAI-TOQNet.pdf
+  website: https://toqnet.csail.mit.edu/
 
 - key: huang2021robotic
   type: article
@@ -825,6 +874,9 @@
   booktitle: AAAI
   year: 2021
   url: https://arxiv.org/pdf/2009.05613.pdf
+  code: https://github.com/tomsilver/ploi
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=FWsVJc2fvCE'}
 
 - key: chitnis2021glib
   type: inproceedings
@@ -833,6 +885,9 @@
   booktitle: AAAI
   year: 2021
   url: https://arxiv.org/pdf/2001.08299.pdf
+  code: https://github.com/ronuchit/GLIB-AAAI-2021
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=F6lmrPT6TOY'}
 
 - key: thompson2021shapebased
   type: inproceedings
@@ -858,6 +913,7 @@
   publisher: IEEE
   year: 2021
   url: https://arxiv.org/abs/2101.02679
+  website: https://mcube.mit.edu/forceful-manipulation/
 
 - key: silver2021learning
   type: inproceedings
@@ -866,6 +922,9 @@
   booktitle: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
   year: 2021
   url: https://arxiv.org/pdf/2103.00589.pdf
+  code: https://github.com/ronuchit/LOFT_IROS_2021
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=iVfpX9BpBRo'}
 
 - key: wang2021learning
   type: article
@@ -947,6 +1006,9 @@
   month: November
   year: 2020
   url: https://arxiv.org/abs/2007.13202
+  code: https://github.com/tomsilver/camps
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=wTXt6djcAd4'}
 
 - key: kaelbling2020foundation
   type: article
@@ -1020,6 +1082,7 @@
   booktitle: 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)
   year: 2020
   url: http://lis.csail.mit.edu/pubs/kawaguchi-aistats20a.pdf
+  code: https://github.com/k9k2/qSGD
 
 - key: kim2020monte
   type: article
@@ -1151,6 +1214,8 @@
   booktitle: International Conference on Robotics and Automation (ICRA)
   year: 2019
   url: http://lis.csail.mit.edu/pubs/chitnis-icra19.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=DH2QFwLELuI'}
 
 - key: karkus2019differentiable
   type: inproceedings
@@ -1159,6 +1224,8 @@
   booktitle: 'Robotics: Science and Systems (RSS)'
   year: 2019
   url: http://lis.csail.mit.edu/pubs/karkus-rss19.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=4jcYlTSJF4Y'}
 
 - key: chitnis2019learningb
   type: article
@@ -1167,6 +1234,8 @@
   journal: Conference on Robot Learning
   year: 2019
   url: http://lis.csail.mit.edu/pubs/chitnis-corl19.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=HGF8Ef5sqU0'}
 
 - key: kim2019learningb
   type: article
@@ -1190,7 +1259,8 @@
   author: [Maria Bauza, Ferran Alet, Yen-Chen Lin, Tomas Lozano-Perez, Leslie P. Kaelbling, Phillip Isola, Alberto Rodriguez]
   booktitle: International Conference on Intelligent Robots and Systems (IROS)
   year: 2019
-  url: http://mcube.mit.edu/omnipush-dataset/index.html
+  url: https://arxiv.org/pdf/1910.00618
+  website: https://web.mit.edu/mcube/omnipush-dataset/
 
 - key: holladay2019forceandmotion
   type: inproceedings
@@ -1319,6 +1389,8 @@
   booktitle: International Conference on Intelligent Robots and Systems (IROS)
   year: 2018
   url: http://lis.csail.mit.edu/pubs/wang-iros18.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/playlist?list=PLoWhBFPMfSzDbc8CYelsbHZa1d3uz-W_c'}
 
 - key: axelrod2018provably
   type: inproceedings
@@ -1335,6 +1407,8 @@
   booktitle: International Conference on Intelligent Robots and Systems (IROS)
   year: 2018
   url: http://lis.csail.mit.edu/pubs/chitnis-iros18.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=_R7lkY5xhnM'}
 
 - key: anders2018robot
   type: inproceedings
@@ -1351,6 +1425,8 @@
   booktitle: Conference on Robot Learning (CoRL)
   year: 2018
   url: http://lis.csail.mit.edu/pubs/chitnis-corl18.pdf
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=slJB_fJsOdM'}
 
 - key: kawaguchi2018generalization
   type: inproceedings
