@@ -15,6 +15,12 @@ TARGET=/afs/csail.mit.edu/group/lis/site
 # Only deploy into a directory that has this file, so a wrong TARGET can't wipe another folder.
 MARKER=.lis-website-deploy-target
 
+# Folders from the pre-2020 site that old publication links still point to (/pubs/..., /movies/...).
+# They stay in the group volume's docroot and are served through symlinks in TARGET, which this
+# script creates and protects from rsync --delete. The web server needs `www rl` on each.
+LEGACY_DIR=/afs/csail.mit.edu/group/lis/docroot
+LEGACY_LINKS=(pubs movies code bhpnNAMO)
+
 # Everything runs inside main, which bash parses in full before running. The git checkout below
 # can rewrite this file, and bash would otherwise read the new version mid-run.
 main() {
@@ -58,8 +64,25 @@ main() {
   trap 'rm -rf "$out"' EXIT
   hugo --minify --panicOnWarning --destination "$out"
 
-  # --checksum skips files whose content didn't change; the marker is protected from --delete.
-  rsync -rl --checksum --delete --filter="protect $MARKER" $dry_run --itemize-changes "$out"/ "$TARGET"/
+  # --checksum skips files whose content didn't change. The marker and legacy symlinks are
+  # protected from --delete, so the build must not produce files at those paths.
+  local filters=(--filter="protect /$MARKER") name
+  for name in "${LEGACY_LINKS[@]}"; do
+    [[ ! -e "$out/$name" ]] || die "the build contains /$name, which is reserved for the legacy $LEGACY_DIR/$name link."
+    filters+=(--filter="protect /$name")
+  done
+  rsync -rl --checksum --delete "${filters[@]}" $dry_run --itemize-changes "$out"/ "$TARGET"/
+
+  for name in "${LEGACY_LINKS[@]}"; do
+    if [[ -L "$TARGET/$name" || -e "$TARGET/$name" ]]; then
+      continue
+    elif [[ -n "$dry_run" ]]; then
+      echo "deploy: would link /$name -> $LEGACY_DIR/$name"
+    else
+      ln -s "$LEGACY_DIR/$name" "$TARGET/$name"
+      echo "deploy: linked /$name -> $LEGACY_DIR/$name"
+    fi
+  done
 
   if [[ -n "$dry_run" ]]; then
     echo "deploy: dry run, nothing changed."

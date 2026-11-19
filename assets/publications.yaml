@@ -928,7 +928,7 @@
   author: [Ferran Alet, Javier Lopez-Contreras, James Koppel, Max Nye, Armando Solar-Lezama, Tomas Lozano-Perez, Leslie Pack Kaelbling, Joshua B. Tenenbaum]
   journal: ICML
   year: 2021
-  url: https://lis.csail.mit.edu/progres
+  url: https://proceedings.mlr.press/v139/alet21a.html
 
 - key: gehring2021understanding
   type: article
@@ -1116,7 +1116,7 @@
   number: '7'
   pages: 1462–1498
   year: 2019
-  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2019.pdf
 
 - key: kawaguchi2019depth
   type: article
@@ -1126,7 +1126,7 @@
   volume: '118'
   pages: 167–174
   year: 2019
-  url: http://lis.csail.mit.edu/pubs/kawaguchi-nn19
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nn19.pdf
 
 - key: xia2019learning
   type: inproceedings
@@ -1217,7 +1217,7 @@
   number: '12'
   pages: 2293–2323
   year: 2019
-  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2-2019
+  url: http://lis.csail.mit.edu/pubs/kawaguchi-nc2-2019.pdf
 
 - key: alet2019neural
   type: article

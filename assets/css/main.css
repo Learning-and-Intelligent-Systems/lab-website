@@ -177,7 +177,25 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Home page */
-.hero { padding: 10rem 0 5rem; }
+.hero { padding: 10rem 0 5rem; position: relative; }
+/* Side images: same sizes and offsets as the original WordPress theme, hidden on narrow screens. */
+.hero-side { position: absolute; height: auto; pointer-events: none; }
+.hero-side-left { left: 0; top: 200px; width: 330px; }
+.hero-side-right { right: 0; top: -20px; width: 245px; }
+/* Keep text and buttons drawn above the images, including the next section, which the left image hangs into. */
+.hero > .wrap-narrow, .hero + .section > .wrap { position: relative; }
+@media (max-width: 1300px) {
+  /* Narrower screens: the left image would cover the Blogs heading, so stop it at the hero's edge. */
+  .hero { overflow: hidden; }
+  .hero-side-left { top: 300px; width: 300px; }
+  .hero-side-right { width: 180px; }
+}
+@media (max-width: 1040px) {
+  .hero-side-left { top: 430px; width: 260px; }
+}
+@media (max-width: 885px) {
+  .hero-side { display: none; }
+}
 .hero h1 { max-width: 14em; }
 .hero-body { display: flex; gap: 3rem; margin-top: 2rem; }
 .cta { display: flex; flex-direction: column; gap: 1.5rem; align-items: flex-start; padding-top: 1.625rem; flex: 0 0 auto; }
