@@ -2,3 +2,5 @@ public/
 resources/_gen/
 .hugo_build.lock
 .DS_Store
+# AFS keeps a replaced file that is still open (e.g. deploy.sh while it runs) as .__afsXXXX
+.__afs*
