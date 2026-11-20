@@ -231,7 +231,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Person card (People page, project pages) */
 .person { display: flex; flex-direction: column; color: #fff; text-decoration: none; }
-.person:hover { text-decoration: none; }
+.person:hover { color: #fff; text-decoration: none; }
 .person .photo { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 25%; }
 .person .placeholder {
   display: grid; place-items: center;
