@@ -7,6 +7,17 @@
 #   links                               extra links: [{label: Video, url: https://...}]
 # Authors whose names match someone in assets/people (by name or aliases) are linked automatically.
 
+- key: ye2026energy
+  type: inproceedings
+  title: Energy-Based Policy Orchestration
+  author: [Weirui Ye*, Yen-Jen Wang*, Elvis Hsieh*, Zhiyang Dou, Shibo Zhao, Pieter Abbeel, Yilun Du, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  booktitle: Conference on Robot Learning (CoRL)
+  year: 2026
+  url: https://arxiv.org/abs/2611.02546
+  pdf: https://arxiv.org/pdf/2611.02546
+  website: https://yewr.github.io/epo/
+  code: https://github.com/YeWR/epo
+
 - key: liu2026rapid
   type: article
   title: 'RAPID: Robot Agentic Programming from Demonstrations'
