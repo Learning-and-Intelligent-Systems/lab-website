@@ -7,6 +7,17 @@
 #   links                               extra links: [{label: Video, url: https://...}]
 # Authors whose names match someone in assets/people (by name or aliases) are linked automatically.
 
+- key: liu2026rapid
+  type: article
+  title: 'RAPID: Robot Agentic Programming from Demonstrations'
+  author: [Yuyao Liu, Jiayuan Mao, David Hsu, Leslie Pack Kaelbling, Tomás Lozano-Pérez]
+  journal: arXiv preprint arXiv:2609.30249
+  year: 2026
+  url: https://arxiv.org/abs/2609.30249
+  pdf: https://arxiv.org/pdf/2609.30249
+  website: https://yuyaoliu.me/projects/rapid/
+  code: https://github.com/nature21/RAPID
+
 - key: chintalapudi2026visibility
   type: inproceedings
   title: Visibility-Aware Task and Motion Planning with Task-Centric Perception
