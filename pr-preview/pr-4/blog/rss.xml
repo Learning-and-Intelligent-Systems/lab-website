@@ -1,0 +1,58 @@
+&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LIS Group Blog</title>
+    <description>Posts from the Learning &amp; Intelligent Systems Group at MIT CSAIL.</description>
+    <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/</link>
+    <atom:link href="https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bilevel Planning for Robots: An Illustrated Introduction</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-11-bilevel-planning/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-11-bilevel-planning/</guid>
+      <description>Bilevel planning, a simple form of task and motion planning (TAMP) with relational state and action abstractions, explained from first principles and applied to tasks from the BEHAVIOR-100 benchmark.</description>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Embodied lifelong learning for decision making: Opportunities brought on by modularity</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-09-embodied-lifelong-learning/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-09-embodied-lifelong-learning/</guid>
+      <description>Embodied intelligence is the ultimate lifelong learning problem. If you had a robot in your home, you would likely ask it to do all sorts of varied chores, like setting the table for dinner, preparing lunch, and doing a load of laundry.</description>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What’s Your Problem? An Oft-Missing Section in AI Papers</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-07-whats-your-problem/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2023-07-whats-your-problem/</guid>
+      <description>Include a Problem Setting section in your next AI paper. It’s worth the word count! And it should be standard in our field.</description>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Part 2: Learning to Generate Abstractions in Problems with Relational Structure</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-abstractions-part-2/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-abstractions-part-2/</guid>
+      <description>This post discusses our work “Planning with Learned Object Importance in Large Problem Instances using Graph Neural Networks,” published at AAAI 2021.</description>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Part 1: Learning to Generate Context-Specific Abstractions for Factored MDPs</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-abstractions-part-1/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-abstractions-part-1/</guid>
+      <description>This post discusses our work “CAMPs: Learning Context-Specific Abstractions for Efficient Planning in Factored MDPs,” published at CoRL 2020.</description>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Learning to Generate Abstractions for Faster Planning</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-learning-to-generate-abstractions/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-03-learning-to-generate-abstractions/</guid>
+      <description>In our recent work, we consider strategies for effective and efficient decision-making that lie between the two extremes of pure learning and pure planning. Our main idea is to learn to generate abstractions of problems that afford faster planning.</description>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The engineering science of embodied intelligence</title>
+      <link>https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-01-engineering-science/</link>
+      <guid isPermaLink="true">https://Learning-and-Intelligent-Systems.github.io/lab-website/pr-preview/pr-4/blog/2021-01-engineering-science/</guid>
+      <description>Cognitive science and neuroscience study the processes by which humans and other animals generate behavior that is intelligent: robust, flexible, and effective at achieving and maintaining the welfare of the individual.</description>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
