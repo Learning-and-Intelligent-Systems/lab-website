@@ -1,3 +1,0 @@
-# Apache on CSAIL's web server: show our own "Page not found" page (layouts/404.html).
-# Only works if the server allows .htaccess overrides; it is ignored otherwise.
-ErrorDocument 404 /404.html
