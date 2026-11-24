@@ -18,6 +18,19 @@
   website: https://yewr.github.io/epo/
   code: https://github.com/YeWR/epo
 
+- key: agarwal2026knowing
+  type: inproceedings
+  title: 'Knowing Where to Look: Interactive Object Search via Spatial-Semantic Fusion'
+  author: [Aditya Agarwal*, Lucy Cai*, Kelly Lu, Travis Manderson, Nicholas Roy, Tomás Lozano-Pérez, Leslie Pack Kaelbling]
+  booktitle: 'CoRL Workshop on Learning Effective Abstractions for Planning; CoRL Workshop on Uncertain World Models'
+  year: 2026
+  url: https://arxiv.org/abs/2611.00499
+  pdf: https://arxiv.org/pdf/2611.00499
+  doi: https://doi.org/10.48550/arXiv.2611.00499
+  website: https://skymanaditya1.github.io/objsearch-website/
+  links:
+  - {label: Video, url: 'https://www.youtube.com/watch?v=O7iGAn8316g'}
+
 - key: liu2026rapid
   type: article
   title: 'RAPID: Robot Agentic Programming from Demonstrations'
